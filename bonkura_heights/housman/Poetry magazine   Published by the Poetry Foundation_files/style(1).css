@@ -1,0 +1,7605 @@
+body {
+	font: normal 12px Arial;
+	background: #e0dece;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font: normal 24px Georgia;
+	margin: 10px 0 3px 0;
+	padding: 0;
+}
+
+h1.icon { padding: 0 0 0 22px; background-position: 0 6px; }
+
+h2 {
+	font: normal 16px Georgia;
+	margin: 10px 0 3px 0;
+	padding: 0;
+}
+
+h3,
+h3 a {
+	font-size: 15px;
+	color: #4a473f;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+
+div#sidebar h3,
+div#sidebar h3 a {
+	font-size: 14px;
+}
+
+/* Link Styles */
+
+a {
+	color: #045482;
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover { text-decoration: underline; }
+
+a.blue { color: #045482; }
+a.blue:hover { color: #000; }
+
+.underline a { text-decoration: underline; }
+.underline a:hover { text-decoration: none; }
+
+a.disabled { cursor:default; }
+a.disabled:hover { text-decoration: none; }
+
+a.title.large,
+span.title.large {
+	font: normal 24px/29px Georgia !important;
+}
+
+span.title a,
+span.title.large a { color: #045482; }
+
+span.title a:hover,
+span.title.large a:hover { color: #000; }
+
+h1 a.title {
+	font: normal 24px/29px Georgia;
+	color: #045482;
+}
+
+.description {
+	font: normal 12px/17px Arial;
+	color: #4d493f;
+}
+
+.description.large {
+	font: normal 16px/21px Georgia;
+}
+
+/* Other sidewide styles */
+
+.shadow {
+	-moz-box-shadow: 3px 3px #b5b5b5;
+	-webkit-box-shadow: 3px 3px #b5b5b5;
+	box-shadow: 3px 3px #b5b5b5;
+	/* For IE 8 */
+  	-ms-filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=3, OffY=3, Color='#b5b5b5', Positive='true');
+	/* For IE 5.5 - 7 */
+  	filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=3, OffY=3, Color='#b5b5b5', Positive='true');
+}
+
+.clear { clear: both; }
+
+.grey { color: #767676; }
+
+.block { display: block !important; }
+.inlineblock { display: inline-block; }
+
+div.divider {
+	clear: both;
+	border-top: 1px solid #abaa9a;
+}
+
+div.divider.light { border-top: 1px solid #e0dece; }
+
+div.divider.full { margin-left: -20px; width: 977px; display: block; }
+
+.bpad { padding-bottom: 6px; }
+.dbpad { padding-bottom: 12px; }
+
+div#poemwrapper .bpad { padding-bottom: 11px; }
+
+body.audio.item div.divider.full { margin-top: 27px; clear:both; }
+
+.right { float: right; }
+.left { float: left; }
+
+.left.image { margin-right: 7px; }
+.left.image.dpad { margin-right: 18px; }
+
+.floatleft { float: left; }
+
+.half { width: 488px; }
+.quarter { width: 244px; }
+
+span.slug {
+	font: normal 10px Arial;
+	color: #000;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+
+div.innercontent,
+div.innercontent p {
+	color: #4d493f;
+	line-height: 19px;
+}
+
+span.uc {
+    text-transform:uppercase;
+}
+
+.sm-caps { font-variant:small-caps; }
+
+/* Actions */
+
+div.actions,
+div.actions ul li { float: left; }
+
+div.actions ul { list-style-type: none; }
+
+div.actions li { margin: 0; padding: 0; }
+
+div.actions li.line {
+	border-right: 1px solid #adadad;
+	margin-right: 7px;
+	padding-right: 7px;
+}
+
+
+div.actions.tight li.line {
+	margin-right:5px;
+	padding-right:5px;
+}
+
+div.actions ul li a { text-decoration: none; }
+div.actions ul li a:hover { text-decoration: underline !important; }
+div.actions ul li a { vertical-align: middle; }
+
+body.poem-poet div.actions,
+body.magazine.archive div.actions,
+body.article div.actions { float: right; height: 29px; }
+
+body.poem-poet div.actions ul li { margin: 0 0 0 7px; }
+
+div.actions ul li a {
+	display: inline-block;
+	padding: 0;
+	margin: 1px 0 0 3px;
+	color: #877440;
+}
+
+div.actions ul li a:hover {
+	color: #000;
+	text-decoration: none;
+}
+
+div.actions span.icon {
+	float: left;
+	display: inline-block;
+	width: 15px;
+	height: 14px;
+	background-image: url("/images/sprite-actions.png");
+}
+
+div.actions span.icon.print { background-position: 0 0; }
+div.actions span.icon.calendar { background-position: 15px 0; }
+div.actions span.icon.download { background-position: 30px 0; }
+div.actions span.icon.favorite { background-position: 45px 0; }
+div.actions span.icon.remove { background-position: 60px 0; }
+div.actions span.icon.share { background-position: 75px 0; }
+
+div.actions span.icon.print.active { background-position: 0 14px; }
+div.actions span.icon.calendar.active { background-position: 15px 14px; }
+div.actions span.icon.download.active { background-position: 30px 15px; }
+div.actions span.icon.favorite.active { background-position: 45px 14px; }
+div.actions span.icon.remove.active { background-position: 60px 14px; }
+div.actions span.icon.share.active { background-position: 75px 14px; }
+
+
+/* Layout */
+
+div#wrapper {
+	width: 976px;
+	margin: 0 auto;
+	background: #fff;
+	position: relative;
+}
+
+div#header { background: #f0efdf; }
+
+div#header a { color: #000; }
+
+div#header span#text_tout_link_text a, div#header a#text_tout_link{color:#fff}
+
+div#nav { background: #000; }
+
+div#content {
+	width: 693px;
+	float: left;
+	background: #fff;
+	padding: 19px 19px 50px 19px;
+}
+
+div#content.nopad {
+	width: 731px;
+	padding: 0;
+}
+
+div#sidebar {
+	float: right;
+	width: 245px;
+}
+
+/* Wrap long URLs like Firefox does */
+div#sidebar { word-wrap: break-word; }
+
+
+body.home.index div#content,
+body.children.laureate div#content,
+body.foundation.index div#content,
+body.foundation.staff div#content,
+body.foundation.buildhome div#content { padding: 19px 19px 0 19px; }
+
+body.children.landing div#content { padding-bottom: 0; }
+
+body.genericfull.foundation div#sidebar { margin-bottom: 50px; }
+
+body.children.landing div#sidebar,
+body.genericfull.foundation.index div#sidebar,
+body.genericfull.foundation.staff div#sidebar,
+body.genericfull.foundation.buildhome div#sidebar { margin-bottom: 0; }
+
+div#sidebar .widget {
+	padding: 0;
+	margin: 0;
+	border-left: 1px solid #abaa9a;
+}
+
+div#sidebar div.widget div.interior {
+	padding: 15px 20px;
+	color: #4d493f;
+}
+
+div#sidebar div.widget div.interior.top {
+	padding-bottom: 10px;
+}
+
+div#sidebar div.widget div.interior.bottom {
+	padding-top: 10px;
+}
+
+div#sidebar div.widget h3 {
+	line-height: 18px;
+	margin: 0 0 12px 0;
+}
+
+div#sidebar div.widget p.title {
+	font: normal 15px Georgia;
+	line-height: 19px;
+	color: #505050;
+	margin: 3px 0 0 0;
+	padding: 0;
+}
+
+div#sidebar div.widget p.title.small {
+	font: normal 12px Arial;
+	line-height: 15px;
+	margin: 6px 0 4px 0;
+}
+
+div#sidebar .widget p {
+	line-height: 17px;
+}
+
+div#sidebar .widget div.padding {
+	padding: 18px;
+}
+
+div#sidebar .widget div.padding.tpad {
+	margin-top: 35px;
+}
+
+div#sidebar .widget.tout {
+	margin-top: 23px;
+}
+
+body.browse div#sidebar .widget.tout {
+	margin-top: 38px;
+}
+
+div#sidebar .widget.tout.past div.top.padding {
+	height: 32px;
+}
+
+div#sidebar .widget.tout.past div.left span.slug,
+div#sidebar .widget.tout.past div.left h3 {
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+div#sidebar .widget.tout.past div.left {
+	width: 135px;
+	margin-top: -5px;
+	display: inline-block;
+}
+
+div#sidebar .widget.tout.past div.pagination-arrows {
+	margin-top: -1px;
+}
+
+div#sidebar .widget.tout .left.half {
+	width: 50%; 
+	margin-right: 7px;
+}
+
+div#sidebar .widget.tout .right.half { width: 46%; }
+
+div#sidebar .widget.tout a.light-blue { font-weight: normal; line-height: 15px !important; }
+
+div#sidebar .toutwrapper { margin-bottom: 50px; }
+
+div.widget.tout .icon {
+	text-indent: 21px;
+	float: left;
+	background-position: 0 1px;
+}
+
+div#sidebar .widget.tout p,
+div#sidebar .widget.tout a.title,
+div#sidebar .widget.tout span.slug,
+div#sidebar .widget.tout span.author,
+div#sidebar .widget.tout div.issueimage {
+	display: block;
+	margin: 0 0 8px 0;
+	padding: 0;
+}
+
+div#sidebar .widget.tout div.issueimage { margin: 8px 0 12px 0; }
+
+div#sidebar .widget.tout div.poem {
+	padding: 0;
+	margin: 0; 
+}
+
+div#sidebar div.widget.tout a.title { font: normal 18px/20px Georgia; color: #045482; }
+div#sidebar div.widget.tout a.title.large { font: normal 20px/20px Georgia !important; }
+div#sidebar div.widget.tout p.icon { width: 200px; }
+
+div#sidebar div.widget.tout div.visitlab {
+	height: 40px;
+	margin-top: 12px;
+	padding-left: 35px;
+	background: url('/images/icon-lab.gif') top left no-repeat;
+}
+
+div#sidebar div.widget.tout div.visitlab p { padding-top: 8px; }
+
+div#sidebar div.widget.tout div.visitlab a { color: #231f20; }
+div#sidebar div.widget.tout div.visitlab span.grey { color: #6c6c6c; }
+
+div#sidebar div.widget ul.linklist,
+div#sidebar div.widget div.linklist { margin: 0 0 32px 0; }
+
+div#sidebar div.widget.tout ul.linklist,
+div#sidebar div.widget.tout div.linklist { margin: 0 0 8px 0; }
+
+div#sidebar div.widget ul.linklist li,
+div#sidebar div.widget div.linklist p { line-height: 24px; }
+
+div#sidebar div.widget.tout ul.linklist li,
+div#sidebar div.widget.tout div.linklist p { line-height: 20px; }
+
+div#sidebar div.widget ul.linklist li a,
+div#sidebar div.widget div.linklist p a { font-size: 12px; }
+
+div#sidebar div.widget ul.linklist.title li,
+div#sidebar div.widget div.linklist.title p {
+	margin: 0 0 8px 0;
+}
+
+div#sidebar div.widget ul.linklist.title li span.link,
+div#sidebar div.widget ul.linklist.title li a,
+div#sidebar div.widget div.linklist.title li span.link,
+div#sidebar div.widget div.linklist.title p a {
+	font: normal 15px/18px Georgia;
+	color: #000;
+	padding: 0;
+}
+
+div#sidebar div.widget ul.linklist.title li span.author,
+div#sidebar div.widget div.linklist.title p span.author {
+	display: block;
+	margin: 0 0 12px 0;
+	line-height: 16px;
+}
+
+div#sidebar div.widget ul.linklist.title li a.link,
+div#sidebar div.widget div.linklist.title p a.link {
+	padding: 0 0 0 15px;
+}
+
+div#sidebar div.widget ul.linklist li a.light-blue,
+div#sidebar div.widget div.linklist p a.light-blue {
+	font-weight: normal;
+	background-position: 0 3px;
+}
+
+body.magazine.article iframe#widget,
+body.magazine.poem iframe#widget {
+    margin-top: 154px;
+}
+
+div#breadcrumbs {
+	display: inline-block;
+	background: #fff;
+	float: none;
+	width: 692px;
+	padding: 7px 0 4px 21px;
+	margin: 0;
+}
+
+div#breadcrumbs.full {
+	background: #f0efdf;
+	width: 955px;
+}
+
+div#breadcrumbs.full.plain {
+	background: #fff;
+}
+
+div#breadcrumbs,
+div#breadcrumbs a {
+	color: #696969;
+	font-size: 11px;
+}
+
+div#controls { float: right; }
+
+div.poem,
+div.article,
+div#poetwrapper div.biography,
+div#articlewrapper div.biography {
+	font: normal 16px Georgia;
+	line-height: 24px;
+	color: #505050;
+	margin: 15px 0 0 0;
+}
+
+div.poem pre,
+p.epigraph,
+span.epigraph,
+div.article pre,
+div#poetwrapper div.biography pre,
+div#articlewrapper div.biography pre {
+	font: normal 16px Georgia;
+	line-height: 24px;
+	color: #505050;
+	margin: 0 0 0 25px;
+}
+
+span.epigraph {
+	display: inline-block;
+	font-style: italic;
+}
+
+p.epigraph { margin-bottom: 25px; }
+
+div.article { color: #404040; }
+
+div.article p.intro { color: #505050; margin: -2px 0 -4px 0; }
+
+div.article div.poem,
+div.article.pad { padding: 0 40px; }
+
+h1.article.pad { padding: 0 0 0 40px; margin: 0; }
+
+#article .orig-pubdate { color: #4D493F; }
+
+body.lab.terms div.article.pad { padding: 0 20px; }
+
+body.lab.terms h1.article.pad { padding: 0 0 0 20px; }
+
+div.article.bpad { padding-bottom: 40px; }
+
+div.style-e { font: normal 12px/17px Arial; color: #4d493f; padding-bottom: 50px; }
+
+div.style-e div.actions { line-height: 1em; }
+
+div.style-e a,
+div.article a { color: #045482; }
+
+div.style-e a:hover,
+div.article a:hover { text-decoration: underline; }
+
+div.style-e th,
+div.style-e td { padding: 0 10px 0 0; }
+
+div.style-e th { text-align: left; }
+
+.tout { background: #f0efdf; padding: 8px 18px; color: #6c6c6c; font: normal 12px/18px Arial; }
+
+.tout.blue { background: #ebf5f5; }
+.tout.white { background: #fff; }
+
+.tout a { color: #045482; }
+.tout a:hover { color: #000; text-decoration: underline; }
+
+.tout a.title { color: #000; }
+
+.tout.tpad { margin-top: 21px; }
+.tout.indent { margin-left: 40px; }
+
+.tout h3.pad { margin: 7px 0 0 0; padding: 15px 0 7px 0; }
+.tout h3.nopad { margin: 0; padding: 15px 0 0 0; }
+
+.tout p.nopad { margin: 0; padding: 0; }
+
+.tout.half { width: 300px; }
+
+.tout.quarter {
+	width: 160px;
+	display: inline-block;
+}
+
+.tout.left { margin-right: 15px; }
+.tout.right { margin-left: 15px; }
+
+.tout dl,
+.tout dt,
+.tout dd { margin: 0; padding: 0; }
+
+.tout dt { font-weight: bold; }
+
+.tout dd { margin-bottom: 12px; }
+
+span.author,
+div.author {
+	text-transform: uppercase;
+	color: #4d493f;
+	display: inline-block;
+	letter-spacing: 0.05em;
+}
+
+span.author a,
+div.author a { color: #043d6e; }
+
+span.author a:hover,
+div.author a:hover { color: #000; }
+
+.photocredit {
+	font: normal 9px Arial;
+	color: #909090;
+}
+
+div.author { font: normal 12px Arial; }
+
+ul.linklist,
+ul.linklist ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+ul.linklist ul { margin: 0 0 0 15px; }
+
+ul.linklist.pad li { margin: 0 0 5px 0; }
+
+ul.linklist li a {
+	padding-left: 15px;
+	line-height: 21px;
+}
+
+ul.linklist.smpad li { margin: 0 0 3px 0; }
+
+ul.linklist.nopad,
+ul.linklist.nopad li { padding-left: 0; margin: 0; }
+
+ul.linklist.blue li a { color: #045482; }
+
+ul.linklist span.soldout { padding-left: 15px; }
+
+div.widget.tout ul.linklist.pad { padding: 5px 0 0 0; }
+div.widget.tout ul.linklist.pad li a { padding-left: 0; }
+
+/* NAV WRAPPER */
+
+div#navwrapper {
+	background: #000;
+	height: 103px;
+	padding: 1px 0 0 0;
+}
+
+div.newsitem {
+	margin: 13px 0 0 0;
+	height: 29px;
+	padding: 0 19px;
+	color: #dccb9b;
+	font-size: 13px;
+}
+
+div.newsitem p {
+	display: block;
+	font-weight: normal;
+}
+
+div.newsitem span.title {
+	letter-spacing: 1px;
+	font-size: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+div#header div.newsitem a, div.newsitem a { color: #fff; }
+div.newsitem a.arrow {
+	margin-left: 10px;
+	padding-left: 17px;
+	background: url("/images/newsitem-arrow.gif") 1px no-repeat;
+}
+
+div#searchbox { float: left; margin: 11px 0 0 15px; }
+
+body.error404 div#content div#searchbox,
+body.error500 div#content div#searchbox { margin-left: 0; }
+
+div#searchbox input {
+	float: left;
+	padding: 10px 7px 4px 7px;
+}
+
+div#pmsearchbox input,
+div#termssearchbox input {
+	float: left;
+	padding: 9px 7px 7px 8px;
+	margin-left: 3px;
+	font-size: 11px;
+}
+
+div#searchbox input#q,
+div#pmsearchbox input#pmq,
+div#termssearchbox input#q {
+	color: #949494;
+	width: 163px;
+	border: 0;
+	border-top: 2px solid #4c4c4c;
+	border-left: 1px solid #4c4c4c;
+}
+
+div#pmsearchbox input#pmq{
+	width:400px;
+}
+
+body.error404 div#content div#searchbox input#pmq,
+body.error500 div#content div#searchbox input#pmq {
+	width: 193px;
+}
+
+div#pmsearchbox input#pmq,
+div#termssearchbox input#q {
+	border-top: 1px solid #4c4c4c;
+}
+
+div#searchbox input#q {
+	color: #000;
+	font: normal 11px Arial;
+}
+
+div#searchbox input#go{
+	width: 29px;
+	height: 29px;
+	margin: 4px 0 0 4px;
+	padding: 0;
+	border: 0;
+	font-size: 0;
+	display: block;
+	line-height: 0;
+	text-indent: -9999px !important;
+	background: transparent url("/images/go.png") 0 0 no-repeat;
+	cursor: pointer; /* hand-shaped cursor */
+	cursor: hand; /* for IE 5.x */
+}
+
+div#pmsearchbox input#pmgo{
+	width: 29px;
+	height: 29px;
+	margin: 2px 0 0 3px;
+	padding: 0;
+	border: 0;
+	line-height: 0;
+	background: transparent url("/images/magazine-go.png") no-repeat center top;
+	text-indent: -9999px;
+	cursor: pointer; /* hand-shaped cursor */
+	cursor: hand; /* for IE 5.x */
+}
+
+input#termsgo{
+	width: 29px;
+	height: 29px;
+	margin: 2px 0 0 3px;
+	padding: 0;
+	border: 0;
+	line-height: 0;
+	background: transparent url("/images/go.png") no-repeat center top;
+	text-indent: -9999px;
+	cursor: pointer; /* hand-shaped cursor */
+	cursor: hand; /* for IE 5.x */
+}
+
+div#pmsearchbox input#pmgo{
+	width: 29px;
+	height: 29px;
+	margin: 2px 0 0 3px;
+	padding: 0;
+	border: 0;
+	line-height: 0;
+	background: transparent url("/images/magazine-go.png") no-repeat center top;
+	text-indent: -9999px;
+	cursor: pointer; /* hand-shaped cursor */
+	cursor: hand; /* for IE 5.x */
+}
+
+
+/* LOGO */
+
+div#logo { padding: 40px; float: left; }
+div#logo a {
+	display: block;
+	width: 305px;
+	height: 74px;
+	text-indent: -9999px;
+	background: url("/images/logo.png") top left no-repeat;
+}
+
+div#printlogo { display: none; }
+
+/* TOP NAV */
+
+div#topnav {
+	float: right;
+	padding: 46px 10px 0 0;
+	font-size: 13px;
+}
+
+div#topnav ul { margin: 42px 0 0 0; padding: 0; list-style-type: none; }
+div#topnav ul li { float: left; margin: 3px 0 0 0; padding: 0; height: 14px; }
+div#topnav ul li.line { padding-right: 7px; margin-right: 7px; border-right: 1px solid #b7b7ae; }
+div#topnav ul li.favorite { height: auto; margin-left: 10px; }
+
+div#topnav ul li > a {
+	color:#000;
+	display: block;
+	margin-top: -2px;
+}
+
+div#topnav ul li.favorite a.my-favorite-poetry {
+	display: block;
+	margin: -3px 0 0 0;
+	padding: 7px 0 0 14px;
+	text-indent: -9999px;
+	width: 153px;
+	height: 30px;
+	background: url('/images/my-favorite-poetry.png') top left no-repeat;	
+}
+
+div#topnav ul li.favorite.active a.my-favorite-poetry {
+	background: transparent url("/images/model-add-on.gif") top left no-repeat;
+	width: 153px;
+	height: 30px;
+	position: relative;
+	top: 0;
+	z-index: 300;
+	padding: 7px 0 0 14px;
+	margin: -4px 0 0 0;
+	text-indent: 7px;
+	background: none;	
+}
+
+
+/* NAVBAR */
+
+div#navbar {
+	clear: both;
+	float: left;
+	padding: 0;
+	margin: 0; 
+}
+
+div#navbar > ul {
+float: left;
+	height: 61px;
+	width: 732px;
+	padding: 0;
+	margin: 0 auto;
+	list-style-type: none;
+	background: url("/images/navbar.png") top left no-repeat;
+}
+
+div#navbar > ul > li {
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+div#navbar > ul > li > span {
+	display: block;
+	text-indent: -9999px;
+	height: 61px;
+}
+
+/* Default State */
+div#navbar > ul > li.nb1 > span { width: 146px; } /* Poems & Poets */
+div#navbar > ul > li.nb2 > span { width: 146px; } /* Features */
+div#navbar > ul > li.nb3 > span { width: 146px; } /* Resources */
+div#navbar > ul > li.nb4 > span { width: 146px; } /* Programs & Initiatives */
+div#navbar > ul > li.nb5 > span { width: 148px; } /* Poetry Magazine */
+
+/* Active State */
+div#navbar > ul > li.nb1.active { background: url("/images/navbar.png") 0px -122px no-repeat; cursor: default; }
+div#navbar > ul > li.nb2.active { background: url("/images/navbar.png") -146px -122px no-repeat; cursor: default; }
+div#navbar > ul > li.nb3.active { background: url("/images/navbar.png") -292px -122px no-repeat; cursor: default; }
+div#navbar > ul > li.nb4.active { background: url("/images/navbar.png") -438px -122px no-repeat; cursor: default; }
+div#navbar > ul > li.nb5.active { background: url("/images/navbar.png") -584px -122px no-repeat; cursor: default; }
+
+
+/* Hover State */
+div#navbar > ul > li.nb1 > span:hover,
+div#navbar > ul > li.nb1.hover,
+div#navbar > ul > li.nb1.active > a:hover { background: url("/images/navbar.png") 0px -61px no-repeat; }
+
+div#navbar > ul > li.nb2 > span:hover,
+div#navbar > ul > li.nb2.hover,
+div#navbar > ul > li.nb2.active > a:hover { background: url("/images/navbar.png") -146px -61px no-repeat; }
+
+div#navbar > ul > li.nb3 > span:hover,
+div#navbar > ul > li.nb3.hover,
+div#navbar > ul > li.nb3.active > a:hover { background: url("/images/navbar.png") -292px -61px no-repeat; }
+
+div#navbar > ul > li.nb4 > span:hover,
+div#navbar > ul > li.nb4.hover,
+div#navbar > ul > li.nb4.active > a:hover { background: url("/images/navbar.png") -438px -61px no-repeat; }
+
+div#navbar > ul > li.nb5 > span:hover,
+div#navbar > ul > li.nb5.hover,
+div#navbar > ul > li.nb5.active > a:hover { background: url("/images/navbar.png") -584px -61px no-repeat; }
+
+div#navbar > ul > li:hover ul { display: block; }
+
+div#navbar > ul > li > ul > li.title { margin-top: 5px; }
+
+div#navbar > ul > li > ul > li.title a {
+	color: #045482;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+div#navbar > ul > li > ul > li.magazine { padding: 19px 12px 19px 15px; }
+
+div#navbar > ul > li > ul > li.magazine span.title,
+div#navbar > ul > li > ul > li.magazine span.title a {
+	font-weight: bold;
+	color: #126b81;
+	font-size: 16px;
+}
+
+div#navbar > ul > li > ul > li.magazine span.title a:hover { color: #000; }
+
+div#navbar > ul > li > ul > li.magazine p {
+	color: #4d493f;
+	font: normal 12px/17px Arial;
+	width: 205px;
+	margin: -2px 0 10px 15px;
+}
+
+div#navbar > ul > li > ul > li.magazine img {
+	width: 97px;
+
+}
+
+div#navbar > ul > li > ul > li.magazine div.issueimage {
+	position:absolute;
+	margin: 22px 0 0 245px;
+}
+
+div#navbar > ul > li > ul > li ul.linklist { display: block; float: none; }
+
+div#navbar > ul > li > ul > li ul.linklist li { margin-bottom: 4px; }
+
+div#navbar > ul > li > ul > li ul.linklist li a {
+	padding: 0 0 0 15px;
+	line-height: 15px !important;
+	font-size: 13px;
+	font-weight: normal;
+}
+
+div#navbar > ul > li > ul > li div.divider {
+	margin: 9px 0 11px 0;
+	clear: none;
+	width: 227px;
+}
+
+/* second-level lists */
+div#navbar > ul > li > ul {
+	z-index: 204;
+	list-style-type: none;
+	position: absolute;
+	width: 145px;
+	margin: 0;
+	padding: 0;
+	background: #f0efdf;
+	border: 1px solid #868685;
+	border-top: 0;
+	display: none; 
+}
+
+/* default dropdowns */
+
+/*div#navbar > ul > li.parent > ul.dropdown {
+	margin: 0 0 0 -1px;
+}
+*/
+
+div#navbar > ul > li.nb1 > ul.dropdown,
+div#navbar > ul > li.nb2 > ul.dropdown {
+	margin: 0;
+}
+
+div#navbar > ul > li.parent > ul.dropdown li a {
+	font-weight: bold;
+	padding: 5px 15px;
+	color: #043d6e;
+}
+
+div#navbar > ul > li.nb1.parent > ul.dropdown li a {
+	padding: 5px 18px;
+}
+
+div#navbar > ul > li.parent > ul.dropdown li:hover a {
+	display: block;
+	text-decoration: none;
+	color: #000;
+	background: #d6d4c5;
+}
+
+/* magazine dropdown */
+
+div#navbar > ul > li.nb5 > ul {
+	width: 391px;
+	border-right: 0;
+	border-top: 0;
+}
+
+div#navbar > ul > li > ul.dropdown > li a {
+	display: inline-block;
+	text-indent: 0;
+}
+
+/* SUBNAV */
+
+div#subnav {
+	background: #f0efdf;
+}
+
+div#subnav div#tabs,
+div#subnav.white {
+	background: #fff;
+}
+
+body.magazine div#subnav { background: none; }
+
+div#subnav {
+	min-height: 50px;
+	margin: 0;
+	padding: 0;
+	float: left;
+	clear: both;
+}
+
+div#subnav ul.menu {
+	height: 52px;
+	width: 976px;
+	padding: 0;
+	margin: 0 auto;
+	list-style-type: none;
+}
+
+body.lab div#subnav ul.menu { background: url("/images/subnav-lab.png") top left no-repeat; }
+body.children div#subnav ul.menu { background: url("/images/subnav-children.png") top left no-repeat; }
+body.foundation div#subnav ul.menu { background: url("/images/subnav-foundation.png") top left no-repeat; }
+
+div#subnav ul.menu li {
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+div#subnav ul.menu li a {
+	display: block;
+	font: bold 14px Arial;
+	height: 32px;
+	padding: 10px 15px;
+	position: absolute;
+}
+
+div#subnav ul li a.home {
+	text-transform: uppercase;
+	width: 155px;
+	padding-top: 26px;
+	padding-left: 70px;
+	height: 16px; 
+}
+
+/* LAB Subnav Default State */
+body.lab div#subnav ul.menu li a {
+	color: #554b82;
+}
+
+body.lab div#subnav ul.menu li a:hover,
+body.lab div#subnav ul.menu li.active a {
+	color: #231f20;
+	text-decoration: none;
+}
+
+/* Learning Lab Subnav */
+body.lab div#subnav ul li.sn2 a { width: 155px; margin-left: 240px; padding-top: 26px; height: 16px; } /* Core Learning Poems */
+body.lab div#subnav ul li.sn3 a { width: 153px; margin-left: 425px; } /* Articles for Students & Teachers */
+body.lab div#subnav ul li.sn4 a { width: 153px; margin-left: 608px; } /* Essays on Poetic Theory */
+body.lab div#subnav ul li.sn5 a { width: 155px; margin-left: 791px; } /* Glossary of Poetic Terms */
+
+/* Hover State for lab */
+body.lab div#subnav ul.menu li.sn1 a.home:hover,
+body.lab div#subnav ul.menu li.sn1.active a { background: url("/images/subnav-lab.png") 0px -52px no-repeat; }
+
+body.lab div#subnav ul li.sn2 a:hover,
+body.lab div#subnav ul li.sn2.active a { background: url("/images/subnav-lab.png") -240px -52px no-repeat; }
+
+body.lab div#subnav ul li.sn3 a:hover,
+body.lab div#subnav ul li.sn3.active a { background: url("/images/subnav-lab.png") -425px -52px no-repeat; }
+
+body.lab div#subnav ul li.sn4 a:hover,
+body.lab div#subnav ul li.sn4.active a { background: url("/images/subnav-lab.png") -608px -52px no-repeat; }
+
+body.lab div#subnav ul li.sn5 a:hover,
+body.lab div#subnav ul li.sn5.active a { background: url("/images/subnav-lab.png") -791px -52px no-repeat; }
+
+
+/* Children Subnav Default State */
+body.children div#subnav ul li a.home {
+	padding-left: 57px;
+	letter-spacing: 0.04em;
+}
+
+body.children div#subnav ul.menu li a {
+	color: #b53300;
+}
+
+body.children div#subnav ul.menu li a:hover,
+body.children div#subnav ul.menu li.active a {
+	color: #343434;
+	text-decoration: none;
+}
+
+body.children div#subnav ul li.sn1 a { width: 168px; margin-left: 0; } /* Children's Poetry */
+body.children div#subnav ul li.sn2 a { width: 217px; margin-left: 241px; } /* Children's Poet Laureate */
+body.children div#subnav ul li.sn3 a { width: 213px; margin-left: 488px; } /* Children's Video */
+body.children div#subnav ul li.sn4 a { width: 214px; margin-left: 732px; } /* Articles about Children's Poetry */
+
+/* Hover State for Children Subnav */
+body.children div#subnav ul li.sn1 a:hover,
+body.children div#subnav ul li.sn1.active a { background: url("/images/subnav-children.png") 0px -52px no-repeat; }
+
+body.children div#subnav ul li.sn2 a:hover,
+body.children div#subnav ul li.sn2.active a { background: url("/images/subnav-children.png") -241px -52px no-repeat; }
+
+body.children div#subnav ul li.sn3 a:hover,
+body.children div#subnav ul li.sn3.active a { background: url("/images/subnav-children.png") -488px -52px no-repeat; }
+
+body.children div#subnav ul li.sn4 a:hover,
+body.children div#subnav ul li.sn4.active a { background: url("/images/subnav-children.png") -732px -52px no-repeat; }
+
+
+/* Foundation Subnav Default State */
+
+body.foundation div#subnav ul li a.home {
+	padding-left: 21px;
+	letter-spacing: 0.04em;
+}
+                   
+body.foundation div#subnav ul.menu li a {
+	color: #045482;
+}
+
+body.foundation div#subnav ul.menu li a:hover,
+body.foundation div#subnav ul.menu li.active a {
+	color: #343434;
+	text-decoration: none;
+}
+
+body.foundation div#subnav ul li.sn1 a { width: 204px; margin-left: 0; } /* About The Foundation */
+body.foundation div#subnav ul li.sn2 a { width: 154px; margin-left: 240px; padding-top: 26px; height: 16px; } /* Poetry Foundation & Poetry Magazine */
+body.foundation div#subnav ul li.sn3 a { width: 154px; margin-left: 424px; padding-top: 26px; height: 16px; } /* Announcements */
+body.foundation div#subnav ul li.sn4 a { width: 154px; margin-left: 608px; padding-top: 26px; height: 16px; } /* A Home for Poetry */
+body.foundation div#subnav ul li.sn5 a { width: 154px; margin-left: 792px; padding-top: 26px; height: 16px; } /* Staff & Board */
+
+/* Hover State for Foundation Subnav */
+body.foundation div#subnav ul li.sn1 a:hover,
+body.foundation div#subnav ul li.sn1.active a { background: url("/images/subnav-foundation.png") 0px -52px no-repeat; }
+
+body.foundation div#subnav ul li.sn2 a:hover,
+body.foundation div#subnav ul li.sn2.active a { background: url("/images/subnav-foundation.png") -240px -52px no-repeat; }
+
+body.foundation div#subnav ul li.sn3 a:hover,
+body.foundation div#subnav ul li.sn3.active a { background: url("/images/subnav-foundation.png") -424px -52px no-repeat; }
+
+body.foundation div#subnav ul li.sn4 a:hover,
+body.foundation div#subnav ul li.sn4.active a { background: url("/images/subnav-foundation.png") -608px -52px no-repeat; }
+
+body.foundation div#subnav ul li.sn5 a:hover,
+body.foundation div#subnav ul li.sn5.active a { background: url("/images/subnav-foundation.png") -792px -52px no-repeat; }
+
+
+/* Poem/Poet Page Subnav */
+
+body.magazine div#subnav { margin: 0 0 0 -19px; padding: 0; }
+
+div#subnav div.fromsearch p { padding-top: 8px; }
+div#subnav div.fromsearch p.back { margin: 0 0 0 20px; }
+div#subnav div.fromsearch p.nav { margin: 0 0 0 20px; padding:2px 0 0 0; }
+
+body.magazine div#subnav div.fromsearch p.back { padding-top: 0; }
+body.magazine div#subnav div.fromsearch p.nav { margin: 0 0 0 20px; }
+
+div#subnav div.fromsearch p.nav span.prevnext { padding-left: 7px; }
+
+div#subnav div.fromsearch a.prev,
+div#subnav div.fromsearch a.next {
+	display: inline-block;
+	height: 12px;
+	color: #76673e;
+}
+
+div#subnav div.fromsearch a.prev { padding-right: 3px; }
+div#subnav div.fromsearch a.next { padding-left: 3px; }
+
+div#subnav div.fromsearch a.prev {
+	padding-left: 11px; 
+}
+
+div#subnav div.fromsearch a.prev { background: url("/images/prev.gif") left 3px no-repeat; }
+div#subnav div.fromsearch a.next { background: url("/images/next.gif") right 3px no-repeat; padding-right: 11px; }
+
+div#subnav div.fromsearch span.prev { background: url("/images/prev-off.gif") left 3px no-repeat; }
+div#subnav div.fromsearch span.next { background: url("/images/next-off.gif") right 3px no-repeat; }
+
+div#subnav div.fromsearch span.grey { font-size: 12px; color: #bcbcb4; font-weight: bold; }
+
+
+/**************************/
+/* Drop shadows on images */
+/**************************/
+
+div.issueimage,
+span.imageshadow,
+span.imageshadow img,
+span.imagebg {
+	float: left;
+	margin-left: 2px;
+}
+
+span.imageshadow {
+	padding: 0;
+	margin: 0 10px 0 0;
+}
+
+span.imageshadow span.imagebg {
+	padding: 0;
+	background: #b5b5b5;
+	margin: 2px 0 0 2px;
+}
+
+span.imageshadow img {
+	margin: -3px 0 0 -3px;
+	border: 1px solid #bdbcb0;
+}
+
+/*********************/
+/* SITE CONTENT AREA */
+/*********************/
+
+/* HOME PAGE */
+
+div#content div#home { padding: 0; }
+
+/* Home Page Top */
+
+body.index div#home-top { padding-bottom: 20px; }
+
+body.index div#home-top div.photo { float: left; }
+
+body.index div#home-top div.photo img {
+	width: 448px;
+	height: 293px;
+}
+
+body.index div#home-top div.featured { float: left; width: 243px; }
+body.index div#home-top div.featured div.int { margin-left: 18px; }
+
+body.index div#home-top div.featured div.lab-tout {
+	font-size: 13px;
+	padding: 1px 0;
+	margin-top: 14px;
+	margin-left: 10px;
+	background: #e6e3d3 url("/images/icon-lab.gif") 14px 8px no-repeat;
+}
+
+body.index div#home-top div.featured div.magazine-tout {
+	font-size: 13px;
+	padding: 1px 0;
+	margin-top: 14px;
+	margin-left: 10px;
+	height:60px;
+	background: #e6e3d3 url("/images/magazine-home-logo.gif") 10px 10px no-repeat;
+}
+
+body.index div#home-top div.featured div.lab-tout p{
+	padding-left: 53px;
+	line-height: 18px;
+	margin: 14px 0 8px 0;
+}
+
+body.index div#home-top div.featured div.magazine-tout p {
+	padding-left: 10px;
+	line-height: 18px;
+	margin: 38px 0 8px 0;
+}
+
+body.index div#home-top div.featured div.lab-tout span.line1,
+body.index div#home-top div.featured div.magazine-tout span.line1 { color: #6c6c6c; }
+
+body.index div#home-top div.featured div.lab-tout span.line2,
+body.index div#home-top div.featured div.lab-tout span.line2 a,
+body.index div#home-top div.featured div.magazine-tout span.line2,
+body.index div#home-top div.featured div.magazine-tout span.line2 a { color: #231f20; }
+
+body.index div#home-top h1,
+body.index div#home-top h1 a,
+body.index div#magazine-top h1,
+body.index div#magazine-top h1 a {
+	font-family: Georgia;
+	font-size: 24px;
+	color: #045482;
+	font-weight: normal;
+	margin: 10px 0 4px 0;
+}
+
+
+body.index div#home-top h2 {
+	font-family: Georgia;
+	font-weight: normal;
+	margin: 5px 0 15px 0;
+	color: #4d493f;
+	font-size: 16px;
+}
+
+/* Home Page Middle */
+
+body.index div#home-middle div.linkwrap { padding: 15px 0; }
+
+body.index div#home-middle ul {
+	list-style-type: none;
+	margin: 15px 0 0 0;
+	padding: 0; 
+}
+
+body.index div#home-middle ul li.item {
+	float: left;
+	width: 161px;
+	margin-right: 16px;
+}
+
+body.index div#home-middle ul li.item.last {
+	margin-right: 0;
+	float: left;
+	width: 161px;
+}
+
+body.index div#home-middle ul li.item4 { margin-right: 0; }
+
+body.index div#home-middle ul li span.title {
+	display:inline-block;
+	width: 155px;
+	margin: 8px 0 4px 0;
+}
+
+body.index div#home-middle ul li img { padding-bottom: 8px; }
+
+div.divider.moveup { position: relative; top: -4px; z-index: 205; }
+
+body.index div#home-middle a.title {
+	font-family: Georgia;
+	font-size: 15px;
+	color: #045482;
+}
+
+body.index div#home-middle span.title a:hover,
+body.index div#home-middle span.title a.hover { text-decoration: underline; }
+
+body.index div#home-middle span.slug { padding: 0; }
+
+body.index div#home-middle span.author {
+	letter-spacing: 0.05em;
+	width: 150px;
+}
+
+body.index span.photocredit {
+	display: block;
+	text-align: right;
+}
+
+/* Home Page Footer */
+
+body.index div#footer { margin-top: 6px !important; }
+
+body.index div#home-footer p {
+	font-size: 13px;
+	color: #505050;
+	margin: 9px 0;
+	line-height: 17px;
+}
+
+body.index div#home-footer h3,
+body.index div#home-footer h3 a {
+	font: normal 18px Georgia;
+	text-transform: none;
+	margin: 8px 0 5px 0;
+	color: #045482;
+	letter-spacing: 0;
+}
+
+body.index div#home-footer ul.linklist li { margin-bottom: 4px; }
+
+body.index div#home-footer div.column {
+	float: left;
+	margin: 19px 0;
+	padding: 0px 19px;
+}
+
+body.index div#home-footer div#col1 div.right { margin-right: -15px; margin-left: 10px; }
+
+body.index div#home-footer div#col1,
+body.index div#home-footer div#col2 {
+	width: 206px;
+	border-right: 1px solid #abaa9a;
+}
+
+body.index div#home-footer div#col1 span { position: relative; top: 4px; right: -3px; }
+
+body.index div#home-footer div#col3 {
+	width: 447px;
+}
+
+body.index div#home-footer div#col3 span.author { margin: 0 0 17px 0; }
+
+body.index div#home-footer div.twitbox {
+	background: #e6e3d3;
+	padding: 0 8px 8px 8px;
+	width: 210px;
+	margin-top: 0;
+	margin-left: -10px;
+}
+
+body.index div#home-footer div.twitbox span.bird {
+	display: block;
+	width: 226px;
+	height: 45px;
+	margin-left: -8px;
+	background: #fff url("/images/home-twitbox-top.gif") top left no-repeat;
+}
+
+body.index div#home-footer div.twitbox span.posted {
+	font-size: 10px;
+	color: #6c6c6c;
+	margin: 5px 0 15px 0;
+	display: block;
+}
+
+body.index div#home-footer div.twitbox p {
+	padding: 0;
+	margin: 0;
+}
+
+body.index div#home-footer div.player { 
+	margin-bottom: 6px;
+}
+
+body.index div#home-footer a.watch { 
+	margin-right: 7px;
+}
+
+/* Back To Top Links */
+
+div.backtotop {
+	float: right;
+	background-image: url("/images/arrow-gold-up.png");
+	background-position: left 2px;
+	background-repeat: no-repeat;
+	padding-left: 15px;
+	line-height: 21px;
+}
+
+div.backtotop a.backtotop {
+	font-size: 12px;
+	color: #877440;
+}
+
+
+/***********************************/
+/* HARRIET MONROE POETRY INSTITUTE */
+/***********************************/
+
+div.captionrow { margin: 9px 0; width: 550px; }
+
+body.foundation span.caption {
+	font: normal 11px Arial;
+	color: #737373;
+	text-align: left;
+}
+
+body.foundation span.photocredit {
+	display: inline;
+}
+
+body.institute ul.list li span.description { 
+}
+
+body.institute p.description { 
+ 	font: normal 16px/1.35em Georgia !important;
+	color: #505050;
+}
+
+body.institute div#top p.description { 
+	width: 95%;
+}
+
+
+
+body.institute div#col2 div.item { margin-top: 15px; } 
+
+
+/* /foundation/director.html */
+
+body.foundation.director { color: #4d493f; }
+
+body.foundation.director div#col1 {
+	float: left;
+	width: 223px;
+	margin-right: 18px;
+	font: normal 11px Arial;
+}
+
+body.foundation.director div#col1 p {
+	margin: 9px 0 5px 0;
+}
+
+body.foundation.director div#col2 h3 {
+	margin: 0;
+}
+
+body.foundation.director div#col2 {
+	float: left;
+	width: 420px;
+	font: normal 13px Arial;
+	line-height: 17px;
+}
+
+body.foundation.director div#col2 p {
+	margin: 7px 0;
+}
+
+/* HMPI Institute Participants */
+body.foundation.participants div.personlist { display: none; }
+
+body.foundation.participants div.item p { line-height: 18px !important; }
+body.foundation.participants div.item strong {
+	display: block;
+	font: normal 18px Georgia;
+	margin: 0 0 5px 0;
+}
+
+body.foundation.participants span.slug { margin: 0 0 6px 0; display: block; }
+
+body.foundation.participants a.toggle {
+	padding: 0 0 0 22px;
+	display: inline-block;
+	background: url("/images/browse-arrow-down.png") 0px 3px no-repeat;
+}
+
+body.foundation.participants a.toggle.active {
+	background: url("/images/browse-arrow-up.png") 0 3px no-repeat;
+}
+
+body.foundation.participants h3 {
+	margin-top: 14px;
+}
+
+/*****************/
+/* POEMS & POETS */
+/*****************/
+
+/* APPLIED TO BOTH SECTIONS */
+
+body.magazine.comment h1 {
+	display: inline-block;
+	float: left;
+}
+
+body.magazine.comment div.author {
+	clear: both;
+	margin: 5px 0 0 0;
+	display: block;
+}
+
+body.magazine.comment div#poemwrapper {
+	margin-bottom: 40px;
+}
+
+div#poemwrapper p.return { margin-top: 20px; float:left; }
+
+body.poem-poet p.link { color: #505050; padding-top: 5px; }
+
+body.poem-poet span.count,
+body.poem-poet span.count a { color: #505050; }
+
+body.poem-poet span.text { font: normal 15px Georgia; }
+
+body.poem-poet div.divider.tpad { margin-top: 20px; }
+
+body.poem-poet span.birthyear {
+	font-size: 13px;
+	margin-top: -1px;
+}
+
+body.poem-poet.poem span.author span.birthyear {
+	display: none;
+}
+
+body.poem-poet div.about span.birthyear { font: normal 13px Arial; }
+
+/* BEGIN TEMP */
+body.poem-poet div.audioplayer { margin-top: 5px; }
+/* END TEMP */
+
+body.poem-poet h3 a {
+	color: #045482;
+	margin: 14px 0 0 0;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+
+body.poem-poet div.section {
+	margin: 14px 0 0 0;
+	padding: 0 0 14px 0;
+	line-height: 1.5em;
+}
+
+body.poem-poet div.tab-content div.section p#original-format{
+	line-height:12px;
+	margin: -10px 0 40px 0;
+}
+
+body.magazine div.section {
+	margin: 0;
+	padding: 0;
+}
+
+body.poem-poet div.tabs-about a.link { display:inline-block; }
+
+body.poem-poet div.about h3 { margin: 10px 0 0 0; }
+
+body.poem-poet ul.list.poem li span.div { font-size: 15px; margin: 0 3px; }
+
+body.poem-poet div.about p.subline {
+	margin: 2px 0 0 0;
+	color: #525252;
+}
+
+body.poem-poet div.about p.section { color: #505050; font: normal 15px Georgia; }
+body.poem-poet div.about p.section span { color: #000; }
+body.poem-poet div.about p.section span.birthyear { color: #505050; }
+body.poem-poet div.about p.section span.slug { padding-top: 0; }
+
+body.poem-poet p.section { padding-bottom: 3px; }
+
+body.poem-poet a.report {
+	color: #045482;
+	font-size: 13px;
+}
+
+body.poem-poet div.section h3 { color: #4a473f; margin: 25px 0 8px 0; }
+
+body.poem-poet div.section div.divider { margin-bottom: 6px; }
+
+body.poem-poet div.section span.slug {
+	color: #000;
+}
+
+body.poem-poet p.section span.slug {
+	display: block;
+	margin-bottom: 4px;
+}
+
+body.poem-poet .fullname_search { display: none; }
+
+body.poem-poet .credit {
+	line-height: 18px;
+	color: #7f7f7f;
+	margin-bottom: 30px;
+}
+
+
+body.poem-poet .morepoems { display: none; }
+
+ul.list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+ul.list li {
+	margin: 0;
+	padding: 0;
+	line-height: 20px;
+	margin: 3px 0 8px 0;
+}
+
+ul.list.book li {
+	width: 33%;
+	float: left;
+	padding: 0 0 20px 0;
+	display: block;
+}
+
+
+ul.list li a.title,
+ul.list li span.title {
+	font-family: Georgia;
+	font-size: 15px;
+}
+
+ul.list li span.title { color: #505050; }
+
+ul.list span.icon {
+	float: left;
+	display: inline-block;
+	height: 19px;
+	margin-top: 1px;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	padding-left: 22px;
+}
+
+ul.list a.link { color: #045482; }
+
+ul.list li span.description {
+	font: normal 12px Arial;
+	line-height: 17px;
+	color: #4d493f;
+	margin: 0 0 6px 0;
+}
+
+ul.list li span.author {
+	display: block;
+	font: normal 12px Arial;
+}
+
+ul.list li img {
+	float: left;
+	margin-right: 4px;
+}
+
+body.magazine.guide span.slug {
+	display: block;
+	margin: 22px 0 0 0;
+}
+
+body.magazine.archive.guide.id3 blockquote { margin-left: 190px; }
+
+body.magazine.guide ul.list li span.author {
+	margin-top: 3px;
+}
+
+body.magazine.guide ul.list li {
+	margin-bottom: 10px;
+}
+
+body.poem-poet div.expander ul {
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+body.poem-poet div.expander ul.list span {
+	color: #505050;
+}
+
+body.poem-poet div.expander ul.list a.toggle {
+	color: #877440;
+	background: url("/images/arrow-gold-down.png") 0 6px no-repeat;
+}
+
+body.poem-poet ul#learning-resources {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	font: normal 15px Georgia;
+}
+
+body.poem-poet ul#learning-resources li { line-height: 23px; }
+
+body.poem-poet ul#learning-resources li.l1 a { color: #0b7c85; }
+body.poem-poet ul#learning-resources li.l2 a { color: #0f6594; }
+body.poem-poet ul#learning-resources li.l3 a { color: #3853ab; }
+body.poem-poet ul#learning-resources li.l4 a { color: #5740bd; }
+body.poem-poet ul#learning-resources li.l5 a { color: #7b3499; }
+
+
+body.poem-poet div.bio { 
+	float: left;
+	color: #4d493f;
+	font-size: 12px;
+	line-height: 17px;
+}
+
+body.poem-poet div.bio p { margin: 0; }
+body.poem-poet div.bio.image { width: 320px; }
+
+body.poem-poet div#about p.section {
+	padding: 3px 0;
+}
+
+body.poem-poet div.image { margin: 8px 0 25px 0; }
+
+body.poem-poet div.bio h3 {
+	margin: 0 0 8px 0;
+}
+
+body.poem-poet div.bio a.link {
+	margin-top: 8px;
+	font-weight: normal;
+	display: block;
+	background-position: 0 3px;
+}
+
+div.authorbio div.image {
+	float: left;
+	margin: 17px 0 25px 0;
+	padding-right: 17px;
+}
+
+div.authorbio div.image img { max-width: 160px; }
+
+div.authorbio div.bio {
+	float: left;
+	width: 530px;
+	margin: 0;
+	padding: 0;
+}
+
+div.authorbio div.bio.image { margin: 0; width: 350px; }
+
+div.authorbio div.bio h3 {
+	padding: 0;
+	margin: 0 0 8px 0;
+	color: #045482;
+}
+
+body.poem-poet div.section.medialist h3 { padding: 0 0 6px 0; }
+body.poem-poet div.section.medialist ul.list li { margin: 5px 0 12px 0; }
+body.poem-poet div.section.medialist img {
+	margin-top: 1px;
+	float: left;
+	padding-right: 5px;
+}
+
+body.poem-poet div.section.medialist.related span.slug { padding: 0 0 9px 0; display: block; }
+
+
+/* MAGAZINE POEM */
+
+body.magazine p.translated { padding-top: 15px; }
+
+body.magazine div.section p.subline {
+	margin: 5px 0 16px 0;
+	color: #505050;
+}
+
+body.magazine div.section div.left.poems { width: 220px; margin-right: 22px; }
+body.magazine div.section div.left.poems p { margin: 0 0 11px 0; padding: 0; }
+body.magazine div.issueimage { margin-right: 18px; width: 160px; }
+
+body.magazine div.section div.divider { margin: 13px 0 6px 0; }
+
+/* POET */
+
+div#poetwrapper {
+	padding: 0 60px 60px 60px;
+}
+
+div#poetwrapper div.about { margin: 25px 0 0 0; }
+
+div#poetwrapper div.biography div.image { margin: -9px 0 0 -60px; padding: 0; }
+div#poetwrapper div.biography div.image { float: left; }
+div#poetwrapper div.biography div.image img { max-width: 448px; padding: 15px 15px 0 0; }
+div#poetwrapper div.biography span.photocredit {
+	display: block;
+	text-align:right;
+	margin-right: 15px;
+}
+
+div#poetwrapper div.fullname_search { display: none; }
+
+body.poem-poet.poet div.section { padding: 0; }
+
+body.poem-poet.poet div.about h3 { margin: 25px 0 0 0; }
+
+body.poem-poet.poet div.backtotop { margin-top: 5px; }
+
+body.poem-poet.poet div.about ul.list li { margin: 3px 0; }
+
+body.poem-poet.poet div#about div.section.articles ul.list.poem {
+	padding-bottom: 7px;
+}
+
+ul.list.poem.nopad {
+	padding: 0 !important;
+}
+
+body.poem-poet.poet div.section.dblist h3 { margin-top: 25px; display: block; }
+
+.dblist {
+	line-height: 17px;
+	color: #4d493f;
+}
+
+.dblist ul { padding: 0; list-style-type: none; margin-bottom: 21px; margin-left: 0; }
+
+.dblist ul li {
+	margin: 0;
+	padding: 0;
+	margin: 3px 0 8px 0;
+}
+
+.dblist strong {
+	margin-top: 10px;
+	margin-bottom: -10px;
+	display: block;
+	font: normal 10px Arial;
+	color: #000;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+
+.dblist > .bibliography ul, .dblist > .furtherreading ul {
+    list-style-type: circle;
+}
+
+/* ABOUT THIS POEM TAB */
+
+body.poem-poet.poet div.section h3 { color: #4a473f; margin: 15px 0 11px 0; }
+body.poem-poet.poet div.section div.divider { clear:both; margin-top: 25px; display:block; }
+
+/* POEM */
+
+div#poemwrapper {
+	padding: 0 40px;
+}
+
+body.lab div#poemwrapper {
+	padding: 10px 40px;
+}
+
+div#poemwrapper div.poem { margin: 25px 0 0 0; }
+
+div#poetwrapper div.actions,
+body.magazine div#poemwrapper div.actions,
+body.magazine div.actions { margin: 11px 0 0 0; }
+
+body.poem-poet.poem.default div.actions {
+	margin: -8px 0 0 0 !important;
+	line-height: 15px;
+	padding: 0;
+}
+
+body.magazine.archive.toc div.actions {
+	margin: 0;
+	float: right;
+}
+
+body.magazine.archive div.actions {
+	margin: 8px 0 0 0;
+	float: right;
+}
+
+div#poemwrapper div.image {
+	float: left;
+	margin: 0;
+	padding: 12px 20px 0 0;
+}
+
+div#poemwrapper div.section.learning h3 {
+	margin-top: 0;
+	padding: 22px 38px 0 0;
+	display: block;
+	height: 18px;
+	float: left;
+	background: url("/images/icon-lab.gif") top right no-repeat;
+}
+
+div#poemwrapper div.section.tags p {
+	font: normal 15px Georgia;
+	color: #505050;
+}
+
+div#poemwrapper div.section.tags span.status0,
+div#poemwrapper div.section.tags span.pending { color: #808080; }
+
+div#poemwrapper div.section.tags span.pending {
+	font-style: italic;
+	font-size: 10px;
+}
+
+div#poemwrapper div.section.tags h3 { 
+	padding-bottom: 8px;
+}
+
+div#poemwrapper div.section.tags input.tag {
+	text-transform: lowercase;
+	font: normal 12px Arial;
+	padding: 9px;
+	background: #f3f2e6;
+	border-top: 1px solid #aaa9a1;
+	border-left: 1px solid #aaa9a1;
+}
+
+/* ARTICLE */
+
+div#articlewrapper {
+	padding: 7px 40px;
+}
+
+body.lab.guide div#articlewrapper,
+body.lab.guide div#poemwrapper { padding: 0 40px 10px 40px; }
+
+body.magazine div#articlewrapper { padding: 25px 40px; }
+
+div#articlewrapper div.actions {
+	margin: -15px -35px 0 0;
+	height: 19px;
+}
+
+div#articlewrapper h2 {
+	color: #4d493f;
+	margin: 0 0 10px 0;
+}
+
+/* Report a Problem */
+
+p.report { padding-top: 17px; }
+
+body.reportproblem td.labelcell {
+	vertical-align: top;
+	padding-top: 8px;
+}
+
+/* FAVORITES */
+
+#favorite-poem-insert-point,
+#favorite-poet-insert-point {
+	display: inline;
+	float: left;
+}
+
+.favorite-dialog-poem,
+.favorite-dialog-poet,
+.favorite-dialog-main {
+	position: absolute;
+	background: transparent url("/images/model-bg.gif") bottom left no-repeat;
+	padding: 6px 10px 12px 10px;
+	width: 185px;
+	margin-left: -56px;
+	margin-top: 4px;
+	z-index: 99999;
+}
+
+.favorite-dialog-main {
+	margin-top: -8px;
+	margin-left: -41px;
+	background: transparent url("/images/model-bg-header.gif") bottom left no-repeat;
+}
+
+ul li.favorite {
+	background: transparent;
+	padding-bottom: 4px;
+	padding-right: 21px;
+}
+
+ul li.favorite.active {
+	background: transparent url("/images/model-add-on.gif") top left no-repeat !important;
+	position: relative;
+	top: -4px;
+}
+
+ul li.favorite a {
+	padding-left: 1px;
+}
+
+ul li.favorite.active a,
+ul li.favorite.active a:hover {
+	background: transparent;
+	color: #fff;
+	padding-top: 4px;
+}
+
+ul li.favorite.active input { padding: 3px 1px; }
+
+ul li.favorite.active p.modelsign {
+	padding-bottom: 4px;
+	margin-bottom: 0;
+}
+
+ul li.favorite p.modelsign a,
+ul li.favorite.active p.modelsign a {
+	color: #333 !important;
+	padding: 0 !important;
+	font-size: 12px;
+	font-family: arial;
+}
+
+ul li.favorite p.modelforgot a,
+ul li.favorite.active p.modelforgot a {
+	font-size: 10px;
+	color: #333 !important;
+}
+
+ul li.favorite p.modelforgot,
+ul li.favorite.active p.modelforgot {
+	padding-bottom: 2px;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+ul li.favorite p.modelsign span,
+ul li.favorite.active p.modelsign span { position: relative; top: -8px; margin-left: 3px; }
+
+ul li.favorite p.modelsign a,
+ul li.favorite.active p.modelsign a { position: relative; top: -8px; }
+
+ul li.favorite p.modelsign input,
+ul li.favorite.active p.modelsign input { display: inline; }
+
+ul li.favorite.active span.icon.favorite { background: transparent; }
+
+.favorite-dialog-poem input.field,
+.favorite-dialog-poet input.field,
+.favorite-dialog-main input.field {
+	width: 93%;
+}
+
+
+/* BROWSE POETRY PAGE */
+
+div#refinement-bar {
+	float: left;
+	width: 226px;
+}
+
+body.articles.archive div#refinement-bar { margin-top: 9px; }
+
+/* Top of bar */
+
+div#refinement-bar div#refinement-top {
+	background: #e0dece;
+	padding: 10px 10px 0 12px;
+}
+
+div#search div#refinement-bar div#refinement-top {
+	padding: 10px;
+}
+
+div#refinement-bar p.refinement-heading {
+	font: bold 14px Arial;
+	color: #505050;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+}
+
+div#refinement-bar ul#refinement-listing {
+	font: bold 12px Arial;
+	color: #000;
+	display: inline-block;
+	margin: 0 0 0 -2px;
+	padding: 5px 0;
+}
+
+div#refinement-bar ul#refinement-listing li {
+	display: block;
+	clear: both;
+	padding: 0;
+}
+
+div#refinement-bar ul#refinement-listing li input {
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+div#refinement-bar ul#refinement-listing li span {
+	display: inline-block;
+	width: 180px;
+	float: left;
+	padding: 0 0 5px 5px;
+}
+
+div#refinement-bar ul#refinement-listing li span.showonly { padding: 0; }
+
+div#refinement-bar ul#refinement-listing li a.showall {
+	color: #045482;
+	font-weight: normal;
+	display: inline-block;
+	padding: 0 0 0 18px;
+	margin-bottom: 5px;
+}
+
+/* Rest of bar */
+
+div#refinement-bar ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+div#refinement-bar ul li.group,
+div#refinement-bar ul li.static-group {
+    border-top: 1px solid #000;
+    padding: 6px 0 8px 12px;
+	background: #e0dece url("/images/browse-arrow-down.png") 197px 14px no-repeat;
+}
+
+.no-arrow {
+    background-image: none !important;
+}
+
+div#search div#refinement-bar ul li.group,
+div#search div#refinement-bar ul li.static-group {
+	background-image: none;
+}
+
+div#refinement-bar ul li.group.open,
+div#refinement-bar ul li.static-group.open {
+	background: #f0efdf url("/images/browse-arrow-up.png") 197px 14px no-repeat;
+}
+
+div#refinement-bar ul li.static-group {
+    border-bottom: 1px solid #000;
+}
+
+div#refinement-bar ul li.static-group a {
+	color: #045482;
+}
+
+div#refinement-bar ul li.group ul {
+	margin-left: 15px;
+}
+
+div#refinement-bar ul li.group ul.terms {
+	margin-left: 3px;
+}
+
+div#refinement-bar ul li.static-group div.options-content { display: none; }
+div#refinement-bar ul li.static-group.open div.options-content { display: block; }
+
+div#refinement-bar span.showonly {
+	margin: 7px 0;
+	display: block;
+	color: #505050;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+div#refinement-bar div#refinement-top span.showonly {
+	display: inline-block;
+	margin: 0 0 5px 18px;
+	color: #000;
+}
+
+div#refinement-bar ul li.group.open,
+div#refinement-bar ul li.static-group.open {
+	padding-top: 6px;
+}
+
+div#refinement-bar ul li a.group,
+div#refinement-bar ul li a.static-group {
+	padding-top: 4px;
+	display: block;
+	color: #045482;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+
+div#refinement-bar ul li a.group.subgroup {
+	padding: 2px 0 0 0;
+}
+
+div#refinement-bar ul li a.group.subgroup.refined-link {
+	font-weight: bold;
+}
+
+div#refinement-bar ul li ul li a.group {
+	border: 0;
+}
+
+div#refinement-bar ul li ul li a.group,
+div#refinement-bar ul li ul li a.primary {
+	color: #333;
+	border: 0;
+	font: normal 13px Arial;
+}
+
+div#refinement-bar ul li ul li a.refine {
+	display: block;
+	margin: 0 0 4px 0;
+	line-height: 14px;
+}
+
+
+div#refinement-bar ul li ul li a.primary { 
+	display: block;
+	margin: 2px 0 4px 0;
+}
+
+div#refinement-bar ul li ul li a.refine-more-link {
+	display: block;
+	color: #045482;
+	background: url('/images/arrow-blue-down.png') 0 4px no-repeat;
+	padding-left: 13px;
+	margin: 6px 0 6px -13px;
+}
+
+div#refinement-bar ul li ul li a.group.primary.refine-more-link {
+	font: normal 12px Arial;
+	line-height: 12px;
+	margin: 10px 0 2px 0;
+	padding: 1px 0 0 13px;
+}
+
+div#refinement-bar a.refined-link {
+	font-weight: bold !important;
+	color: #000 !important;
+}
+div#refinement-bar ul li ul li ul {
+	padding: 4px 0 0 0;
+}
+
+div#refinement-bar .icon {
+	height: 18px;
+}
+
+div#home-middle .icon,
+div#browse-widget .icon,
+div#refinement-bar .icon,
+div#search-results .icon,
+div#articlelist .icon,
+div.style-e .icon {
+	padding-left: 21px;
+	background-repeat: no-repeat;
+}
+
+div#browse-widget .icon,
+div#home-middle .icon { float: left; }
+
+div#refinement-bar ul li.static-group div.options-content ul li.icon {
+	line-height: 18px;
+	height: 22px;
+	font-size: 13px;
+	padding-left: 21px;
+}
+
+body.features div#refinement-bar ul li.group {
+	padding: 18px 12px;
+}
+
+body.features div#refinement-bar ul li.group ul li {
+	height: 21px !important;
+	margin: 2px 0 1px 0;
+	padding-top: 0;
+}
+
+body.features div#refinement-bar ul li.group ul li.icon {
+	margin: 0 !important;
+	padding-top: 3px;
+	height: 21px !important;
+	background-position: 0 0 !important;
+}
+
+div#refinement-bar ul li.static-group div.options-content ul li.icon.nopad { padding-left: 0; }
+
+.icon.p { background-image: url("/images/icon-p.gif"); background-repeat: no-repeat; }
+.icon.l { background-image: url("/images/icon-l.gif"); background-repeat: no-repeat; }
+.icon.c { background-image: url("/images/icon-c.gif"); background-repeat: no-repeat; }
+.icon.a { background-image: url("/images/icon-a.gif"); background-repeat: no-repeat; }
+.icon.v { background-image: url("/images/icon-v.gif"); background-repeat: no-repeat; }
+
+div#refinement-bar li.article_types { height: 19px; }
+
+div#refinement-bar li.article_types.icon { margin-left: -22px; background-position: 0 0; padding-top: 1px; }
+
+/* Overrides for simple list in refinement bar (not full search/browse bar) */
+
+div#refinement-bar.list div#refinement-top {
+	padding: 10px 12px;
+}
+
+div#refinement-bar.list ul li.group,
+div#refinement-bar.list ul li.group.open {
+	background-image: none;
+	border-bottom: 1px solid #494949;
+}
+
+
+div#refinement-bar.list ul li.group ul {
+	margin-left: 0;
+}
+
+
+div#refinement-bar.list ul li ul li {
+	margin: 10px 0;
+}
+
+div#refinement-bar.list ul li.refine.open a.refine {
+	color: #333;
+	font-weight: bold;
+}
+
+div#refinement-bar.list ul li ul li a.refine {
+	font-size: 13px;
+	color: #045482;
+}
+
+div#refinement-bar.list ul li ul li a.refine:hover {
+	color: #000;
+}
+
+
+/* Browse Search Results */
+
+span#browse-result-show-hide {
+	display: inline-block;
+	width: 88px;
+	margin: 0;
+	padding: 5px 5px 0 0;
+	height: 28px;
+	border-right: 1px solid #505050;
+}
+
+div#search span#browse-result-show-hide {
+	border: 0;
+}
+
+body.articles.archive div.clear.divider { margin-bottom: 21px; }
+
+body.articles.archive div#controls { width: 442px; margin: 0 0 22px 0; padding: 0; }
+body.articles.archive div#controls p.resultcount { margin: 0 0 8px 0; padding: 0; }
+body.articles.archive div#pagination.top { margin: 0 9px 0 0; }
+
+span#browse-result-show-hide span {
+	padding-top: 5px;
+	margin-right: 5px;
+}
+
+span#browse-result-show-hide span,
+div#browse-sort,
+div#sort-control {
+	font: bold 12px Arial;
+	color: #777368;
+}
+
+div#browse-sort,
+div#sort-control {
+	margin-top: 8px;
+	padding: 0;	
+}
+
+span#browse-result-show-hide span,
+div#pagination.top,
+span.pagination.top,
+div#browse-show-hide,
+div#browse-sort,
+div#sort-control { float: left; }
+
+div#browse-show-hide { padding-right: 10px; }
+
+a#hide_preview,
+a#show_preview {
+	display: block;
+	background-repeat: none;
+	background-image: url("/images/icon-details-sprite.png");
+	height: 24px;
+	width: 20px;
+	text-indent: -9999em;
+	float: left;
+	margin: 0 1px 0 0;
+}
+
+a#hide_preview { background-position: 0 0; }
+a#hide_preview:hover { background-position: 60px 0; }
+
+a#hide_preview.active,
+a#hide_preview.active:hover { background-position: 40px 0; }
+
+a#hide_preview.inactive,
+a#hide_preview.inactive:hover { background-position: 20px 0px; }
+
+a#show_preview { background-position: 0 24px; }
+a#show_preview:hover { background-position: 60px 24px; }
+
+a#show_preview.active,
+a#show_preview.active:hover { background-position: 40px 24px; }
+
+a#show_preview.inactive,
+a#show_preview.inactive:hover { background-position: 20px 24px; }
+
+div.promotion img { margin: -3px 11px 0 0; }
+
+div#search-results {
+	float: left;
+	padding: 0 0 0 19px;
+	width: 448px;
+}
+
+div#search-results.full { width: 97%; }
+
+body.magazine.archive div#search-results {
+	width: 97%;
+	margin-bottom: 8px;
+}
+
+body.lab.terms div#search-results {
+	margin-top: 3px;
+}
+
+div#search-results p {
+	margin: 20px 0 15px 0;
+}
+
+div#search-results p.resultcount {
+	margin: 0 0 12px 0;
+}
+
+div#search-results p.letters { width: 100%; margin-top: 15px; }
+div#search-results p.letters span {
+	padding: 2px 0;
+	background: #e0dece;
+	color: #505050;
+}
+
+div#search-results p.letters a span {
+	color: #045482;
+	font-weight: bold;
+}
+
+div#search-results p.letters a.active span {
+	background: #045482;
+	color: #fff;
+}
+
+div#search-results p.letters a:hover {
+	text-decoration: none;
+}
+
+div#search-results span.label {
+	color: #045482;
+	font-weight: bold;
+	font-size: 10px;
+	padding: 0 4px;
+	line-height: 14px;
+	background: #e0dece;
+	display: inline-block;
+}
+
+div#home span.icon,
+div#search-results span.icon,
+div#articlelist span.icon {
+	background-position: 0 0;
+	display: inline-block;
+	height: 16px;
+	float: left;
+}
+
+div#articlelist span.icon {
+	background-position: 0 2px;
+	height: 18px;
+}
+
+div#search-results p.browse-poem-preview,
+div#search-results div.browse-poem-preview {
+	margin: -8px 0 9px 0;
+	padding: 0;
+	color: #505050;
+	line-height: 17px;
+}
+
+div#search-results span.browse-poem-preview,
+div#search-results span.description {
+	padding: 0;
+	color: #505050;
+	line-height: 17px;
+	display: block;
+	margin: 0;
+}
+
+div#search-results p.browse-poem-preview.poet {
+	margin: -12px 0 0 0;
+	line-height: 18px;
+}
+
+div#search-results span.slug,
+div#search-results a.title,
+div#search-results span.title,
+div#search-results span.author { margin: 0 0 3px 0; display: inline-block; }
+
+div#search-results a.title { text-decoration:underline; }
+
+div#search-results span.title { color: #505050; }
+
+body.magazine div#search-results div#pagination { margin: 15px 0; }
+body.magazine div#search-results span.description { margin: 0; }
+
+body.foundation.events div#search-results h3 { margin: 0; padding: 0; }
+body.foundation.events div#search-results div.right { margin: -7px 0 0 0; }
+
+body.foundation.events div#search-results div.right a { white-space: nowrap; }
+
+div#search-results span.browse-poem-preview p { padding: 0; margin: 0; }
+
+p.resultcount,
+span.resultcount {
+	color: #777368 !important;
+	font-weight: bold;
+	font-size: 13px;
+}
+
+div#browse p.loading img { float: left; }
+
+div#browse p.loading span,
+div#browse span.notfound {
+	display: block;
+	float: left;
+	font-weight: bold;
+	color: #777368;
+}
+
+div#browse span.notfound { position: absolute; }
+
+div#browse p.loading span { margin: 1px 0 0 5px; }
+
+div#browse span.birthyear { color: #505050; }
+
+/* BROWSE POETRY WIDGET */
+div#browse-widget-wrapper {
+	position: relative;
+	display: block;
+	min-height: 553px;
+	width: 244px;
+	padding: 0;
+	padding-left: 1px;
+	padding-top: 53px;
+	margin: 0;
+	background: url("/images/browse-poetry-bg.png") top left no-repeat;
+}
+
+div#browse-widget {
+	width: 244px;
+	min-height: 553px;
+	overflow: hidden;
+	position: absolute;
+}
+
+div#browse-widget a.link { font-family: Arial; font-size: 12px; }
+
+div#browse-widget a.link.more,
+a.link.more,
+span.more,
+span.more-black {
+	display: inline-block;
+	line-height: 18px !important;
+	background: url("/images/arrow-more.gif") 0 3px no-repeat;
+	padding-left: 15px;
+	color: #877440;
+}
+
+.more-noIcon {
+    display: inline-block;
+    padding: 5px 0 0 0;
+    line-height: 18px !important;
+    color: #877440;
+}
+
+span.more-black { color: #000; }
+a.link.more-brown { color: #877440; }
+
+a.link.more.back {
+	background: url("/images/arrow-back.gif") 0 2px no-repeat;
+}
+
+a.link.more.download {
+	background: url("/images/arrow-download.gif") 0 2px no-repeat;
+}
+
+a.link.more.calendar {
+	background: url("/images/arrow-calendar.gif") 0 2px no-repeat;
+}
+
+a.link.more.anchor {
+	background: url("/images/arrow-anchor.png") 0 2px no-repeat;
+}
+
+div#browse-widget a.link.more:hover,
+a.link.more:hover {
+	background: url("/images/arrow-hover.png") 0 3px no-repeat;
+	color: #000;
+}
+
+a.link.more.back:hover {
+	background: url("/images/arrow-back-hover.gif") 0 2px no-repeat;
+}
+
+a.link.more.download:hover {
+	background: url("/images/arrow-download-hover.gif") 0 2px no-repeat;
+}
+
+a.link.more.calendar:hover {
+	background: url("/images/arrow-calendar-hover.gif") 0 2px no-repeat;
+}
+
+a.link.more.anchor:hover {
+	background: url("/images/arrow-anchor-hover.png") 0 2px no-repeat;
+}
+
+
+/* Link styles */
+
+a.link.light-blue {
+	color: #000;
+	font-weight: bold;
+	background: url('/images/arrow-light-blue.png') 0 1px no-repeat;
+}
+
+a.link.black,
+a.link.light-blue:hover {
+	color: #000;
+	background: url('/images/arrow-hover.png') 0 1px no-repeat;
+}
+
+a.extlink,
+a.link.extlink {
+	padding-left: 15px;
+	background: url("/images/arrow-extlink.gif") 0 3px no-repeat;
+	color: #045482;
+}
+
+a.extlink.lpad { margin-left: 2px; }
+
+span.extlink {
+	display: block;
+	margin-top: 5px;
+}
+
+div.author_url span.extlink { margin-top: 1px; }
+
+
+div.author_url a.extlink {
+	background: url("/images/arrow-extlink.gif") 0 1px no-repeat;
+}
+
+
+a.extlink:hover,
+a.link.extlink:hover {
+	background: url("/images/arrow-extlink-hover.gif") 0 3px no-repeat;
+}
+
+div.author_url a.extlink:hover {
+	background: url("/images/arrow-extlink-hover.gif") 0 1px no-repeat;
+	color: #000;
+}
+
+div#navbar a.link.light-blue {
+	background: url('/images/arrow-light-blue.png') 0 2px no-repeat;
+}
+
+div#navbar a.link.black,
+div#navbar a.link.light-blue:hover {
+	background: url('/images/arrow-hover.png') 0 2px no-repeat;
+}
+
+div#browse-widget p.loading { color: #505050; }
+div#browse-widget p.loading img { margin-top: 3px; }
+
+
+div#widget-nav {
+	margin: 0 auto;
+	width: 244px;
+	height: 152px;
+	background: #4d493e;
+}
+
+div#widget-nav-slider ul li {
+	width: 101px;
+	height: 152px;
+	display: inline-block;
+	float: left;
+	background: #fff;
+}
+	
+div#widget-nav-slider ul li div.image img {
+	width: 100px;
+	height: 66px;
+	overflow: hidden;
+}
+
+div#widget-nav-slider ul li div.name span {
+	background: #4d493e;
+	letter-spacing: 0.07em;
+}
+
+div#widget-nav div#widget-nav-slider ul li div.name span {
+	display: block;
+	width: 82px;
+	height: 78px;
+	color: #a19d95;
+	text-decoration: none;
+	line-height: 13px;
+	padding: 5px 9px;
+}
+
+div#widget-nav div#widget-nav-slider ul li.current-page div.name span,
+div#widget-nav div#widget-nav-slider ul li:hover div.name span {
+	background: #231f20;
+}
+
+div#widget-nav div#widget-nav-slider ul li.current-page div.name span {
+	color: #fff;
+}
+
+div#widget-nav div#widget-nav-slider a:hover {
+	text-decoration: none;
+}
+
+div.widget-nav-image {
+	height: 66px;
+	overflow: hidden;
+}
+
+div#widget-nav-slider {
+	left: -182px;
+	width: 749px;
+	height: 152px;
+	display: block;
+	position: absolute;
+}
+
+div#widget-nav-buttons {
+	position: absolute;
+	z-index: 99999999;
+}
+
+div#widget-nav-prev a,
+div#widget-nav-next a {
+	position: absolute;
+	display: block;
+	text-indent: -9999px;
+	height: 28px;
+	top: -28px;
+	z-index: 999999;
+}
+
+div#browse-widget div#widget-nav-prev a {
+	float: left;
+	width: 20px;
+	background: transparent url("/images/browse-poetry-prev.gif") -1px top no-repeat;
+}
+
+div#browse-widget div#widget-nav-next a {
+	float: right;
+	width: 124px;
+	margin-left: 120px;
+	background: transparent url("/images/browse-poetry-next.gif") top left no-repeat;
+}
+
+div#browse-widget.content-magazine div#widget-nav-prev a {
+	background: transparent url("/images/browse-poetry-prev-mag.gif") -1px top no-repeat;
+}
+
+div#browse-widget.content-magazine div#widget-nav-next a {
+	background: transparent url("/images/browse-poetry-next-mag.gif") top left no-repeat;
+}
+
+div#browse-widget.content-childrens div#widget-nav-prev a { background: transparent url("/images/browse-poetry-prev-children.gif") -1px top no-repeat; }
+div#browse-widget.content-childrens div#widget-nav-next a { background: transparent url("/images/browse-poetry-next-children.gif") top left no-repeat; }
+
+div#browse-widget.content-lab div#widget-nav-prev a {
+	background: transparent url("/images/browse-poetry-prev-lab.gif") -1px top no-repeat;
+}
+
+div#browse-widget.content-lab div#widget-nav-next a {
+	background: transparent url("/images/browse-poetry-next-lab.gif") top left no-repeat;
+}
+
+div#browse-widget div#widget-nav-next a:hover {
+	background-position: 0 -28px;
+}
+
+div#browse-widget-content {
+	position: absolute;
+	width: 204px;
+	padding: 20px;
+	display: block;
+}
+
+div#browse-widget-content div.single a.title {
+	font-size: 18px;
+}
+
+div#browse-widget-content div.single  {
+	font: normal 13px/17px Georgia;
+}
+
+div#browse-widget-content a { color: #025469; }
+
+div#browse-widget-content .icon {
+	height: 16px;
+}
+
+div#browse-widget-content .title,
+div#search-results .title {
+	font: normal 15px/17px Georgia;
+	color: #000;
+}
+
+div#browse-widget-content .sub,
+div#search-results .sub {
+	font: normal 12px/17px Arial;
+	color: #505050;
+	text-transform: uppercase;
+}
+
+div#browse-widget-content a.prev,
+div#browse-widget-content a.next,
+div#browse-widget-content span.prev,
+div#browse-widget-content span.next,
+div#browse-widget-content span.middle {
+	display: inline-block;
+	height: 12px;
+	margin-left: 4px;
+	color: #76673e;
+	line-height: 14px;
+}
+
+div#browse-widget-content span.middle { color: #8a8986; }
+
+div#browse-widget-content a.prev,
+div#browse-widget-content span.prev {
+	text-indent: -9999px;
+	padding-left: 6px; 
+	margin-left: 0;
+	width: 0;
+}
+
+
+div#browse-widget-content a.prev { background: url("/images/prev.gif") left 3px no-repeat; }
+div#browse-widget-content a.next { background: url("/images/next.gif") right 3px no-repeat; padding-right: 11px; }
+
+div#browse-widget-content span.prev { background: url("/images/prev-off.gif") left 3px no-repeat; }
+div#browse-widget-content span.next { background: url("/images/next-off.gif") right 3px no-repeat; }
+
+div#browse-widget-content p { margin: 0 0 12px 0; }
+div#browse-widget-content p.browse-related { margin-left: 1px; clear:both; padding-top: 12px; }
+
+/* LAB */
+
+body.lab div.actions,
+body.children div.actions {
+	float: right;
+	margin-top: 10px;
+}
+
+/* GLOSSARY TERMS */
+
+body.lab.terms div#content div#lab { padding: 0; }
+
+body.lab.terms h1 { float: left; }
+body.lab.terms h3,
+body.lab.terms h4 {
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color: #505050;
+	font: bold 14px Arial;
+	margin: 10px 0 4px 0;
+	padding: 0;
+}
+
+p.alphabet { padding: 0; margin: 0;}
+
+p.alphabet span {
+	margin: 0 0.78em 0 0;
+	font-weight: bold;
+	color: #484848;
+}
+
+p.alphabet span a { color: #877440; }
+
+div#browse p.alphabet span { margin: 0 0.4em 0 0; }
+
+/* Glossary Terms search box */
+
+body.lab div#termssearchbox {
+	width: 649px;
+	margin: 0 0 21px 0;
+	padding: 15px 22px 15px 17px;
+	height: 55px;
+	border-bottom: 1px solid #abaa9a;
+	background: #e7f5f5;
+}
+
+body.lab div#termssearchbox div.description p {
+	color: #7f7f7f;
+	padding: 7px 2px;
+	clear: both;
+}
+
+
+/************************/
+/* LEARNING LAB SECTION */
+/************************/
+
+div#lab ul.lab-links {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	line-height: 21px;
+}
+
+div#lab ul.lab-links li a {
+	background-position: 0 1px;
+	background-repeat: no-repeat;
+	padding-left: 15px;
+}
+
+div#lab ul.lab-links li.annotated a {
+	color: #4887a8;
+	background-image: url('/images/arrow-turquoise.png');
+}
+
+div#lab ul.lab-links li.guide a {
+	color: #4887a8;
+	background-image: url('/images/arrow-light-blue.png');
+}
+
+div#lab ul.lab-links li.writing a {
+	color: #3e57a8;
+	background-image: url('/images/arrow-blue.png');
+}
+
+div#lab ul.lab-links li.discussion a {
+	color: #614fb2;
+	background-image: url('/images/arrow-light-purple.png');
+}
+
+div#lab ul.lab-links li.teaching a {
+	color: #614fb2;
+	background-image: url('/images/arrow-purple.png');
+}
+
+div#lab ul.lab-links li a:hover {
+	color: #000;
+	background-image: url('/images/arrow-hover.png');
+}
+
+
+/* Learning Lab Landing Page Top */
+body.lab.index div#content { padding-bottom: 0; }
+
+div#lab-top div.right {
+	width: 220px;
+	
+}
+
+div#lab-top div.about {
+	font-size: 13px;
+	color: #505050;
+	background: #f0efdf;
+	padding: 17px 18px 4px 18px;
+	line-height: 17px;
+}
+
+div#lab-top div.about div.actions {
+	float: none;
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+div#lab-top div.about div.actions ul {
+	margin: 0;
+	padding: 0;
+}
+
+div#lab-top div.about div.actions ul li {
+	line-height: 15px;
+	margin-bottom: 12px;
+}
+
+div#lab-top div.photo { width: 125px; }
+
+div#lab-top div.featured { width: 453px; }
+
+div#lab-top div.featured p strong { color: #505050; }
+
+div#lab-top div.featured p.right {
+	display: block;
+	margin: 10px 0 0 0;
+}
+
+div#lab-top div.featured div.infotop {
+	padding: 0;
+	margin: 5px 0 0 0;
+	width: 448px;
+	height: 35px;
+	float: left;
+}
+
+div#lab-top div.featured span.author { margin-top: 4px; }
+
+div#lab-top h1,
+div#lab-top h1 a {
+	font-family: Georgia;
+	font-size: 24px;
+	color: #045482;
+	font-weight: normal;
+	margin: -5px 0 4px 0;
+}
+
+div#lab-top h1 a:hover { color: #000; }
+
+div#lab-top h2 {
+	color: #736f87;
+	font-size: 13px;
+}
+
+div#lab-top div.morepoems {
+	padding: 7px 18px 0 18px;
+}
+
+div#lab-top div.morepoems p.item {
+	padding-bottom: 3px;
+}
+
+div#lab-top div.morepoems p.item.last {
+	padding-bottom: 0;
+}
+
+div#lab-top div.morepoems span.title a {
+	font: normal 15px/18px Georgia;
+	width: 170px;
+	color: #045482;
+	margin: 5px 0;
+	display: block;
+}
+
+div#lab-top span.title a:hover,
+div#lab-top span.title a.hover { color: #000; text-decoration: underline; }
+
+
+/* Learning Lab - Core Learning Poems page */
+
+body.lab div#articlelist div.item {
+	margin: 0;
+	padding: 0;
+}
+
+body.lab div#articlelist div.item div.info {
+	width: 550px;
+}
+
+body.lab div#articlelist div.item div.info.full {
+	width: 600px;
+}
+
+body.lab div#articlelist div.divider {
+	clear: both;
+	display: block;
+	margin: 17px 0;
+}
+
+body.lab div.learning-resources a {
+	position: absolute;
+	display: block;
+	margin-left: 538px;
+	background: url("/images/lab-resources-available.gif") top left no-repeat;
+	width: 83px;
+	height: 35px;
+	margin-top: 20px;
+	text-indent: -9999px;
+}
+
+body.lab div#articlelist div.item div.info.full div.learning-resources a { margin-left: 608px; }
+
+body.lab.resources p { line-height: 20px; }
+
+body.lab.resources p a.extlink { font-weight: bold; background-position: 0 1px; }
+
+body.lab.resources p a.extlink:hover { color: #000; }
+
+body.lab span.description {
+	color: #4d493f;
+	font: normal 12px/17px Arial;
+}
+
+/* Poem Guide */
+
+body.lab.guide .featured-nav { width: 632px; margin-bottom: 15px; }
+
+body.lab.guide .featured-nav li {
+	list-style-type: none;
+	padding: 4px 5px 3px 21px;
+	line-height: 18px;
+	background: url('/images/lab-arrow-down.png') 7px 9px no-repeat;
+}
+
+body.lab.guide .featured-nav li.active .l1_desc,
+body.lab.guide .featured-nav li.active .l2_desc,
+body.lab.guide .featured-nav li.active .l3_desc {
+	padding: 14px 12px 14px 0;
+}
+
+body.lab.guide .featured-nav li.l1 { background-color: #e0dfcd; border-bottom: 1px solid #3675a2; }
+body.lab.guide .featured-nav li.l2 { background-color: #cecdbc; border-bottom: 1px solid #645b84; }
+body.lab.guide .featured-nav li.l3 { background-color: #bab8a9; }
+
+body.lab.guide .featured-nav li.l1.active {
+	background: #f1f1e1 url('/images/lab-resources-bg1.png') top left repeat-x;
+}
+
+body.lab.guide .featured-nav li.l2.active {
+	background: #f1f1e1 url('/images/lab-resources-bg2.png') top left repeat-x;
+}
+
+body.lab.guide .featured-nav li.l3.active {
+	background: #f1f1e1 url('/images/lab-resources-bg3.png') top left repeat-x;
+}
+
+body.lab.guide .featured-nav li a.heading {
+	font: bold 12px Arial;
+	color: #4d493f;
+	text-transform: uppercase;
+	width: 450px;
+	display: inline-block;
+}
+
+body.lab.guide .featured-nav li a.heading:hover { text-decoration: none; }
+
+body.lab.guide .featured-nav li span.link { float: right; margin: 0; padding: 0; }
+
+body.lab.guide .featured-nav p { margin: 0; padding: 0; }
+
+body.lab.guide .l1_desc,
+body.lab.guide .l2_desc,
+body.lab.guide .l3_desc { display: none; }
+
+body.lab.guide div#content { padding-top: 0; }
+
+body.lab.guide div#poemwrapper div.links {
+	float: right;
+	padding: 30px 0 0 0;
+	margin-right: -19px;
+}
+
+body.lab.guide.poem-poet div#poemwrapper div.links {
+	float: right;
+	padding: 4px 0 0 0;
+	margin-right: -19px;
+}
+
+body.lab div.watchlisten {
+	margin-bottom: 30px;
+}
+
+body.lab div.watchlisten span.description {
+	line-height: 18px;
+	color: #7f7f7f;
+}
+
+/* Essays on Poetic Theory */
+
+body.lab.essays div.sort { padding-left: 15px; float: left; color: #877440; }
+body.lab.essays div.sort input { margin-left: 10px; }
+
+body.lab.article div.introduction { 
+	background: #efeef6;
+	color: #484848;
+	width: 615px;
+	padding: 5px 15px 15px 15px;
+	margin: 22px 0 22px -15px;
+	font: normal 12px/19px Arial;
+}
+
+
+/* GENERIC PAGES */
+
+/* Generic Page Breadcrumbs */
+body.generic div#breadcrumbs { 
+	padding: 7px 19px 2px 19px;
+}
+
+body.generic div#content a { color: #045482; }
+body.generic div#content a:hover { color: #000; }
+
+body.generic div#content a.link,
+body.generic div#content div.actions a { color: #877440; }
+
+body.generic div#content a.link:hover,
+body.generic div#content div.actions a:hover { color: #000; }
+
+body.generic.foundation.hmpiproject div#content h1 { margin: 5px 0 0 0; }
+
+body.generic.foundation.hmpiproject div#content p,
+body.generic.foundation.hmpiproject div#content ul,
+body.generic.foundation.hmpiproject div#content h3 { margin: 15px 0 0 0; }
+
+body.generic.foundation.hmpiproject.twoline div.actions { padding: 29px 0 0 0; }
+
+body.generic h1 {
+	color: #000;
+	margin: 0 0 12px 0;
+	max-width: 560px;
+/*	float: left;*/
+}
+
+body.generic h2 { clear: left; }
+
+body.generic h3 { margin: 6px 0; padding: 0; }
+
+h3.tpad { margin: 30px 0 6px 0 !important; }
+h3.nopad { margin: 0 !important; padding: 0 !important; }
+
+body.generic h4 { margin: 25px 0 6px 0; }
+
+body.generic div#content p,
+body.generic div#content ul { color: #4d493f; line-height: 1.6em; }
+
+body.generic div#content ul { padding: 0 0 0 15px; }
+body.generic div#content ul.linklist { padding: 0; }
+
+body.generic div#content div.actions ul {
+	margin: 10px 0 0 0;
+	line-height: auto;
+}
+
+body.generic div#content ul li {
+	line-height: 1.6em;
+	margin-bottom: 6px;
+}
+
+body.generic div#content div.actions ul li { line-height: 1.4em; }
+
+body.generic div#content ul li ul { margin-top: 6px; }
+
+body.generic div.divider.pad { margin: 0; }
+
+body.generic div.actions { float: right; }
+
+/* Seasonal Poems Pages */
+
+body.generic.seasonal h1 { margin: 0 0 5px 0; }
+
+body.generic.seasonal h2 {
+	clear: left;
+	margin: 0 0 15px 0;
+}
+
+body.generic.seasonal h3 { margin-bottom: 10px; margin-top: 7px; }
+body.generic.seasonal h3.tpad { margin-bottom: 10px !important; }
+
+body.generic.seasonal div.divider { margin-bottom: 16px; }
+
+body.generic.seasonal div#generic a { font: normal 15px/17px Georgia; color: #000 !important; display:inline-block; padding-bottom: 3px; }
+
+body.generic.seasonal div#generic dd {
+	text-transform: uppercase;
+	color: #4d493f;
+	display: inline-block;
+	letter-spacing: 0.05em;
+}
+
+body.generic.seasonal div#generic dt a {
+	text-transform:none;
+	letter-spacing: 0;
+	color: #000;
+}
+
+body.generic.seasonal.historymonth div#generic dd,
+body.generic.seasonal.historymonth div#generic dt a {
+	width: 125px;
+}
+
+body.generic.seasonal div#generic div.featured a { width: auto; }
+
+
+body.generic.seasonal div.column { float: left; width: 200px; margin-right: 40px; }
+body.generic.seasonal div.column.last { margin-right: 0; }
+
+body.generic.seasonal ul.poem.list.nopad li { padding-bottom: 6px; }
+
+body.generic.seasonal div.actions { margin-top: 0; }
+
+
+/* MAGAZINE */
+
+/* Magazine Breadcrumbs */
+body.magazine div#breadcrumbs { 
+	width: 693px;
+	padding: 7px 19px 4px 19px;
+	margin: 0;
+}
+
+body.magazine div#breadcrumbs.full.plain {
+	width: 938px;
+	background: #fff;
+}
+
+/* Magazine H1 heading */
+div#magazine h1.poetry {
+	clear:both;
+	text-indent: -9999px;
+	width: 301px;
+	height: 51px;
+	margin: 35px 0 7px 0;
+	padding: 0;
+	background: url("/images/magazine-heading.png") top left no-repeat;
+}
+
+/* Magazine H2 heading*/
+div#magazine h2.poetry {
+	font: normal 26px Georgia;
+	color: #87784d;
+}
+
+
+/********************************/
+/* Poetry Magazine Landing Page */
+/********************************/
+
+body.magazine.index div#breadcrumbs {
+	position: absolute;
+	background: none;
+	left:248px;
+}
+
+/* Magazine Top Section */
+
+body.magazine div#mag-top div.right h2 {
+	margin: 0 0 15px 0;
+	padding: 0;
+	font-family: Georgia;
+	width: 400px;
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: normal;
+	color: #777368;
+}
+
+body.magazine div#mag-top { height: 291px; }
+body.magazine div#mag-top div.left { width: 263px; }
+body.magazine div#mag-top div.left div.graphic {
+	margin: 0;
+	padding: 0;
+	width: 263px;
+	height: 258px;
+	background: url("/images/magazine-graphic.jpg") top left no-repeat;
+}
+
+body.magazine div#mag-top div.left span.photocredit {
+	margin: 0 0 12px 22px;
+	text-align: left;
+}
+
+body.magazine div#mag-top div.right { width: 465px; }
+
+body.magazine p.podcast {
+	color: #646056;
+	font-weight: bold;
+	line-height: 14px;
+	margin: 9px 0 4px 0;
+	padding: 0;
+}
+
+
+/* Magazine Lower Section */
+
+body.magazine div#lower { margin: 0; clear:both; }
+
+body.magazine div#lower .left,
+body.magazine div#lower .right { width: 447px; }
+
+body.magazine div#lower .quarter {
+	width: 204px;
+}
+
+body.magazine div#lower .toutwrap.last .quarter {
+	min-height: 265px;
+	width: 204px;
+}
+
+body.magazine div#lower .quarter.one {
+	border-right: 1px solid #abaa9a;
+	margin-right: 19px;
+	padding-right: 19px;
+}
+
+body.magazine div#lower .toutwrap.last .quarter span.slug {
+	display: block;
+	margin-bottom: 7px;
+}
+
+body.magazine div#lower .right.half { border-left: 1px solid #abaa9a; }
+
+body.magazine div#lower .half { margin: 0; padding: 0 20px; }
+body.magazine div#lower .half p { color: #4d493f; }
+body.magazine div#lower .left.half p { margin: 7px 0; }
+
+body.magazine div#lower .half p.title { margin: 5px 20px 5px 0; padding: 0; }
+body.magazine div#lower .quarter p.title { margin: 0 !important; }
+body.magazine div#lower .left.quarter.one p strong { margin-bottom: 8px; display:inline-block; }
+
+body.magazine div#lower div.image,
+body.magazine div#lower div.text { float: left; }
+
+body.magazine div#lower div.image { margin-right: 15px; }
+body.magazine div#lower div.image img { max-width: 157px; }
+
+body.magazine div#lower div.text p { margin: 7px 0 10px 0; width: 260px; }
+
+body.magazine div#lower h4 {
+	font: bold 14px Arial;
+	color: #505050;
+	letter-spacing: 0.05em;
+	margin: 15px 0 0 0;
+	text-transform: uppercase;
+}
+
+body.magazine div#lower div.text h4 { margin: 0; }
+
+body.magazine div#lower span.author { display: block; margin-top: 5px; }
+
+body.magazine div#lower a.title { font: normal 18px Georgia; color: #035382; }
+
+body.magazine div#lower ul.list {
+	margin: 13px 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+body.magazine div#lower ul.list li { line-height: 20px; }
+
+body.magazine div#lower ul.list a {
+	font: normal 15px Georgia;
+	color: #000;
+}
+
+body.magazine div#lower ul.linklist li {
+	margin-bottom: 7px;
+}
+
+body.magazine div#lower div.podcast {
+	width: 488px;
+	height: 160px;
+	margin: -12px 0 20px -21px;
+	background: url("/images/podcast-bg.png") top left no-repeat;
+}
+
+body.magazine div#lower div.podcast p {
+	color: #efedf5;
+	width: 280px;
+	padding: 68px 0 0 23px;
+}
+
+body.magazine div#lower div.podcast h4 {
+	display: none;
+}
+
+
+/* Magazine Slideshow Subnav */
+
+body.magazine div#featnav {
+	height: 35px;
+	background: url('/images/featnav-bg.gif') top left repeat-x;
+}
+
+body.magazine div#featnav span.slug {
+	display: block;
+	float: left;
+	font-size: 11px;
+	color: #000;
+	position:absolute;
+	padding: 7px 0 0 22px;
+}
+
+body.magazine div#featnav span.right {
+	margin: 5px 30px 0 0;
+	width: 190px;
+}
+
+body.magazine div#featnav span.right a.link {
+	background-position: 0 3px;
+}
+
+
+/* Slideshow Pagination */
+div#slideshownav {
+	float: left;
+	margin: 0 0 0 265px;
+	width: 125px;
+}
+
+div#slidenav a {
+	color: #fff;
+	display: block;
+	float: left;
+	width: 14px;
+	height: 19px;
+	margin: 0 5px 0 0;
+	padding: 5px 0 0 7px;
+	background: #505050;
+}
+
+div#slidenav a#slide1.active,
+div#slidenav a#slide2.active,
+div#slidenav a#slide3.active,
+div#slidenav a#slide4.active {
+	height: 33px;
+	background: url("/images/slideshownav-on.png") top left no-repeat;
+}
+
+div#slidecontrols a {
+	display: inline-block;
+	float: left;
+	width: 21px;
+	height: 25px;
+	background: url("/images/slideshownav-play.png") top left no-repeat;
+	text-indent: -9999px;
+}
+
+div#slidecontrols a.active {
+	background: url("/images/slideshownav-pause.png") top left no-repeat;
+}
+
+
+/* Magazine Slideshow Container */
+body.magazine div#featured {
+	margin: 0;
+	padding: 0;
+	width: 732px;
+	display: block;
+	overflow-x: hidden;
+}
+
+body.magazine div#featuredslideshow {
+	left: 0;
+	width: 2928px;
+	display: block;
+}
+
+body.magazine div#featured div.item {
+	width: 732px;
+	display: inline-block;
+	float: left;
+}
+
+
+/* Magazine Slideshow Contents */
+
+body.magazine div#featured { padding-top: 10px; }
+
+body.magazine div#featured div.photo,
+body.magazine div#featured div.feat { float: left; width: 244px; }
+
+body.magazine div#featured div.photo img { min-width: 244px; }
+
+body.magazine div.magazine_bio {
+	float: left;
+	color: #7f7d78;
+	line-height: 17px;
+	width: 200px;
+	padding: 0 22px;
+}
+
+body.magazine div.magazine_bio h4 {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	font: bold 12px Arial;
+	color: #505050;
+}
+
+body.magazine div.magazine_bio p {
+	margin: 0;
+	padding: 0;
+}
+
+body.magazine div#featured div.feat {
+    width: 441px;
+    margin-left: 22px;
+}
+
+body.magazine div#featured div.feat.full { width: 686px; }
+
+body.magazine div#featured div.tout h3 {
+	margin: 10px 0 0 0;
+}
+
+body.magazine div#featured div.feat h3 a {
+	font: normal 24px Georgia;
+	text-transform: none;
+	color: #045482;
+	letter-spacing: 0;
+}
+
+
+body.magazine div#featured div.feat div.poem {
+	line-height: 21px;
+}
+
+body.magazine div#featured span.subtitle {
+	display:block;
+	font: normal 18px Georgia;
+	color: #777368;
+	line-height: 22px;
+	margin: 0;
+	padding: 0;
+}
+
+body.magazine div#featured span.author {
+	display: block;
+	margin: 6px 0 0 0;
+}
+
+span.author.temppad {
+	margin-left: 61px;
+	margin-bottom: 3px;
+}
+
+
+/***************************/
+/* Poetry Magazine Archive */
+/***************************/
+
+body.magazine.archive.toc div#magazinetop {
+	margin-top: 10px;
+}
+
+body.magazine.archive div#magazine h1.poetry {
+	float: left;
+	margin: 0 180px 13px 0;
+}
+
+body.magazine.archive div#magazine h2.poetry {
+	margin-bottom: 13px;
+}
+
+body.magazine.archive span.photocredit {
+	display: block;
+	margin: 4px 0;
+	line-height: 1.2em;
+}
+
+body.magazine.archive div.image.large { width: 435px; }
+body.magazine.archive div.image.right {
+	float: right;
+	width: 210px;
+	padding-left: 10px;
+}
+
+/* Archive content and linklist */
+body.magazine.archive div#content {
+	padding: 9px 19px 50px 19px;
+}
+
+body.magazine.archive.poem-poet div#content {
+	padding: 0 19px 50px 19px;
+	margin-top: -1px
+}
+
+body.magazine.archive div#content div.about p,
+body.magazine.archive div#content div.about h3 {
+	width: 590px;
+	color: #4d493f;
+	line-height: 17px;
+	font-size: 12px;
+}
+
+body.magazine.archive div#content div.about p {
+	margin: 6px 0;
+}
+
+body.magazine.archive ul.linklist { float: left; }
+
+body.magazine.archive ul.linklist li a {
+	font-weight: normal;
+	line-height: 19px;
+}
+
+body.magazine.archive h4,
+body.magazine.archive h4 a {
+	font: normal 20px Georgia;
+	color: #126b81;
+	margin: 14px 0 7px 0;
+	padding: 0;
+}
+
+/* Magazine archive search box */
+
+div#magazine div#pmsearchbox {
+	width: 649px;
+	margin: 25px 0 21px 0;
+	padding: 10px 22px;
+	height: 100px;
+	border-bottom: 1px solid #abaa9a;
+	background: #e7f5f5;
+}
+
+body.poem-poet div#magazine div#pmsearchbox {
+	border-bottom: 0;
+}
+
+div#magazine div#pmsearchbox h3 {
+	margin: 12px 0 19px 0;
+}
+
+div#magazine div#pmsearchbox select,
+div#magazine div#pmsearchbox input {
+	float: left;
+}
+
+div#magazine div#pmsearchbox div.description {
+	float: right;
+	color: #7f7f7f;
+	width: 160px;
+	margin: 9px 25px 0 0;
+}
+
+div#magazine div#pmsearchbox div.description p {
+	font: normal 12px Arial;
+	margin: 0;
+	line-height: 18px;
+}
+
+/* Display None because this select menu is only used as source for jquery fancy dropdown */
+div#magazine div#pmsearchbox select { display: none; }
+
+
+/* Search Box on Poetry Magazine Poem page */
+body.poem-poet div#magazine div#pmsearchbox {
+	width: 630px;
+	padding: 10px 0 10px 18px;
+	margin: 25px 0 21px 40px;
+}
+
+
+body.poem-poet div#magazine div#pmsearchbox div.description {
+	width: 160px;
+	margin: 9px 15px 0 0;
+}
+
+/* Magazine Archive - Browse Past Issues */
+
+/* Past Issues Navigation */
+body.magazine ul#decades,
+body.magazine ul#years,
+body.magazine ul#prevnext {
+	font-weight: bold;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	clear: both;
+	width: 693px;
+	display: block;
+}
+
+body.magazine ul#decades {
+	background: #a1a192;
+	border-bottom: 1px solid #fff;
+}
+
+body.magazine ul#years {
+	width: 750px;
+	background: #288da6;
+	border-bottom: 1px solid #fff;
+	width: 692px;
+	height: 25px;
+}
+
+body.magazine ul#decades li,
+body.magazine ul#years li {
+	width: 49px;
+	height: 16px;
+	padding: 6px 7px 2px 7px;
+	text-align: center;
+	float: left;
+}
+
+body.magazine ul#decades li {
+	background: #a1a192;
+	border-right: 1px solid #fff;
+	padding-left: 5px;
+	padding-right: 8px;
+}
+
+body.magazine ul#years li {
+	background: #288da6;
+	width: 51px;
+	padding-right: 11px;
+}
+
+body.magazine ul#decades li.active {
+	padding-top: 9px;
+	margin-top: -2px;
+	height: 16px;
+	background: #288da6;
+}
+
+body.magazine ul#decades li.active a {
+	color: #fff;
+	display: block;
+	margin-top: -1px;
+}
+
+body.magazine ul#years li.active a { color: #fff; }
+
+body.magazine ul#decades li a { color: #3d3a32; }
+body.magazine ul#years li a { color: #97cedb; }
+
+
+/* Past Issues Carousel */
+
+body.magazine ul#prevnext {
+	width: 692px;
+	background: #505050;
+	height: 24px;
+	overflow:hidden;
+}
+
+body.magazine ul#prevnext li {
+	height: 15px;
+	padding: 0;
+	margin: 0;
+	float: left;
+}
+
+body.magazine ul#prevnext li a,
+body.magazine ul#prevnext li span {
+	display: block;
+	text-indent: -9999em;
+	width: 84px;
+	height: 24px;
+	overflow: none;
+	border-right: 1px solid #fff;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
+body.magazine ul#prevnext li.prev a {
+	background-image: url("/images/browse-magazine-prev.gif");
+}
+
+body.magazine ul#prevnext li.next a {
+	background-image: url("/images/browse-magazine-next.gif");
+}
+
+body.magazine ul#prevnext li.prev span {
+	background-image: url("/images/browse-magazine-prev-off.gif");
+}
+
+body.magazine ul#prevnext li.next span {
+	background-image: url("/images/browse-magazine-next-off.gif");
+}
+
+body.magazine ul#prevnext li.prev a:hover,
+body.magazine ul#prevnext li.next a:hover {
+	background-position: 0 -24px;
+}
+
+body.magazine ul#prevnext li.current {
+	padding: 6px 7px 5px 10px;
+	letter-spacing: 0.05em;
+	color: #fff;
+}
+
+body.magazine div#carousel {
+	clear: both;
+	width: 690px;
+	overflow: hidden;
+	color: #4d493f;
+	font: normal 13px Arial;
+	line-height: 17px;
+	padding-bottom: 50px;
+}
+
+body.magazine div#carousel h4 {
+	margin: 17px 0;
+	padding: 0;
+	font-size: 13px;
+}
+
+body.magazine div#carousel span.imageshadow,
+body.magazine div#carousel span.imageshadow img,
+body.magazine div#carousel span.imagebg,
+body.magazine div#carousel span.description {
+	float: left;
+}
+
+body.magazine div#carousel img { max-width: 97px; }
+
+body.magazine div#carousel span.imageshadow {
+	padding: 0;
+	margin: 0 10px 0 0;
+}
+
+body.magazine div#carousel span.imagebg {
+	width: 97px;
+	height: 134px;
+	padding: 0;
+	background: #b5b5b5;
+	margin: 2px 0 0 2px;
+}
+
+body.magazine div#carousel span.imageshadow img {
+	margin: -3px 0 0 -2px;
+	border: 1px solid #bdbcb0;
+}
+
+body.magazine div#carousel span.description {
+	width: 105px;
+}
+
+body.magazine div#carousel span.description.full {
+	width: 180px;
+}
+
+/* Width for the element is set by jcarousel javascript - this width fixes a display issue during page load */
+body.magazine div#carousel ul {
+	width: 99999px;
+	list-style-type: none;
+	margin: 0 0 0 -3px;
+	padding: 0 0 0 3px;
+	height: 228px;
+	overflow:hidden;
+}
+
+body.magazine div#carousel ul li { height: 228px; }
+
+body.magazine div#carousel ul li div.archive_carousel_wrapper {
+	float: left;
+	width: 232px;
+	margin: 0 0 0 3px;
+	padding: 0;
+}
+
+
+/* Other Magazine Styles */
+
+div.divider.pad { padding: 15px 0 0 0; }
+
+p.cover { margin-bottom: 7px; display: block; }
+
+body.magazine div.divider.pad { padding: 19px 0 0 0; }
+
+div.toutwrap {
+	margin-bottom: 15px;
+	line-height: 17px;
+}
+
+div.toutwrap.last {
+	margin-bottom: 29px;
+}
+
+/**********************************/
+/* Poetry Magazine Subscribe Page */
+/**********************************/
+
+body.magazine.subscribe h3 { margin: 16px 0 7px 0; }
+ul.list.subscribe li { line-height: 20px; margin: 0; }
+ul.list.subscribe a.more.link { color: #877440; }
+
+/*************************************/
+/* Poetry Magazine Discussion Guides */
+/*************************************/
+
+body.magazine.guides a.title,
+body.magazine.guides span.title a { font: normal 15px Georgia; }
+
+body.magazine.guides h1 a.title { font-size: 24px; }
+
+body.magazine.guides a.title { color: #045482; }
+body.magazine.guides a.title:hover { color: #000; }
+
+body.magazine.guides p.resultcount,
+body.lab.articles p.resultcount {
+	width: auto;
+	margin: 4px 7px 0 0;
+	float: left;
+}
+
+body.magazine.guides div#featurewrapper {
+	margin: 0 0 15px 0;
+}
+
+body.magazine.guides div#featureimage {
+	float: left;
+	padding: 0;
+	margin: -4px 0 0 0;
+}
+
+body.magazine.guides div#featurewrapper h1 {
+	padding: 0;
+	margin: 0 0 4px 0;
+}
+
+body.magazine.guides div#featurewrapper p.description {
+	padding: 0;
+	margin: 0 0 21px 0;
+}
+
+body.magazine.guides span.slug {
+	display: block;
+	margin: 0 0 7px 0;
+}
+
+body.magazine.guides div#featureimage span.imageshadow { display: block; }
+
+body.magazine.guides div#featureimage ul.linklist { margin-top: 12px; }
+
+body.magazine.guides div#featureimage ul.linklist li a { line-height: 15px !important; }
+
+body.magazine.guides div#feature { float: left; width: 505px; margin: 8px 0 0 10px; }
+
+body.magazine.guides ul.linklist li {
+	margin-bottom: 3px;
+}
+
+body.magazine.guides ul.linklist li a {
+	font-weight: normal;
+	line-height: 15px;
+}
+
+body.magazine.guides div.past-guide {
+	width: 222px;
+	padding: 0 8px 45px 0;
+	float: left;
+}
+
+body.magazine.guides div.past-guide div.cover { float: left; }
+body.magazine.guides div.past-guide div.info {
+	width: 105px;
+	float: left;
+}
+
+body.magazine.guides div.past-guide span.description {
+	display: block;
+	width: 105px;
+	margin-top: 3px;
+	color: #505050;
+}
+
+body.magazine.guides div.past-guide p {
+	line-height: 16px;
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+}
+
+
+
+/*************************************/
+/* Poetry Magazine Table of Contents */
+/*************************************/
+
+
+/* TOC Top Bar */
+div#tocbar div.name,
+div#tocbar div.authors {
+	background: #288da6;
+	color: #fff;
+	padding: 9px 10px 7px 10px;
+}
+
+div#tocbar div.name {
+	width: 205px;
+	float: left; 
+}
+
+div#tocbar div.name p { margin: 0; }
+div#tocbar div.authors p { margin: 0; }
+
+div#tocbar div.links ul {
+	list-style-type: none;
+	margin: 2px 0 -1px 0;
+	padding: 0;
+	float: left;
+	background: #c7c7b5;
+	padding: 8px 7px 6px 9px;
+	border-left: 1px solid #fff;
+	width: 451px;
+}
+
+div#tocbar div.links ul li {
+	float: left;
+	padding-right: 30px;
+}
+
+div#tocbar div.links ul li a.link.more {
+	color: #3d3a32;
+	background: url("/images/arrow-grey.png") 0 3px no-repeat;
+}
+
+div#tocbar div.links ul li a.link.more:hover {
+	background: url("/images/arrow-hover.png") 0 3px no-repeat;
+}
+
+
+div#tocbar div.name {
+	font: bold 14px Arial;
+	text-transform: uppercase;
+}
+
+div#tocbar div.authors {
+	font: normal 13px Arial;
+	clear: both;
+}
+
+/* TOC Content Area */
+
+body.magazine.toc div#toccontent { margin: 25px 0; }
+
+body.magazine.toc div.image,
+body.magazine.toc div.toclist { float: left; }
+
+body.magazine.toc div.image {
+	margin: 3px 20px 0 0;
+}
+
+body.magazine.toc div.image span.imageshadow { margin-bottom: 10px; }
+
+body.magazine.toc div.toclist { width: 509px; }
+
+body.magazine.toc div.toclist.full { width: 100%; }
+
+body.magazine.toc div.toclist div.clear.pad { padding: 30px 0 0 0; }
+
+body.magazine.toc div.toclist h3 { margin: 0 0 6px 10px; float: left; }
+
+body.magazine.toc div.toclist div.backtotop { margin-top: 3px; }
+
+body.magazine.toc div.toclist div.item {
+	clear: both;
+	border-top: 1px solid #abaa9a;
+	margin: 10px 0;
+	padding: 10px 0 0 0;
+}
+
+body.magazine.toc div.authorcol {
+	float: left;
+	width: 100px;
+	margin: 0 10px 10px 0;
+}
+
+body.magazine.toc div.authorcol span.authorimage {
+	display: inline-block;
+	width: 100px;
+	height: 66px;
+	overflow: hidden;
+}
+
+body.magazine.toc div.authorcol span.authorimage img { width: 100px; }
+
+body.magazine.toc div.contentcol {
+	float: left;
+	margin: 0 0 10px 0;
+	padding: 0;
+	width: 390px;
+}
+
+body.magazine.toc div.contentcol p {
+	margin: 0;
+	padding: 0;
+	color: #4d493f;
+	margin-top: -5px;
+}
+
+body.magazine.toc div.contentcol p.authorname {
+	margin: 0 0 7px 0;
+	display: inline-block;
+}
+
+body.magazine.toc div.contentcol p.authorname a.title {
+	color: black;
+	text-transform: uppercase;
+}
+
+body.magazine.poem-poet ul.list li {
+	line-height: 18px;
+	margin: 0 0 5px 0;
+}
+
+body.magazine.poem-poet div.actions ul li { margin: 0 0 0 7px; }
+
+/*OLD TOC's*/
+div#tree{
+	margin-top:0px;
+}
+
+div#tree span.title a{
+	font: normal 15px/18px Georgia;
+	color: #000;
+	padding: 0;
+}
+
+div#tree span.author{
+	color: #505050;
+	text-transform: uppercase;
+	display: inline-block;
+	letter-spacing: 0.05em;
+}
+
+div#tree span.review_title, div#tree span.review_author{
+	color: #505050;
+	font: normal 12px Arial;
+	line-height: 18px;
+}
+
+div#tree ul{
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+div#tree ul li ul{
+	list-style:none;
+	padding: 0 0 0 10px;
+	margin:0;
+}
+
+div#tree ul li:first-child{
+	border-top: none;
+}
+div#tree ul li.subgroup:first-child{
+	padding-top:0;
+	margin-top:0;
+}
+div#tree ul li.subgroup:first-child h3{
+	padding-top:0;
+}
+
+div#tree ul li:last-child{
+	border-bottom: none;
+}
+
+div#tree ul{
+	margin-top:-15px;
+}
+
+div#tree ul li{
+	border-bottom: 1px solid #aba99a;
+	border-top: 1px solid #aba99a;
+	padding: 15px 5px;
+	margin-top: -1px;
+}
+
+div#tree ul li.subgroup{
+	border-bottom: none;
+	border-top: none;
+}
+
+div#tree ul li ul li{
+	border-bottom: none;
+	border-top: none;
+	padding: 5px 2px;
+}
+div#tree ul li ul li:first-child{
+	border-top: none;
+}
+div#tree h3{
+	color: #4A473F;
+	font-size: 15px;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	float:none;
+	margin:0 0 11px -5px;
+	padding:20px 0 0 5px;
+	border-bottom: 1px solid #aba99a;
+}
+div#tree ul.group h3{
+	font: normal 16px Georgia;
+	font-style: italic;
+	text-transform: none;
+	float:none;
+	margin:0;
+	padding:0 0 0 0;
+	border-bottom: none;
+}
+
+/* Tabs */
+
+div#tabs {
+	min-height: 50px;
+	width: 976px;
+	padding-top: 20px;
+	margin-top: 0;
+	border-bottom: 1px solid #757575;
+}
+
+div#tabs ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+div#tabs ul li.tab {
+	float: left;
+	list-style-type: none;
+}
+
+div#tabs ul li.tab > a {
+	display: block;
+	font-weight: bold;
+	font-size: 14px;
+	color: #045482;
+	border: 1px solid #757575;
+	border-bottom: 0;
+	margin-top: 4px;
+	margin-right: 10px;
+	margin-bottom: -2px;
+	padding: 9px;
+	width: 260px;
+	height: 27px;
+	background: #e0dece;
+}
+
+div#tabs ul li.tab > a.comments span {
+	display:inline-block;
+	color: #231f20;
+	font-size: 14px;
+}
+
+div#tabs ul li.tab > a.poet.active {
+	width: 268px;
+}
+
+div#tabs ul li.tab.first > a {
+	margin-left: 11px;
+} 
+
+div#tabs ul li.tab > a:hover { text-decoration: none; background: #fff; }
+
+div#tabs ul li.tab > a.active {
+	background: #fff;
+	height: 27px;
+	color: #231f20;
+	padding: 14px 11px 10px 9px;
+	margin-top: -1px;
+}
+
+div#tabs ul li.tab > a.active:hover { 
+	cursor: default;
+}
+
+div#tabs ul li.tab.first a.active {
+	width: 258px;
+}
+
+div#tabs ul li.tab > a span {
+	display: block;
+	font-size: 12px;
+	color: #696969;
+	font-weight: normal;
+	margin-top: 2px;
+}
+
+div#tabs div.actions { margin: -35px 0 0 85px; }
+div#tabs div.actions ul li { padding-left: 12px; }
+div#tabs div.actions ul li a { font-size: 13px; line-height: 15px; }
+
+/* Learning Lab Tabs */
+
+/* Tabs */
+
+body.lab div#subnav { background: #fff; }
+
+body.lab div#tabs {
+	clear: both;
+	margin-top: 15px;
+}
+
+body.lab div#tabs ul li.tab > a {
+	width: 200px;
+}
+
+body.lab div#tabs ul li.tab a.active {
+	width: 198px;
+}
+
+
+/************/
+/* FEATURES */
+/************/
+
+body.articles div#articlelist {
+	color: #4d493f;
+	font: normal 12px/17px Arial;
+	margin: 20px 0 0 0;
+}
+
+body.articles div#articlelist div.articleitems {
+	display: block;
+	clear: both;
+	margin: 25px 0 0 0;
+}
+
+body.articles div#articlelist div.item {
+	margin: 0 0 25px 0;
+}
+
+body.articles div#articlelist div.item div.image {
+	float: left;
+	margin-right: 12px;
+}
+
+body.articles div#articlelist div.item div.info { float: left; }
+
+body.articles div#articlelist div.item div.info p { margin: 0; padding: 0; }
+
+body.articles div#articlelist div.item span { display: inline-block; }
+
+body.articles div#articlelist div.item span.slug { margin: 0 0 2px 0; }
+
+body.articles div#articlelist div.item span.title,
+body.articles div#articlelist div.item span.description { margin: 0 0 3px 0; }
+
+body.lab.articles div#articlelist div.item span.author { margin: 0 0 3px 0; }
+          
+body.articles div#articlelist div.item span.title a {
+	font: normal 18px Georgia;
+	color: #045482;
+}
+
+body.articles div#articlelist div.item span.author { font: normal 12px Arial; }
+
+body.articles div#articlelist div.item span.description {
+	font: normal 12px Arial;
+	line-height: 17px;
+	color: #4d493f;
+}
+
+/* Home > Features > Articles */
+/* Learning > Articles for Teachers & Students */
+
+body.articles div#featurewrapper {
+	display: inline-block;
+	margin-bottom: 25px;
+} 
+
+body.articles.featured div#feature {
+	margin: 8px 0 0 0;
+}
+
+body.articles.featured div#feature span.icon {
+	height: 23px;
+	background-position: 0 6px;
+} 
+
+body.articles.featured div#feature.image {
+	float: left;
+	width: 230px;
+	margin: 0 0 0 20px;
+}
+
+body.articles.featured div#feature span.slug { display: block; margin-bottom: 4px; }
+
+body.articles.featured div#feature a.title {
+	display: block;
+	font: normal 24px/27px Georgia;
+	color: #035382;
+}
+
+body.articles.featured div#feature span.description {
+	font: normal 16px Georgia;
+	line-height: 21px;
+	color: #4d493f;
+	margin-top: -4px;
+	margin-bottom: 12px;
+	display: inline-block;
+}
+
+body.articles.featured div#featureimage {
+	float: left;
+	margin-left: -19px;
+	width: 448px;
+}
+
+body.articles.featured div#featureimage img { width: 448px; }
+
+body.articles.featured div#featureimage span.photocredit {
+	margin-top: 2px;
+	float: right;
+}
+
+/*
+body.articles.featured div#articlelist div.image { height: 105px; overflow: hidden; }
+*/
+
+body.articles.featured div#articlelist div.image img { width: 160px; }
+
+body.articles.featured div#articlelist { width: 100%; }
+body.articles.featured div#articlelist h3 { margin: 0; }
+body.articles.featured div#articlelist h3.pad { margin: 20px 0 15px 0; }
+
+body.articles.featured div#articlelist div.item div.info {
+	float: left;
+	width: 470px;
+}
+
+body.articles.featured div#articlelist div.item div.info.full { width: 100% !important; }
+
+body.articles.featured div#articlelist div.lists { margin: 10px 0 0 0; }
+body.articles.featured div#articlelist div.lists ul.linklist { float: left; margin: 0 40px 0 0;  }
+
+body.articles.featured div#articlelist div.lists ul.linklist li { margin-bottom: 7px; }
+
+body.articles.featured div#articlelist div.lists ul.linklist.last { margin: 0;  }
+
+/* Home > Features > Slideshows */
+
+body.slideshow.articles p.resultcount {
+	width: auto;
+	margin: 6px 0 0 0;
+	float: left;
+}
+
+body.slideshow img { border: 0; }
+
+body.slideshow div#featureimage { max-height: 292px; overflow: hidden; }
+
+/* Home > Features > Articles > Archive */
+
+body.articles.archive div#refinement-bar.list,
+body.articles.archive div#articlelist { float: left; }
+
+body.articles.archive div#refinement-bar.list ul { margin: 0; padding: 0;  }
+
+body.articles.archive div#refinement-bar .icon { background-position: 0 0; }
+
+body.articles.archive div#refinement-bar.list ul li ul li.icon { margin: 5px 0; }
+
+body.articles.archive div#articlelist div.item span.slug { display: inline-block; }
+
+body.articles.archive div#articlelist {
+	width: 440px;
+	float: left;
+	margin: 1px 0 0 25px;
+}
+
+body.articles.archive div#articlelist div.item div.info {
+	float: left;
+	width: 355px;
+}
+
+body.articles.archive div#articlelist div.item div.info.full { width: 100% !important; }
+
+
+
+/* Home > Features > Article */
+
+body.article h3,
+body.article h3 a {
+	margin: 14px 0 0 0;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+
+body.article h3 a { color: #045482; }
+
+body.article div.article_related h3 { margin-bottom: 12px; }
+
+body.article div.article_related ul.list { margin-bottom: 14px; }
+
+body.article .tab-content span.pagination { margin: 8px 18px 0 0 }
+
+body.article .tab-content span.count { color: #505050; font-size: 12px; }
+
+body.article div#comments.tab-content { margin-top: 30px; }
+
+body.article div#comments.tab-content div.comment {
+	margin-top: 14px;
+	width: 477px;
+}
+
+body.article div#comments.tab-content div.postcomment { margin-bottom: 7px; }
+
+body.article div#comments.tab-content div.postcomment p,
+
+body.article div#comments.tab-content div.comment,
+body.article div.bio { line-height: 20px; font-size: 12px; }
+
+body.article div#comments.tab-content div.postcomment p,
+body.article div.bio { color: #4d493f; }
+
+body.article div#comments.tab-content div.comment p { color: #231f20; }
+
+body.article div#comments.tab-content div.comment span { color: #877440; }
+
+body.article div.tabs-comments { margin: 0; padding: 0; float: left; }
+body.article div.tabs-comments span { font-size: 14px; }
+
+body.article div.section { margin: 0 0 15px 0; }
+
+body.article div.section h3 { margin: 22px 0 0 0; }
+
+body.article div.section div.authorbio div.image img { margin: 7px 0 0 0; }
+
+body.article span.slug { margin-bottom: 3px; display: inline-block; }
+
+body.article div.section span.slug { margin: 4px 0 6px 0; display: inline-block; }
+	
+body.article div.divider { clear: both; margin-top: 18px; display: block; }
+
+body.article div.backtotop { margin-top: 5px; }
+
+
+/*****************/
+/* AUDIO & VIDEO */
+/*****************/
+
+body.audio div.actions,
+body.video div.actions { float: right; margin-top: 9px; }
+
+body.audio div#content,
+body.video div#content { margin-top: 7px; padding-top: 0; }
+
+body.video div#content { margin-right: 0; padding-right: 0; width: 695px; margin-bottom: 10px; }
+
+/* ------------- */
+/* --- video --- */
+/* ------------- */
+
+body.video h1 { width: 300px; }
+body.video h3.basic { float: left; padding: 0; margin: 0; }
+body.video .showitem { float: left; margin-right: 20px; }
+
+body.video div.learnmore p,
+body.video div.learnmore h3 { margin: 0; padding: 0; }
+
+body.video .runtime {
+	font: normal 12px Arial;
+	color: #959595;
+}
+
+body.video div.top { margin: 0 0 15px 0; }
+
+body.video.children div.top { margin: 25px 0 15px 0; }
+
+body.video p.title { margin: 7px 0; padding: 0; }
+
+body.video span.title.large {
+	width: 540px;
+	display: inline-block;
+}
+
+body.video span.title.large a { color: #045482; }
+body.video span.title.large a:hover { color: #000; }
+
+body.video div.showbanner { margin: 10px 20px; padding: 15px 30px; background: #f0efdf; min-height: 228px; width: 632px; float: left; }
+body.video div.showbanner p { font: normal 13px/20px Arial; color: #545454; width: 383px; }
+body.video div.showbanner p.full { width: 538px !important; }
+
+body.video div.showbanner div.logo {
+	float: right;
+	margin: 12px 0 0 0;
+}
+
+body.video div.showbanner p.heading {
+	display: block;
+	text-indent: -9999px;
+}
+
+body.video div.showbanner p.heading.children {
+	width: 201px;
+	height: 50px;
+	background: url("/images/video/heading_children.png") top left no-repeat;
+}
+
+body.video div.showbanner p.heading.classica {
+	width: 208px;
+	height: 94px;
+	background: url("/images/video/heading_classica.png") top left no-repeat;
+}
+
+body.video div.showbanner p.heading.newshour {
+	width: 284px;
+	height: 27px;
+	background: url("/images/video/heading_newshour.png") top left no-repeat;
+}
+
+body.video div.showbanner p.heading.poetrydo {
+	width: 256px;
+	height: 27px;
+	background: url("/images/video/heading_poetrydo.png") top left no-repeat;
+}
+
+body.video div.showbanner p.heading.achildsg { 
+	width: 639px;
+	height: 35px;
+	background: url("/images/video/heading_achildsg.png") top left no-repeat;
+}
+
+body.video div.showbanner p.heading.poetryev {
+	width: 408px;
+	height: 39px;
+	background: url("/images/video/heading_poetryev.png") top left no-repeat;
+}
+
+body.video div.showbanner p.heading.favorite {
+	width: 265px;
+	height: 27px;
+	background: url("/images/video/heading_favorite.png") top left no-repeat;
+}
+
+body.video div#videocarousel {
+	float: left;
+	margin-top: -6px;
+}
+
+body.video div#video_carousel ul li {
+	width: 202px;
+	height: 225px;
+	border-right: 1px solid #fff;
+}
+
+body.video div#videocarousel h3 {
+	padding-top: 5px;
+	padding-bottom: 0;
+	margin-bottom: 10px;
+}
+
+body.video div.pagination-arrows.right {
+	margin: 18px 21px 0 0;
+}
+
+body.video div#sidebar div#videocarousel { margin: 15px 0 0 0; }
+
+body.video div#sidebar div.pagination-arrows.right {
+	margin: 8px 21px 0 0;
+}
+
+
+body.video div#lowercontent div.videorow { display: block; padding-bottom: 20px; }
+body.video div#lowercontent div.videorow p.title { padding: 0 10px; }
+
+body.video div#lowercontent a.title,
+body.video.all a.title { color: #045482 !important; }
+
+body.video div#lowercontent { margin-bottom: 40px; }
+
+body.video.item div#lowercontent { width: 924px; padding-bottom: 40px; }
+
+body.video div#lowercontent h3,
+body.video.all h3 { margin-top: 7px; margin-left: 2px; }
+
+body.video div#lowercontent div.divider,
+body.video.all div.divider { margin: 18px 0 8px 0; display: block; }
+
+body.video div#lowercontent div.divider.nopad,
+body.video.all div.divider.nopad { margin: 0 0 8px 0; }
+
+body.video span.line { border-left: 1px solid #abaa9a; height: 35px; display: inline-block; margin: 0 13px 0 8px; float: left; }
+body.video span.line.spacer { border-left: 0; }
+
+body.video div#pagination.top {
+	display: inline-block;
+	border: 0;
+	margin-right: 0;
+	padding-right: 5px;
+	margin-left: 5px;
+	margin-bottom: 4px;
+}
+
+body.video .topline { padding: 5px 0 27px 0; }
+
+body.video div.featvideo { margin: 10px 0 15px 0; }
+body.video.item div#lowercontent { margin: 10px 20px; }
+
+body.video.item div.lower,
+body.video.all div.lower { padding: 5px 10px 10px 10px !important; }
+
+body.video div.lower span.description {
+	font: normal 12px/18px Arial;
+	color: #505050;
+	display: inline-block;
+	margin: 0 0 2px 0;
+	padding: 0;
+}
+
+body.video .videoitem,
+body.video.all .videoitem {
+	float: left;
+	width: 230px;
+/*	min-height: 272px;*/
+	margin: 0 0 20px 1px;
+	line-height: 1.3em;
+}
+
+body.video.landing .videoitem {
+	min-height: 272px;
+}
+
+body.video .videoitem a { color: #737373; font-weight: bold; }
+body.video .videoitem a:hover { text-decoration:none; color: #046573; }
+body.video .videoitem img {
+	margin: 0 0 5px 0;
+
+	/* TEMPORARY - Remove once new thumbnail images have been uploaded */
+	width: 230px;
+	height: 131px;
+}
+
+body.video .videoitem div.title { margin: 0 5px; }
+
+body.video.all.bypoet p.authorname { margin: 5px 0; }
+
+body.video.all.bypoet .videoitem {
+	float: none;
+	width: 160px;
+	height: auto;
+	margin: 0;
+	line-height: 1.3em;
+}
+
+body.video.all.bypoet .leftcol { float: left; }
+body.video.all.bypoet .rightcol { float: left; margin: 0 0 0 200px; }
+
+body.video.all.bypoet .alphaletter {
+	font-size: 14px;
+	color: #4a473f;
+	font-weight: bold;
+	margin: 15px 0 0 0;
+}
+
+body.video .videoitem.hover span { color: #cdcdcd !important; }
+body.video .videoitem.hover span.slug { color: #fff !important; }
+
+body.video .children.videoitem.hover,
+body.video div.children.videoitem.hover a.title,
+body.video div#lowercontent div.children.videoitem.hover a.title { background: #bc5b29; color: #fff !important; text-decoration: none; }
+                                                         
+body.video .classica.videoitem.hover,                    
+body.video div.classica.videoitem.hover a.title,
+body.video div#lowercontent div.classica.videoitem.hover a.title { background: #b88830; color: #fff !important; text-decoration: none; }
+                                                         
+body.video .newshour.videoitem.hover,                    
+body.video div.newshour.videoitem.hover a.title,
+body.video div#lowercontent div.newshour.videoitem.hover a.title { background: #bd3c3c; color: #fff !important; text-decoration: none; }
+                                                         
+body.video .poetrydo.videoitem.hover,                   
+body.video div.poetrydo.videoitem.hover a.title,
+body.video div#lowercontent div.poetrydo.videoitem.hover a.title { background: #877440; color: #fff !important; text-decoration: none; }
+
+body.video .achildsg.videoitem.hover,                   
+body.video div.achildsg.videoitem.hover a.title,
+body.video div#lowercontent div.achildsg.videoitem.hover a.title { background: #5d4c3b; color: #fff !important; text-decoration: none; }
+                                                         
+body.video .poetryev.videoitem.hover,                    
+body.video div.poetryev.videoitem.hover a.title,
+body.video div#lowercontent div.poetryev.videoitem.hover a.title { background: #6c535a; color: #fff !important; text-decoration: none; }
+
+body.video .favorite.videoitem.hover,                    
+body.video div.favorite.videoitem.hover a.title,
+body.video div#lowercontent div.favorite.videoitem.hover a.title { background: #bc5b29; color: #fff !important; text-decoration: none; }
+
+body.video .browse { margin-left: 15px; }
+
+body.video div#lowercontent span.browse,
+body.video.all span.browse { margin: 7px 0 0 0; display: inline-block; float: left; }
+
+body.video .latestvideo { width: 415px; margin: 0 15px 0 0; float: left; }
+body.video .latestvideo h2 {
+	font-size: 14px;
+	margin: 3px 0 3px 0;
+}
+
+body.video .latestvideo h2 { color: #000; }
+body.video .latestvideo h2 a { color: #046573; }
+
+body.video .latestvideo .vidcontent {
+	float: left;
+}
+
+body.video .latestvideo .share {
+	float: left;
+	margin: 7px 0 0 21px;
+	width: 59px;
+	height: 32px;
+	padding: 8px;
+	border: 1px solid #f47711;
+}
+
+body.video .latestvideo .share img { padding: 0 0 5px 0; }
+
+body.video .topline {
+	margin: 0 0 10px 0;
+	padding: 0 0 14px 0;
+}
+
+body.video.all .topline { border: 0; margin: 0; }
+
+body.video .clear.greendiv { border-top: 1px solid #819c72; width: 670px; }
+body.video div.right .pagination { margin: 4px 10px 0 0; }
+
+/* Landing Page */
+body.video div.vidleft { float: left; }
+body.video div.vidcontent { float: left; margin: 0 0 0 1px; }
+
+
+/* ALL VIDEO */
+
+body.video.all .videoitem div.show_title {
+	font-size: 9px;
+	font-weight: bold;
+	color: #fff;
+	border-collapse: collapse;
+	width: 152px;
+	text-transform: uppercase;
+	padding: 0 2px 1px 6px;
+	background: #000;
+}
+
+body.video.all .videoitem span.title { display:inline-block; margin: -2px; }
+
+body.video .videoitem.hover a,
+body.video.all .videoitem.hover a { text-decoration:none; color: #046573; }
+
+body.video.all .children.videoitem div.show_title { background: #d1ba0a; }
+body.video.all .classica.videoitem div.show_title { background: #2f4d4b; }
+body.video.all .newshour.videoitem div.show_title { background: #395980; }
+body.video.all .poetrydo.videoitem div.show_title { background: #514770; }
+body.video.all .poetryev.videoitem div.show_title { background: #76b5b4; }
+
+body.video.all .videoitem a { font-size: 12px; color: #046573; line-height: 1.3em; }
+
+body.video.all .videoitem.hover a { text-decoration: underline; }
+
+body.video.all .smpad { margin: 10px 0; }
+
+body.video.all .videoitem div.lower { padding: 0 5px; }
+
+body.video h3.headline { float: left; width: 675px; margin: 3px 0 0 0; }
+
+body.video .divider { clear: both; padding: 5px 0; }
+
+/* By Poet */
+div.alphafilter { background: #d9d7c7; padding: 10px 11px; }
+
+div.alphafilter,
+div.alphafilter a { font: bold 12px Arial; color: #505050; }
+
+div.alphafilter span.letter,
+div.alphafilter span.all { color: #000; }
+
+div.alphafilter a {
+	color: #045482;
+	text-decoration: underline;
+}
+
+div.alphafilter span.letters a,
+div.alphafilter span.letters span,
+div.alphafilter span.label { margin-right: 0.62em; }
+
+div.alphafilter span.all { margin-left: 8px; }
+
+body.audio tr.alphabet { margin: -7px 0 0 0; padding: 0; }
+
+body.audio tr.alphabet td { margin: 0; padding: 0; }
+
+/* ------------- */
+/* --- audio --- */
+/* ------------- */
+
+/* LANDING PAGE */
+
+p.landing_poetryma { background: url('/images/av/landing_poetrymagazinepodcast.gif') top left no-repeat; }
+p.landing_poetryof { background: url('/images/av/landing_poetryofftheshelf.gif') top left no-repeat; }
+p.landing_poemofth { background: url('/images/av/landing_poemoftheday.gif') top left no-repeat; }
+p.landing_poemtalk { background: url('/images/av/landing_poemtalk.gif') top left no-repeat; }
+p.landing_poetryra { background: url('/images/av/landing_poetryradio.gif') top left no-repeat; }
+p.landing_essentia { background: url('/images/av/landing_podcast_essential.gif') top left no-repeat; }
+p.landing_poetryle { background: url('/images/av/landing_podcast_poetrylectures.gif') top left no-repeat; }
+p.landing_kennethg { background: url('/images/av/landing_avantgarde.gif') top left no-repeat; }
+p.landing_chicagop { background: url('/images/av/landing_chicagop.gif') top left no-repeat; }
+
+p.landing_poetryma,
+p.landing_poetryof,
+p.landing_poemofth,
+p.landing_poemtalk,
+p.landing_poetryra,
+p.landing_essentia,
+p.landing_kennethg,
+p.landing_chicagop,
+p.landing_poetryle { width: 670px; height: 51px; }
+
+p.landing_poetryma a,
+p.landing_poetryof a,
+p.landing_poemofth a,
+p.landing_poemtalk a,
+p.landing_poetryra a,
+p.landing_essentia a,
+p.landing_kennethg a,
+p.landing_chicagop a,
+p.landing_poetryle a { float: right; padding: 19px 6px 0 0; }
+
+/* AUDIO 2 */
+
+.showinfo.avant-ga,
+.showinfo.kennethg { background: #704956 url('/images/av/avantgarde.png') top left no-repeat; }
+
+.showinfo.poetryma { background: #298da6 url('/images/av/poetrymagazinepodcast.png') top left no-repeat; }
+
+.showinfo.poetryof { background: #35a8a4 url('/images/av/poetryofftheshelf.png') top left no-repeat; }
+.showinfo.poemofth { background: #4f9980 url('/images/av/poemoftheday.png') top left no-repeat; }
+.showinfo.poemtalk { background: #777097 url('/images/av/poemtalk.png') top left no-repeat; }
+.showinfo.poetryra { background: #909e5a url('/images/av/poetryradio.png') top left no-repeat; }
+.showinfo.essentia { background: #a68f51 url('/images/av/podcast_essential.png') top left no-repeat; }
+.showinfo.poetryle { background: #705e49 url('/images/av/podcast_poetrylectures.png') top left no-repeat; }
+.showinfo.chicagop { background: #4c5e80 url('/images/av/podcast_chicagopoetrytour.png') top left no-repeat; }
+
+div#show { margin-bottom: 20px; padding: 0; }
+
+div#show.avant-ga,
+div#show.kennethg { background: #704956; }
+
+div#show.poetryma { background: #298da6; }
+
+div#show.poetryof { background: #35a8a4; }
+div#show.poemofth { background: #4f9980; }
+div#show.poemtalk { background: #777097; }
+div#show.poetryra { background: #909e5a; }
+div#show.essentia { background: #a68f51; }
+div#show.poetryle { background: #705e49; }
+div#show.chicagop { background: #4c5e80; }
+
+
+body.audio .subscribe span a {
+	width: 97px;
+	height: 35px;
+	text-indent: -9999px;
+	float: left;
+	margin: 10px 0 0 0;
+	display: block;
+}
+
+body.audio .subscribe.kennethg span a,
+body.audio .subscribe.avant-ga span a { background: url('/images/av/subscribe_avant-ga.png') top left no-repeat; }
+
+body.audio .subscribe.poetryma span a { background: url('/images/av/subscribe_poetryma.png') top left no-repeat; }
+body.audio .subscribe.poetryof span a { background: url('/images/av/subscribe_poetryof.png') top left no-repeat; }
+body.audio .subscribe.poemofth span a { background: url('/images/av/subscribe_poemofth.png') top left no-repeat; }
+body.audio .subscribe.poemtalk span a { background: url('/images/av/subscribe_poemtalk.png') top left no-repeat; }
+body.audio .subscribe.poetryra span a { background: url('/images/av/subscribe_poetryra.png') top left no-repeat; }
+body.audio .subscribe.essentia span a { background: url('/images/av/subscribe_essentia.png') top left no-repeat; }
+body.audio .subscribe.poetryle span a { background: url('/images/av/subscribe_poetryle.png') top left no-repeat; }
+body.audio .subscribe.chicagop span a { background: url('/images/av/subscribe_chicagop.png') top left no-repeat; }
+
+body.audio .subscribe a.help,
+body.audio.item .subscribe a.help {
+	float: left;
+	margin: 16px 0 0 15px;
+}
+
+body.audio .subscribe a:hover { text-decoration:none; }
+
+body.audio h1 { margin-bottom: 10px; }
+
+body.audio .showinfo a,
+body.audio.item .showinfo a { font-weight: normal; color: #fff; text-decoration: underline; }
+
+body.audio .showinfo a:hover,
+body.audio.item .showinfo a:hover { text-decoration: none; }
+
+body.audio div.top { margin: 15px 0 7px 5px; }
+body.audio div.top h3 { margin-top: 0; }
+
+body.audio.all div.top,
+body.audio.landing div.top { margin: 15px 0; padding: 0; }
+
+body.audio.all div.top h3,
+body.audio.landing div.top h3 { margin: 7px 0 0 0; }
+
+body.audio.landing div.top { height: 20px; }
+
+
+/* List Table */
+body.audio table.audio,
+body.audio.item table.audio {
+	width: 100%;
+	margin: 0 0 25px 0;
+}
+
+body.audio table.audio tr th,
+body.audio.item table.audio tr th {
+	padding: 0 0 8px 10px;
+	text-align: left;
+}
+
+body.audio table.audio tr.sortable th,
+body.audio.item table.audio tr.sortable th {
+	padding: 0 0 8px 0;
+}
+
+body.audio table.audio tr.alphabet th {
+	padding: 0;
+}
+
+body.audio th span.slug {
+	font: bold 11px Arial;
+	color: #505050;
+}
+
+body.audio table.audio tr th,
+body.audio.item table.audio tr th,
+body.audio table.audio tr td,
+body.audio.item table.audio tr td {
+	border-bottom: 1px solid #e0dece;
+}
+
+
+body.audio table.audio td a,
+body.audio.item table.audio td a {
+	font-size: 12px;
+	color: #046573;
+}
+
+body.audio table.audio tr td,
+body.audio.item table.audio tr td {
+	padding: 7px 9px 5px 0;
+	line-height: 19px;
+	vertical-align: top;
+}
+
+body.audio table.audio tr.active td,
+body.audio.item table.audio tr.active td {
+	background: #f0efdf;
+}
+
+body.audio table.audio tr td.show {
+	padding: 10px;
+}
+
+body.audio table.audio tr.active td.show {
+	background: #f0efdf;
+}
+
+body.audio table.audio tr.active td.show.avant-ga,
+body.audio table.audio tr.active td.show.kennethg { background: #704956; }
+
+body.audio table.audio tr.active td.show.poetryma { background: #288da6; }
+
+body.audio table.audio tr.active td.show.poetryof { background: #36a8a4; }
+body.audio table.audio tr.active td.show.poemofth { background: #60a876; }
+body.audio table.audio tr.active td.show.poemtalk { background: #777097; }
+body.audio table.audio tr.active td.show.poetryra { background: #8f9e59; }
+body.audio table.audio tr.active td.show.essentia { background: #a68f51; }
+body.audio table.audio tr.active td.show.poetryle { background: #705e49; }
+body.audio table.audio tr.active td.show.chicagop { background: #4c5e80; }
+
+body.audio table.audio tr.active td.show a { color: #fff !important; }
+
+body.audio table.audio tr.last td,
+body.audio.item table.audio tr.last td {
+	border-bottom: 0;
+}
+
+body.audio table.audio tr.divider td,
+body.audio.item table.audio tr.divider td {
+	border-bottom: 1px solid #abaa9a;
+}
+
+body.audio table.audio td.title,
+body.audio.item table.audio td.title { padding: 5px 10px 7px 10px; }
+
+body.audio table.audio tr td.listen span.listen,
+body.audio.item table.audio tr td.listen span.listen {
+	display: block;
+	height: 14px;
+	width: 12px;
+	text-indent: -9999px;
+	background: url('/images/av/icon-listen.png') left top no-repeat;
+	margin-left: 12px;
+}
+
+body.audio table.audio tr.active td.listen span.listen,
+body.audio.item table.audio tr.active td.listen span.listen {
+	background: url('/images/av/icon-listen.png') left bottom no-repeat;
+}
+
+body.audio table.audio td.authors,
+body.audio.item table.audio td.authors { line-height: 18px; padding: 7px 10px; }
+
+body.audio table.audio td.date,
+body.audio.item table.audio td.date {
+	font: normal 13px Arial;
+	color: #505050;
+	padding-left: 10px;
+}
+
+body.audio p.description { line-height: 1.4em; }
+body.audio p.description a { font-weight: normal; }
+
+/* Audio2 */
+
+body.audio h2,
+body.audio h2 a {
+	font-size: 16px;
+	padding: 0;
+	margin: 10px 0 3px 0;
+}
+
+body.audio h2 { color: #000; }
+body.audio h2 a { color: #046573; }
+
+body.audio p,
+body.audio.item p { margin: 5px 0; }
+
+body.audio p.more { margin: 6px 0 0 90px; }
+body.audio p.more a { font-size: 10px; }
+
+body.audio p.topimages img { width: 80px; }
+
+body.audio div#content h3 { clear:both; }
+
+body.audio .poemoftheday { background: #d5ecdc; margin: 0 0 30px 0; }
+body.audio .poemoftheday h2 { padding: 10px 0 0 0; }
+body.audio .poemoftheday h2 a { font-size: 14px; color: #046573; }
+body.audio .poemoftheday img { padding-right: 15px; }
+
+/* Show Links */
+
+body.audio div#show { margin-top: 20px; }
+body.audio div#show.nopad { margin-top: 2px; }
+
+
+body.audio .showinfo {
+	position: relative;
+	float: left;
+	font: normal 13px/19px Arial;
+	color: #fff;
+	width: 200px;
+	min-height: 320px;
+	padding: 103px 22px 0 22px;
+	margin: 0;
+}
+
+body.audio .showinfo.poemtalk {
+	padding-top: 73px;
+}
+
+body.audio.landing .showinfo {
+	width: 244px;
+	padding: 0;
+	min-height: 0;
+}
+
+body.audio .showinfo a { color: #fff; text-decoration: underline; }
+body.audio .showinfo a:hover { text-decoration:none; }
+
+body.audio .showtitle p,
+body.audio .showinfo p { margin: 0; padding: 0; }
+
+/* Latest Audio */
+body.audio .latestaudio {
+	position: relative;
+	background: #f0efdf;
+	float: left;
+	width: 389px;
+	min-height: 360px;
+	padding: 27px 30px 37px 30px;
+	font: normal 13px/19px Arial;
+	color: #4d493f;
+}
+
+body.audio.landing .latestaudio {
+	min-height: 217px;
+	padding-bottom: 29px;
+}
+
+body.audio .latestaudio p { margin: 7px 0 0 0; }
+
+body.audio .latestaudio div.issueimage {
+	margin-right: 8px;
+}
+
+body.audio .relatedlinks div.left { margin-top: -8px; }
+
+body.audio .relatedlinks div.left.issueimage { margin-top: 0; }
+
+body.audio .relatedlinks div.left.image { width: 260px; }
+
+/* ALL AUDIO */
+
+body.audio h3.basic,
+body.audio.item h3.basic { float: left; padding: 0; margin: 0; }
+
+body.audio .browse,
+body.audio.item .browse { margin-left: 18px; }
+
+body.audio.all div.clear.smpad { padding: 4px 0; }
+body.audio.all table.audio th { border: 0; border-bottom: 1px solid #d9d9d9; }
+
+body.audio.all td.date { width: 60px; }
+
+body.audio.all td.show a {
+	font-size: 10px;
+	line-height: 12px;
+	font-weight: bold;
+	text-transform:uppercase;
+}
+
+body.audio.all table.audio td.show.poetryma a { color: #13758e; }
+body.audio.all table.audio td.show.poetryof a { color: #1f8e8a; }
+body.audio.all table.audio td.show.poemofth a { color: #448a59; }
+body.audio.all table.audio td.show.poemtalk a { color: #5a537a; }
+body.audio.all table.audio td.show.poetryra a { color: #73813e; }
+body.audio.all table.audio td.show.essentia a { color: #8a7337; }
+body.audio.all table.audio td.show.poetryle a { color: #5a4935; }
+body.audio.all table.audio td.show.chicagop a { color: #364769; }
+body.audio.all table.audio td.show.avant-ga a { color: #5a3541; }
+
+body.video div#content a.title,
+body.audio div#content a.title,
+body.video div#content span.title,
+body.audio div#content span.title {
+	font: normal 15px/19px Georgia !important;
+	color: #000;
+}
+
+body.video div#content a.title.large,
+body.audio div#content a.title.large,
+body.video div#content span.title.large,
+body.audio div#content span.title.large {
+	font: normal 24px/29px Georgia !important;
+}
+
+body.audio a.title.large { color: #045482 !important; }
+body.audio a.title.large:hover { color: #000 !important; }
+
+body.audio p.audioplayer { margin-bottom: 26px; }
+
+body.audio p.copyright { margin-top: 15px; font: normal 12px/17px Arial; color: #4d493f; }
+
+body.audio div.latestaudio div.section { margin-bottom: 12px; }
+
+
+/* Favorites */
+
+body.favorites h1 { 
+	font: normal 26px Georgia;
+	color: #87784d;
+	margin: 0;
+	padding: 15px 0 0 20px;
+}
+
+body.favorites div.title {
+	min-height: 20px;
+	display: inline-block;
+	padding: 3px 10px;
+	margin: 0 -14px 5px -10px;
+}
+
+body.favorites div.title h3 {
+	float: left;
+	margin: 0;
+	padding: 0;
+	display:inline-block;
+	max-width: 514px;
+}
+
+body.favorites div#poets div.title h3 {
+	max-width: 283px;
+}
+
+body.favorites div.title h3 a {
+    color: #000;
+	font: normal 18px Georgia;
+	letter-spacing: 0;
+	text-transform: none !important;
+}
+
+body.favorites span.author {
+	color: #505050;
+	letter-spacing: 0.04em;
+}
+
+body.favorites div#content { padding-top: 5px; }
+
+body.favorites div#content div#poems,
+body.favorites div#content div#poets { padding-top: 23px; }
+
+body.favorites div#content div#poems div.actions,
+body.favorites div#content div#poets div.actions {
+	float:none;
+	text-align:right;
+}
+body.favorites div#content div#poems div.actions a.facebook,
+body.favorites div#content div#poets div.actions a.facebook {
+	background: url(/images/icon-facebook.png) left top no-repeat;
+	padding-left:20px;
+	display:inline-block;
+	min-height:16px;
+}
+
+body.favorites div#content div#poems div.article,
+body.favorites div#content div#poets div.article { padding-top: 0; }
+
+body.favorites div#poets.tab-content div.item p {
+	margin: 0;
+	padding: 0;
+	line-height: 16px;
+	color: #505050;
+}
+
+body.favorites div.item div.left {
+	float: left;
+	margin-right: 20px;
+}
+
+body.favorites div.item div.left img { max-width: 161px; }
+
+body.favorites div.item div.right {
+	float: left;
+	width: 510px;
+}
+
+body.favorites div.item div.title {
+	background: #fff;
+}
+
+body.favorites div.title.active {
+	background: #f0efdf !important;
+}
+
+/* Specific to 'actions' in 'title' div */
+body.favorites div.title div.actions {
+	display: none;
+	margin-left: 30px;
+}
+
+/* Specific to 'actions' in 'title' div */
+body.favorites div#content div.title div.actions {
+	float:left !important;
+}
+
+body.favorites div.title div.actions ul {
+	padding: 0;
+	margin: 3px 0 0 0;
+}
+
+body.favorites div.title div.actions ul li {
+	float: left;
+	padding-left: 10px;
+}
+
+body.favorites div.title.active div.actions {
+    display: inline-block;
+}
+
+
+/* For top of Favorites page */
+body.favorites h1 { float: left; }
+body.favorites div.actions.top ul { margin: 25px 0 0 -17px; }
+body.favorites div.actions.top ul li { margin-right: 15px; }
+
+/* Buttons */
+
+span.buttons {
+	display: inline-block;
+	margin: 4px 0;
+}
+
+span.button a {
+	width: 59px;
+	height: 16px;
+	text-indent: -9999px;
+	text-transform:capitalize;
+	font-size:0;
+	display:block;
+	line-height:0;
+	float: left;
+	margin-right:5px;
+}
+
+span.button.watch a { background: url("/images/button-watch.png") top left no-repeat; }
+span.button.listen a { background: url("/images/button-listen.png") top left no-repeat; }
+
+/* Expander Widget */
+div.expander a.toggle {
+	display: inline-block;
+	color: #045482;
+	margin: 0;
+	line-height: 14px;
+    padding-left: 14px;
+	padding-top: 2px;
+	background: url("/images/expander-arrow-closed.png") 2px 4px no-repeat;
+}
+
+div.expander.active a.toggle {
+	background: url("/images/expander-arrow-open.png") 2px 4px no-repeat;
+}
+
+div.expander ul {
+	list-style-type: none;
+	margin: 0;
+}
+
+div.expander ul li ul {
+    line-height: 18px;
+    margin: 0;
+	padding: 4px 0 0 14px;
+}
+
+div.expander ul li ul { display: none; }
+div.expander.active ul li ul { display: block; }
+
+div.expander ul li ul li { color: #505050; }
+div.expander ul li ul li span.category {
+	font-size: 10px;
+	font-weight: bold;
+}
+
+body.favorites div.expander {
+    margin: 4px 0 -2px 0;
+}
+
+body.favorites div.expander > ul { padding: 0; }
+
+/*
+	body.favorites div#poems.tab-content div.expander > ul { padding: 0 0 0 24px; }
+	body.favorites div#poets.tab-content div.expander > ul { padding: 0; }
+*/
+
+/* Tab Content */
+
+div.tab-content { display: none; }
+div.tab-content.active { display: block; }
+div.tab-content span.author {
+	display: block;
+}
+
+div.tab-content span.description {
+	font: normal 12px Arial;
+	line-height: 17px;
+	color: #4d493f;
+	margin: 0 0 8px 0;
+}
+
+div.tab-content span.publisher {
+	font: normal 12px Arial;
+	line-height: 17px;
+	color: #505050;
+	display: block;
+}
+
+/* Tab Content Item */
+div.tab-content div.item { margin-bottom: 25px; }
+
+/* Space above credit line on poems */
+div#poem.tab-content div.credit { padding-top: 24px; }
+
+.article-credit {
+    line-height: 18px;
+    color: #7f7f7f;
+    margin-bottom: 30px;
+}
+
+/* Tag Form */
+form.tag { margin-top: 5px; }
+
+form.tag input.tag {
+	float: left; 
+	width: 138px;
+	font-size: 11px;
+	color: #505050;
+	padding: 2px;
+	border-bottom: 0;
+	border-right: 1px solid #f3f3f3;
+}
+
+form.tag input.submit {
+	margin-left: 5px;
+}
+
+
+/* Fancy Dropdown Menu */
+
+span.dropdown-menu .dropdown {
+	float: left;
+	color: #045482;
+	font-weight: bold;
+	width: 219px;
+	height: 35px;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	background: url("/images/dropdown-bg.png") top left repeat;
+}
+
+span.dropdown-menu .dropdown dd,
+span.dropdown-menu .dropdown dt,
+span.dropdown-menu .dropdown ul {
+	margin: 0;
+	padding: 0;
+}
+
+span.dropdown-menu .dropdown dd { position:relative; }
+
+span.dropdown-menu .dropdown a,
+span.dropdown-menu .dropdown a:visited {
+	color: #045482;
+	text-decoration: none;
+	outline: none;
+}
+
+span.dropdown-menu .dropdown a:hover {
+	color: #000;
+}
+
+span.dropdown-menu .dropdown dt a {
+	display: block;
+	width: 195px;
+	padding: 12px 9px 4px 12px;
+
+}
+
+span.dropdown-menu .dropdown dt a:hover {
+	color: #045482;
+}
+
+span.dropdown-menu .dropdown dt a span {
+	cursor: pointer;
+	display: block;
+}
+
+span.dropdown-menu .dropdown dd ul {
+	background: #f0efdf none repeat scroll 0 0;
+	border: 1px solid #9d9c8b;
+	color: #045482;
+	display: none;
+	left: 1px;
+	position: absolute;
+	top: 1px;
+	width: auto;
+	min-width: 213px;
+	list-style-type: none;
+}
+
+span.dropdown-menu .dropdown span.value { display: none; }
+span.dropdown-menu .dropdown dd ul li a { padding: 5px 6px 5px 10px !important; margin: 0 !important; display: block; }
+span.dropdown-menu .dropdown dd ul li a:hover { background: #d6d4c5; }
+
+body.generic span.dropdown-menu .dropdown,
+body.genericfull span.dropdown-menu .dropdown {
+	width: 100% !important;
+	background: url("/images/dropdown-bg-generic.gif") top right no-repeat !important;
+}
+
+body.generic span.dropdown-menu .dropdown dt a,
+body.genericfull span.dropdown-menu .dropdown dt a { width: 97% !important; }
+
+body.generic span.dropdown-menu .dropdown dd ul,
+body.genericfull span.dropdown-menu .dropdown dd ul {
+	background: #f3f2e6 none repeat scroll 0 0;
+	border: 1px solid #aaa9a1;
+	border-top: 0;
+	border-right: 0;
+	left: -1px;
+	min-width: 448px;
+}
+
+body.generic span.dropdown-menu .dropdown dd ul,
+body.generic span.dropdown-menu .dropdown dd ul li,
+body.genericfull span.dropdown-menu .dropdown dd ul,
+body.genericfull span.dropdown-menu .dropdown dd ul li {
+ 	margin: 0 !important;
+	padding: 0 !important;
+}
+
+/* Person List */
+
+div.personlist { margin-top: 3px; }
+div.personlist div.item { clear: both; margin: 5px 0; padding: 15px; display: inline-block; }
+div.personlist div.item div.image { float: left; margin-right: 12px; width: 135px; display: block; min-height: 1px; }
+div.personlist div.item span.photocredit { float: right; }
+div.personlist div.item div.description { float: left; width: 510px; }
+div.personlist div.item div.description p { margin: -4px 0 0 0; padding: 0; }
+
+div.personlist div.item.shade {
+	background: #f0efdf;
+	margin: 0;
+	padding: 20px 15px;
+}
+
+/* LOWER CONTENT AREA - 4 COLUMN LAYOUT */
+
+/* Learning Lab Landing Page Footer */
+ 
+div#footer-columns p {
+	font-size: 12px;
+	color: #4d493f;
+	margin: 9px 0;
+	line-height: 19px;
+}
+
+div#footer-columns h3,
+div#footer-columns h3 a {
+	margin: 0 0 12px 0;
+}
+
+div#footer-columns ul.linklist li { margin-bottom: 4px; }
+
+div#footer-columns div.column {
+	float: left;
+	padding: 0;
+	margin-bottom: 35px;
+	width: 243px;
+	border-right: 1px solid #abaa9a;
+}
+
+div#footer-columns div#col1.column {
+	width: 242px;
+}                
+
+div#footer-columns div#col2.column {
+	width: 244px;
+}
+
+div#footer-columns div#col4.column {
+	border-right: 0;
+}
+
+
+div#footer-columns.three div#col1.column,
+div#footer-columns.three div#col2.column,
+div#footer-columns.three div#col3.column {
+	width: 230px;
+}
+
+div#footer-columns.three div#col3.column {
+	border-right: 0;
+}
+
+div#footer-columns.three.full div#col2.column {
+	width: 500px;
+}
+
+div#footer-columns div.padding {
+	padding: 19px;
+}
+
+div#footer-columns div.item {
+	padding-top: 15px;
+}
+
+div#footer-columns p.title,
+div#footer-columns a.title { 
+	font: normal 18px Georgia;
+}
+
+div#footer-columns a.title { 
+	color: #045482;
+}
+
+
+body.foundation.institute div#footer-columns div#col1 div.staff img {
+	margin: 0 0 3px 0;
+}
+
+body.foundation.institute div#footer-columns div#col1 div.staff span.slug {
+	display: block;
+	margin: 3px 0 0 0;
+}
+
+body.foundation.institute div#footer-columns div#col1 div.staff p { 
+	margin: 3px 0;
+}
+
+body.foundation.institute div#footer-columns div#col1 p.title,
+body.foundation.institute div#footer-columns div#col1 a.title { 
+	font: normal 15px Georgia;
+}
+
+body.foundation.institute div#footer-columns div.announcements a.title { 
+	font: normal 15px Georgia;
+	color: #000;
+}
+
+
+div#footer-columns div.logos { margin-top: 36px; }
+div#footer-columns div.logos p { margin-bottom: 26px; }
+div#footer-columns div.logos .left { margin-right: 30px; }
+
+div#footer-columns div.podcast {
+	width: 244px;
+	height: 160px;
+	background: url('/images/podcast-poemtalk-bg.png') top left no-repeat;
+	margin: 0;
+	display: inline-block;
+}
+
+div#footer-columns div.podcast p.heading { display: none; }
+                      
+div#footer-columns div.podcast p {
+	font: normal 13px/17px Arial;
+	color: #fff;
+	padding: 58px 19px 0 19px;
+}
+
+
+/* Best Sellers Landing */
+
+body.bestsellers div.behindthelist { padding: 0; margin: -6px 0 0 0; }
+body.bestsellers div.aboutthelist p { line-height: 12px; }
+
+body.bestsellers.landing div#footer-columns div.column { min-height: 400px; }
+
+body.bestsellers p.leftpad { padding-left: 19px; }
+body.bestsellers div.article img.left.image { margin: 6px 20px 0 0; }
+
+body.bestsellers div#footer-columns div.column span.author { display: inline-block; padding: 3px 0; }
+
+body.bestsellers div#footer-columns div.padding {
+	padding: 8px 19px;
+}
+
+body.bestsellers div#footer-columns div.paddingtop {
+	padding: 26px 19px 14px 19px;
+}
+
+div#footer-columns h4 {
+	text-transform: uppercase;
+	margin: 0;
+	padding: 0;
+	color: #505050;
+	font-size: 14px;
+}
+
+div#footer-columns h4 a {
+	color: #045482;
+}
+
+div#footer-columns h4 a:hover {
+	color: #000;
+}
+
+body.bestsellers.landing div#footer-columns div.bookwrap {
+	padding-top: 25px;
+}
+
+body.bestsellers.list div#footer-columns div.bookwrap {
+	padding-bottom: 10px;
+}
+
+div#footer-columns div.bookwrap.item1,
+div#footer-columns div.bookwrap.item2,
+div#footer-columns div.bookwrap.item3,
+div#footer-columns div.bookwrap.item4,
+div#footer-columns div.bookwrap.item5 {
+	padding-bottom: 15px;
+}
+
+div#footer-columns div.bookwrap.last {
+	margin-bottom: 0;
+}
+
+div#footer-columns div.bookleft {
+	float: left;
+	max-width: 62px;
+	margin-right: 10px;
+}
+
+div#footer-columns div.bookleft > span > img { max-width: 62px; }
+
+div#footer-columns div.bookright {
+	float: left;
+	width: 130px;
+}
+
+div#footer-columns div.bookright a.title {
+	font-size: 15px;
+}
+
+/* Best Sellers List */
+body.bestsellers.list div#footer-columns {
+	margin-top: 30px;
+}
+
+body.bestsellers.list div#footer-columns div.bookwrap {
+	min-height: 125px;
+}
+
+body.bestsellers.list div#footer-columns div.bookleft > img {
+	max-width: 60px;
+}
+
+body.bestsellers.list div#footer-columns div.bookright {
+	width: 120px;
+}
+
+body.bestsellers.list div#footer-columns div.padding {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+body.bestsellers.list div#footer-columns div.paddingtop {
+	padding: 15px 0;
+}
+
+body.bestsellers.list div#footer-columns div#col1 div.padding {
+	padding-left: 0;
+}
+
+body.bestsellers.list div#footer-columns div#col1 div.bookright {
+	width: 122px;
+}
+
+body.bestsellers.list h3 { margin: 0; padding: 0; }
+
+table#bestsellerlists { width: 100%; margin-top: 30px; }
+
+table#bestsellerlists tr th.col1,
+table#bestsellerlists tr th.col2,
+table#bestsellerlists tr td.col1,
+table#bestsellerlists tr td.col2 { width: 25px; }
+
+table#bestsellerlists tr th.col4,
+table#bestsellerlists tr td.col4 { width: 55px; }
+
+table#bestsellerlists th { text-align: left; }
+
+table#bestsellerlists th,
+table#bestsellerlists td { padding: 3px 10px; vertical-align: top; }
+
+table#bestsellerlists tr td { padding: 8px 10px; }
+
+table#bestsellerlists tr td span.title,
+table#bestsellerlists td a.title { font: normal 15px Georgia, serif; }
+
+table#bestsellerlists td span.author { display: block; }
+
+table#bestsellerlists tr td { border-bottom: 1px solid #e0dece; }
+
+table#bestsellerlists tr th,
+table#bestsellerlists tr.last td { border-bottom: 1px solid #939287; }
+
+
+
+/* Best Sellers All Weeks */
+
+body.bestsellers div#refinement-bar.list,
+body.bestsellers div#results { float: left; }
+
+body.bestsellers div#refinement-bar.list ul { margin: 0; padding: 0; }
+
+body.bestsellers div#refinement-bar.list ul li.group.open { padding: 14px 10px 6px 10px; }
+
+body.bestsellers div#refinement-bar.list ul li ul li.refine {
+	color: #333;
+	font: bold 13px/14px Arial;
+	margin-bottom: 3px; 
+}
+
+body.bestsellers div#refinement-bar.list ul li ul li.refine a { font: normal 13px/14px Arial; }
+
+body.bestsellers div#results {
+	width: 440px;
+	float: left;
+	padding: 1px 0 40px 20px;
+}
+
+body.bestsellers div#results div.item {
+	clear: both;
+	padding: 16px 0;
+}
+
+body.bestsellers div#results div.item ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+body.bestsellers div#results div.item ul li {
+	float: left;
+	height: 21px;
+}
+
+body.bestsellers div#results div.item ul li.line {
+	margin-right: 10px;
+	padding-right: 10px;
+	border-right: 1px solid #918153;
+}
+
+body.bestsellers div#results div.item ul li,
+body.bestsellers div#results div.item ul li a {
+	font-weight: bold;
+	font-size: 13px;
+}
+
+body.bestsellers div#results div.item p.description {
+	font: bold 12px Arial;
+	color: #505050;
+	margin: 0 0 4px 0;
+	padding: 0;
+}
+
+
+body.bestsellers div.allweeks { padding: 0 0 0 15px; float: left; }
+body.bestsellers div.weeklink { padding: 6px 0 0 15px; float: left; }
+
+
+/* FOOTER */
+
+div#footer {
+	border-top: 7px solid #adac9a;
+	background: #d6d4c5;
+}
+
+div#footer a{
+	color: #000;
+}
+
+div#footer div.section {
+	font-size: 14px;
+	color: #4a473f;
+	text-transform: uppercase;
+}
+
+div#footer div#links div.section {
+	padding-top: 4px;
+	margin-bottom: 15px;
+}
+
+div#footer div#siteindex,
+div#footer div#copyright { padding: 20px; }
+
+div#footer div#links label strong { color: #646056; }
+div#footer div#links label {
+	color: #505050;
+	display: block;
+	padding-left: 18px;
+}
+
+/* Signup Form */
+
+div#footer form#signup div.mailing { 
+    display: none;
+	clear: both;
+	padding: 1px 0 4px 0;
+}
+
+div#footer form#signup p.checkbox input {
+    display: block;
+	float: left;
+	margin: 0 0 0 -1px;
+	padding: 0;
+}
+
+div#footer form#signup input.full {
+	width: 437px;
+}
+
+div#footer form#signup input.half {
+	margin: 0;
+}
+
+div#footer form#signup p.row {
+	margin: 6px 0;
+	height: 28px;
+	clear: both;
+	display: block;
+}
+
+div#footer form#signup p.row.email {
+	padding: 11px 0 4px 0;
+}
+
+div#footer form#signup p.row input,
+div#footer form#signup p.row select {
+	border: 0;
+	border-top: 1px solid #7f7f7f;
+	border-left: 1px solid #7f7f7f;
+	height: 21px;
+	color: #949494;
+	font-size: 12px;
+	padding: 5px 5px 0 5px;
+}
+
+div#footer form#signup input.half.left {
+	width: 205px;
+	float: left;
+}
+
+div#footer form#signup input.half.right {
+	float: left;
+	width: 205px;
+	margin-left: 16px;
+}
+
+div#footer form#signup input.city,
+div#footer form#signup input.state,
+div#footer form#signup input.zip {
+	float: left;
+}
+
+div#footer form#signup input.state,
+div#footer form#signup input.zip {
+	margin-left: 6px;
+}
+
+div#footer form#signup input.city {
+	width: 205px;
+	margin-right: 10px;
+}
+
+div#footer form#signup input.state,
+div#footer form#signup select.state {
+	width: 96px;
+	margin-right: 4px;
+}
+
+div#footer form#signup input.zip { width: 88px; }
+
+div#footer form#signup input.signup1,
+div#footer form#signup input.signup2 {
+	height: auto !important;
+	width: auto !important;
+	padding: 0 !important;
+	border: 0 !important;
+}
+
+div#footer form#signup input#email_signup1 {
+	width: 305px;
+	margin-right: 6px;
+}
+
+div#footer form#signup input#email_signup1,
+div#footer form#signup input.signup1 { float: left; }
+
+div#footer form#signup a.cancel {
+	padding: 0;
+	margin: 6px 12px 0 327px;
+	display: block;
+	text-decoration: underline;
+	float: left;
+}
+
+div#footer form#signup a.cancel:hover { text-decoration: none; }
+
+/* Footer Columns */
+
+div#footer div.col {
+	float: left;
+	margin: 20px 20px 20px 0;
+}
+
+div#footer div#links div.col {
+	margin: 17px 20px 17px 0;
+}
+
+div#footer div.col.nopad { margin: 20px 0; }
+
+div#footer div#siteindex div.col { width: 139px; }
+
+div#footer div.col ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+div#footer div.col.c1 {
+	width: 448px;
+	padding-left: 20px;
+}
+
+div#footer div.col.c1 p {
+	line-height: 1.3em;
+	margin: 0 0 10px 0;
+	padding-top: 4px;
+}
+
+div#footer div.col.c1 input.checkbox {
+	border: 1px solid #226592;
+	margin-top: -1px;
+}
+
+div#footer div.col.c1 div.left,
+div#footer div.col.c1 div.right { width: 48%; }
+
+div#footer div.col.c1 div.right { padding-left: 1%; }
+
+div#footer div.col.c2,
+div#footer div.col.c3 {
+	width: 204px;
+	border-left: 1px solid #abaa9a;
+	padding-left: 19px;
+	min-height: 251px;
+}
+
+
+div#footer div.col.c2 ul li {
+	line-height: 25px;
+	padding-left: 23px;
+	margin-bottom: 3px;
+}
+
+div#footer div.col.c2 ul li.rss.i1 { background: url("/images/icon-rss1.png") 0 3px no-repeat; }
+div#footer div.col.c2 ul li.rss.i2 { background: url("/images/icon-rss2.png") 0 3px no-repeat; }
+div#footer div.col.c2 ul li.rss.i3 { background: url("/images/icon-rss3.png") 0 3px no-repeat; }
+div#footer div.col.c2 ul li.rss.i4 { background: url("/images/icon-rss4.png") 0 3px no-repeat; }
+div#footer div.col.c2 ul li.rss.i5 { background: url("/images/icon-rss5.png") 0 3px no-repeat; }
+div#footer div.col.c2 ul li.rss.i6 { background: url("/images/icon-rss6.png") 0 3px no-repeat; }
+
+div#footer div.col.c2 ul li a { display: block; }
+
+div#footer div.col.c3 ul { line-height: 20px; }
+
+div#footer div.col.c3 ul li {
+	padding: 0 0 12px 22px;
+	color: #646056;
+}
+
+div#footer div.col.c3 ul li ul li { padding: 0; }
+
+div#footer div.col.c3 ul li.facebook { background: url("/images/icon-facebook.png") top left no-repeat; }
+div#footer div.col.c3 ul li.twitter { background: url("/images/icon-twitter.png") top left no-repeat; }
+div#footer div.col.c3 ul li.flickr { background: url("/images/icon-flickr.png") top left no-repeat; }
+
+div#footer div#siteindex ul {
+	line-height: 21px;
+	margin-bottom: 7px;
+}
+
+div#footer div#siteindex div.heading {
+	font-weight: bold;
+	color: #000;
+	line-height: 21px;
+}
+
+/* TEMP - dev bar */
+
+#dev-bar {
+	text-align: center;
+	padding: 3px 0;
+	color: #000;
+}
+
+#dev-bar.dev_not_set {
+	background-color: #cdc9c9;
+	color: #777;
+}
+
+#dev-bar.dev_not_started {
+	background-color: #f00;
+	color: #fff;
+}
+
+#dev-bar.dev_in_progress {
+	background-color: #ffd700;
+}
+
+#dev-bar.dev_ready_for_internal_qa {
+	background-color: #00bfff;
+}
+
+#dev-bar.dev_ready_for_external_qa {
+	background-color: #9400d3;
+	color: #fff;
+}
+
+#dev-bar.dev_completed {
+	background-color: #006400;
+	color: #fff;
+}
+
+
+/* MISC TEMP */
+
+select#test {
+	background-color:#fff;
+	border:1px solid #4C4C4C;
+	font-size:1em;
+	font-weight:bold;
+	margin:6px;
+	padding:8px 0 0 5px;
+}
+
+select#test option { padding: 5px; }
+
+
+/* Tooltips */
+
+#tooltip-p,
+#tooltip-l,
+#tooltip-c,
+#tooltip-v,
+#tooltip-a {
+	display: none;
+	color: #000;	
+	height: 58px;
+	width: 206px;
+	font-size: 12px;
+	padding: 0;
+	margin-left: -30px;
+	position:relative;
+	z-index: 99999;
+	background: transparent url("/images/tooltip-bg.png");
+}
+
+div.tooltip img {
+	float: left;
+	margin: 12px 10px;
+}
+
+div.tooltip p {
+	width: 190px;
+}
+
+div.booktip {
+	float: left;
+	position: absolute;
+	margin-left: -100px;
+	background: #b5b5b5;
+	z-index: 500;
+	padding: 0 2px 2px 0;
+}
+
+div.booktipint {
+	float: left;
+	background: #f0efdf;
+	margin: -3px 0 0 -3px;
+	border: 1px solid #c9c9c5;
+	padding: 20px 20px 15px 20px;
+}
+
+div.booktipint p {
+	padding: 10px 0 5px 0;
+	margin: 0;
+	clear: both;
+	color: #4d493f;
+	font: bold 11px Arial !important;
+	white-space: nowrap;
+}
+
+div.booktip img {
+	float: left;
+}
+
+div.booktip p {
+	width: 100px;
+}
+
+
+/* Sortable Table Headings */
+
+table tr.sortable th {
+	background: url('/images/sortable-th-bg.png') top left repeat-x;
+	border-right: 1px solid #b0b0a4 !important;
+	border-bottom: 1px solid #b0b0a4 !important;
+	margin-right: 1px !important;
+}
+
+table tr.sortable th.active {
+	border: 0 !important;
+	border-left: 1px solid #b0b0a4 !important;
+	border-top: 1px solid #b0b0a4 !important;
+	background: #d9d7c7;
+}
+
+table tr.sortable th a {
+	color: #045482;
+	font: bold 14px Arial;
+	padding: 0;
+	margin: 9px 0 0 9px;
+	height: 1em;
+	display: inline-block;
+}
+
+table tr.sortable th.active a {
+	color: #4a473f;
+}
+
+table tr.sortable th.hover a { text-decoration: underline; }
+
+table tr.sortable th.active.order-desc a {
+	background-image: url(/images/arrow-gold-down.png);
+	background-position: right center;
+	background-repeat: no-repeat;
+	display:block;
+	margin-right:12px;
+}
+table tr.sortable th.active.order-asc a {
+	background-image: url(/images/arrow-gold-up.png);
+	background-position: right center;
+	background-repeat: no-repeat;
+	display:block;
+	margin-right:12px;
+}
+
+.hide { display: none; }
+
+/* Contact Form */
+
+body.contact div#form input,
+body.contact div#form select,
+body.contact div#form textarea { width: 420px; }
+
+body.contact div#form select { width: 440px; }
+
+body.contact div#form input#submit { width: auto; }
+
+body div#form input#submit.submitButtonLarge {
+    background: url("/images/button-submit-large.png") no-repeat 0px 0px;
+    cursor: hand; cursor: pointer;
+    color: transparent;
+    text-transform: capitalize;
+    width: 93px;
+    height: 34px;
+    border: 0px;
+}
+
+div#form form label {
+	display: block;
+	font-weight: bold;
+	color: #505050;
+}
+
+div#form form input { margin-bottom: 7px; }
+
+div#form form p.textarea { margin-top: 24px; }
+
+div#form form input,
+div#form form textarea,
+body.generic span.dropdown-menu .dropdown,
+body.genericfull span.dropdown-menu .dropdown {
+	background-color: #f3f2e6 !important;
+	border-top: 1px solid #aaa9a1;
+	border-left: 1px solid #aaa9a1;
+	border-right: 0;
+	border-bottom: 0;
+	padding: 9px;
+	color: #505050;
+	font-size: 13px;
+}
+
+body.generic span.dropdown-menu .dropdown,
+body.genericfull span.dropdown-menu .dropdown { padding: 0; }
+
+div#form form input#submit { padding: 0; float: left; border: 0; }
+
+div#form a.reset { display:inline-block; margin-top: 9px; margin-left: 10px; }
+
+body.contact div#content h1 { margin-bottom: 6px; }
+
+body.contact div#content div.right { padding: 15px 22px 0 0; }
+
+body.magazine.contact div#content div.right { padding: 0 22px 0 0; }
+
+body.magazine.contact div#content p.left { margin: 0; }
+
+body.magazine.contact p.state, p.state {
+	padding: 0;
+	display: inline-block;
+}
+
+.error,
+.errors ul li,
+.errors p,
+.errors p strong {
+    color: #c00;
+}
+
+label.error, .form_error_msg {
+    color: #c00 !important;
+}
+
+
+/* iphone */
+
+/* iPhone Landing Page */
+div#iphonewrap {  }
+
+div#iphone { margin: 7px 0 0 6px; }
+
+div#iphone div.left {
+    float: left;
+    width: 250px;
+    margin-top: 7px;
+    position: relative;
+    margin-left: -30px;
+}
+
+div#iphone div.right {
+    float: right;
+    width: 410px;
+    margin-top: 7px;
+}
+
+div#iphone div.right h3 { margin-bottom: 0; }
+
+div#iphone ul {
+    margin-top: -3px;
+	margin-left: 0;
+    padding: 0 0 0 25px; 
+    line-height: 18px;
+}
+
+div#iphone ul li { margin: 0 0 10px 0; }
+
+div#iphonecontainer {
+    background: transparent url("/images/iphone_bg.png") top left no-repeat;
+    margin: 0 auto;
+    width: 301px;
+    height: 530px;
+}
+
+div#iphonecontainer span a {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+div#iphone h2 { 
+    width: 88px;
+    height: 88px;
+    background: transparent url("/images/iphone_header.png") top left no-repeat;
+    display: block;
+    text-indent: -9999px;
+}
+
+div#iphone h2 a { 
+    width: 88px;
+    height: 88px;
+    display:block;
+    text-indent: -9999px;
+}
+
+div#iphonecontent {
+    position: absolute;
+    margin: 94px 0 0 47px;
+    width: 208px;
+    height: 312px;
+    display: block;
+    overflow: hidden;
+}
+
+div#iphoneslider {
+    left: 0;
+    width: 832px;
+    height: 312px;
+    display: block;
+    position: absolute;
+}
+
+div#iphonecontent div.slide1,
+div#iphonecontent div.slide2,
+div#iphonecontent div.slide3,
+div#iphonecontent div.slide4 {
+    width: 208px;
+    height: 312px;
+    display: inline-block;
+    float: left;
+}
+
+div#iphonecontent div.slide1 { background: url("/images/iphone-slide1.jpg") top left no-repeat; }
+div#iphonecontent div.slide2 { background: url("/images/iphone-slide2.jpg") top left no-repeat; }
+div#iphonecontent div.slide3 { background: url("/images/iphone-slide3.jpg") top left no-repeat; }
+div#iphonecontent div.slide4 { background: url("/images/iphone-slide4.jpg") top left no-repeat; }
+
+div#iphone div#pagination {
+    margin: 501px 0 0 125px;
+    position: absolute;
+}
+
+div#iphone div.left div.iphonelinks {
+    display: block;
+    margin: 45px 0 0 10px;
+}
+
+div#iphone div.right div.appstore{
+	float: left;
+}
+
+div#iphone div.right div.android_store{
+	float: left;
+	margin-left: 10px;
+}
+
+div#iphone div.right div.appstore a {
+    display: block;
+    width: 136px;
+    height: 47px;
+    background: transparent url("/images/iphone_appstore.png") top left no-repeat;
+    text-indent: -9999px;
+}
+
+div#iphone div.right div.android_store a {
+	display: block;
+	margin-top:1px;
+    width: 117px;
+    height: 45px;
+	text-indent: -9999px;
+	background: transparent url("/images/45_avail_market_logo1.png") top left no-repeat;
+}
+
+div#iphone span.pagination {
+    margin: 501px 0 0 125px;
+    position: absolute;
+}
+
+div#iphone div.icon-l {
+	float: left;
+	width: 98px;
+}
+
+div#iphone div.icon-r {
+	font-size: 24px;
+	font-family: georgia;
+	line-height: 27px;
+	padding-top: 40px;
+	color: #000;
+}
+
+div#iphone p.subiphone {
+	color: #4d493f;
+	font-size: 16px;
+	font-family: georgia;
+	margin-top: 6px;
+	line-height: 20px;
+}
+
+div#iphone div.right {
+	color: #4d493f;
+	line-height: 17px;
+}
+
+/* Newsletter Signup Box */
+
+body.foundation.index div#newsletterdefault,
+body.foundation.index div#newsletterthanks {
+	background: #f0efdf;
+	padding: 10px;
+	position: relative;
+	margin-left: -10px;
+	margin-right: -10px;
+}
+
+body.foundation.index div#newsletterdefault p,
+body.foundation.index div#newsletterthanks p {
+	line-height: 17px !important;
+	font-size: 12px !important;
+	margin: 0;
+	padding: 0;
+}
+
+div#newsletterdefault p,
+div#newsletterthanks p {
+	margin: 0;
+	padding: 0;
+}
+
+div#newsletterpop p {
+	margin: 0;
+	padding: 0;
+}
+
+div#newsletterpop p.newspoptitle {
+	font-size: 12px;
+	color: #505050;
+	font-weight: bold;
+	margin-top: 0;
+	padding-top: 0;
+	margin-bottom: 0;
+	padding-bottom: 10px;
+}
+
+div#newsletterpop p.newsfield { padding-bottom: 10px; }
+
+div#newsletterpop {
+	background: transparent url("/images/announce-popup-bg.png") bottom left no-repeat;
+	padding: 10px 15px;
+	width: 199px;
+	height: 120px;
+	position: absolute;
+	z-index: 20;
+	margin-top: -115px;
+	margin-left: 63px;
+}
+
+form#mini_signup label{
+	display:block;
+	font-size:10px;
+}
+
+/* Default Pagination arrows */
+
+div.pagination-arrows ul { margin: 0; padding: 0; list-style-type: none; }
+div.pagination-arrows ul li { padding: 0; margin: 0; float: left; }
+
+div.pagination-arrows a.next,
+div.pagination-arrows a.prev {
+	display: block;
+	width: 20px;
+	height: 24px;
+	text-indent: -9999px;
+	background: url("/images/pagination-sprite.png") 20px 0;
+}
+
+div.pagination-arrows a.next { margin-left: 1px; }
+
+div.pagination-arrows a.prev {
+	background-position: 40px 0;
+}
+
+div.pagination-arrows a.prev.disabled {
+	background-position: 0 0;
+	cursor:default;
+}
+
+div.pagination-arrows a.next.disabled {
+	background-position: 60px 0;
+	cursor:default;
+}
+
+/* Site Pagination */
+
+
+p.resultcount.left { width: 195px; }
+p.resultcount.right { width: 195px; }
+
+div.pagination { margin: 12px 0 0 0; }
+
+body.slideshow div.pagination { margin: -8px 0; }
+
+span.pagination { margin: 0; padding: 0; display: block; }
+
+span.pagination,
+div#pagination {
+	float: left;
+	font-size: 12px;
+}
+
+span.pagination.top,
+div#pagination.top {
+	height: 28px;
+	padding: 4px 10px 1px 0;
+	margin-right: 10px;
+	border-right: 1px solid #505050;
+}
+
+span.pagination.bottom,
+div#pagination.bottom { clear: both; margin-top: 30px; }
+
+span.pagination span.link { display: none; }
+
+span.pagination a,
+span.pagination .pager-current-page,
+div#pagination a,
+div#pagination .pager-current-page {
+	display: inline-block;
+	text-align: center;
+	color: #fff;
+	background: #434343;
+	border-top: 1px solid #434343 !important;
+	border-left: 1px solid #434343 !important;
+	height: 18px !important;
+	min-width: 13px !important;
+	margin: 0 1px 0 0 !important;
+	padding: 2px 4px 3px 3px !important;
+}	
+
+span.pagination a,
+div#pagination a { color: #fff !important; }
+
+span.pagination .pager-current-page,
+div#pagination .pager-current-page {
+	color: #000 !important;
+	border-top: 1px solid #8a6800 !important;
+	border-left: 1px solid #8a6800 !important;
+	background: #ffbe00;
+	padding: 2px 3px 3px 3px !important;
+}
+
+span.pagination .pager-current-page:hover,
+div#pagination .pager-current-page:hover {
+	color: #000 !important;
+}
+
+span#browse-result-pagination a { padding: 5px 4px 0 3px !important; }
+span#browse-result-pagination .pager-current-page { padding: 5px 3px 0 3px !important; }
+
+
+div#pagination a.next,
+div#pagination a.prev,
+span.pagination a.next,
+span.pagination a.prev {
+	width: 15px;
+	text-indent: -9999px;
+	background: #434343 url("/images/browse-pagination-sprite.png") 19px -1px;
+}
+
+div#pagination a.next,
+span.pagination a.next {
+	background-position: 60px -1px;
+}
+
+div#pagination a.prev,
+span.pagination a.prev {
+	background-position: 80px -1px;
+}
+
+div#pagination a.prev:hover,
+span.pagination a.prev:hover {
+	background-position: 40px -1px;
+	cursor:default;
+}
+
+div#pagination a.next:hover,
+span.pagination a.next:hover {
+	background-position: 20px -1px;
+	cursor:default;
+}
+
+div#pagination a.prev.inactive,
+div#pagination a.prev.inactive:hover,
+span.pagination a.prev.inactive,
+span.pagination a.prev.inactive:hover {
+	background-position: 0 -1px;
+	cursor:default;
+}
+
+div#pagination a.next.inactive,
+div#pagination a.next.inactive:hover,
+span.pagination a.next.inactive,
+span.pagination a.next.inactive:hover {
+	background-position: 100px -1px;
+	cursor:default;
+}
+
+span.pagination a:hover,
+div#pagination a:hover { color: #ffbe00 !important; text-decoration: none; }
+
+
+/**************/
+/* CHILDREN'S */
+/**************/
+
+/* Children's Article */
+
+body.children div#subnav div#tabs {
+	width: 976px;
+	margin: 0;
+	padding: 35px 0 0 0;
+}
+
+
+/* Children's Landing Page */
+
+div#childrens-top div.right { width: 220px; }
+
+div#childrens-top div.about {
+	font-size: 12px;
+	color: #505050;
+	background: #f0efdf;
+	padding: 17px 18px 4px 18px;
+	line-height: 17px;
+}
+
+body.children.laureate div#childrens-top div.about {
+	height: 272px;
+}
+
+div#childrens-top div.about div.actions {
+	float: none;
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+div#childrens-top div.about div.actions ul {
+	margin: 0;
+	padding: 0;
+}
+
+div#childrens-top div.about div.actions ul li {
+	line-height: 15px;
+	margin-bottom: 12px;
+}
+
+div#childrens-top div.photo { width: 448px; }
+div#childrens-top div.photo p { margin-top: 5px; padding-top: 0; float: right; }
+
+div#childrens-top div.featured { width: 453px; }
+
+div#childrens-top h1,
+div#childrens-top h1 a {
+	font-family: Georgia;
+	font-size: 24px;
+	color: #045482;
+	font-weight: normal;
+	margin: -5px 0 4px 0;
+}
+
+div#childrens-top h1 a:hover { color: #000; }
+
+div#childrens-top div.morepoems { padding: 7px 18px 0 18px; }
+
+div#childrens-top div.infotop { padding-top: 6px; }
+
+div#childrens-top div.newbookLeft {
+	float: left;
+	padding-top: 8px;
+}
+
+div#childrens-top div.newbookLeft img {
+	width: 108px;
+    border: 0px;
+}
+
+div#childrens-top div.newbookRight {
+    float: left;
+	width: 330px;
+}
+
+div#childrens-top div.newbookRight p {
+	margin: 2px 0 0 0;
+	padding: 0;
+}
+
+div#childrens-top div.newbookRight p.title { margin-bottom: 8px; }
+div#childrens-top div.newbookRight p.author { margin-bottom: 8px; }
+div#childrens-top div.newbookRight p.description { margin-bottom: 8px; }
+
+div#childrens-top div.prevLeft {
+	float: left;
+	width: 69px;
+}
+
+div#childrens-top div.prevLeft img.left.image { max-width: 62px; }
+
+div#childrens-top div.prevRight {
+	float: right;
+	width: 110px;
+	margin-bottom: 25px;
+}
+
+div#childrens-top div.prevRight p {
+	margin: 0; 
+	padding: 0;
+}
+
+div#childrens-top span.prevTitle {
+	font-size: 15px;
+	font-family: georgia;
+	line-height: 18px;
+}
+
+div#childrens-top span.prevAuthor {
+	font-size: 12px;
+	font-family: arial;
+	line-height: 16px;
+	text-transform: uppercase;
+	color: #505050;
+}
+
+div#childrens-top span.prevPublisher {
+	font-size: 13px;
+	font-family: arial;
+	line-height: 17px;
+	color: #505050;
+}
+
+div#childrens-footer p {
+	font-size: 13px;
+	color: #4d493f;
+	margin: 9px 0;
+	line-height: 17px;
+}
+
+div#childrens-footer h3,
+div#childrens-footer h3 a { margin: 0 0 12px 0; }
+
+div#childrens-footer div.column {
+	float: left;
+	padding: 0;
+	margin-bottom: 35px;
+	border-right: 1px solid #abaa9a;
+}
+
+div#childrens-footer div#col1.column { width: 488px; }                
+div#childrens-footer div#col2.column { width: 487px; border-right: 0; }                
+div#childrens-footer div.padding { padding: 19px; }
+
+div#childrens-footer div.lowerLeft {
+	float: left;
+	width: 50%;
+}
+
+div#childrens-footer div.lowerRight {
+	float: right;
+	width: 88px;
+}
+
+div#childrens-footer div#col1.column div.photo { margin-top: 5px; }
+
+div#childrens-footer div#col1.column p.photocredit {
+	margin-top: 4px;
+	text-align: right;
+}
+
+div#childrens-footer div#col1.column p.title {
+	font-size: 18px;
+	font-family: georgia;
+	font-weight: normal;
+	text-transform: none !important;
+}
+
+div#childrens-footer div#col1.column p.author {
+	font-size: 12px;
+	font-family: arial;
+	text-transform: uppercase;
+	color: #4d493f;
+	margin-bottom: 6px;
+	padding-bottom: 0;
+}
+
+div#childrens-footer div#col1.column p.description {
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	font-family: arial;
+	color: #4d493f;
+}
+
+div#childrens-footer div#col2.column div#bestsellers {
+	margin-top: 30px;
+}
+
+div#childrens-footer div#col2.column div.bestall {
+	float: left;
+	width: 50%;
+}
+
+div#childrens-footer div#col2.column div.bestLeft {
+	float: left;
+	width: 69px;
+}
+
+div#childrens-footer div#col2.column div.bestLeft img.left.image {
+	max-width: 62px;
+}
+
+div#childrens-footer div#col2.column div.bestRight {
+	float: right;
+	width: 150px;
+	margin-bottom: 25px;
+}
+
+div#childrens-footer div#col2.column div.bestRightWrap {
+	width: 130px;
+}
+
+div#childrens-footer div#col2.column div.bestRight p {
+	margin: 0; 
+	padding: 0;
+}
+
+div#childrens-footer div#col2.column div.bestRight p.bestTitle { margin-bottom: 4px; }
+div#childrens-footer div#col2.column div.bestRight p.bestAuthor { margin-bottom: 4px; }
+
+div#childrens-footer div#col2.column span.bestTitle {
+	font-size: 15px;
+	font-family: georgia;
+	line-height: 18px;
+	padding-bottom: 4px;
+}
+
+div#childrens-footer div#col2.column span.bestAuthor {
+	font-size: 12px;
+	font-family: arial;
+	line-height: 16px;
+	text-transform: uppercase;
+	color: #505050;
+}
+
+div#childrens-footer div#col2.column span.bestPublisher {
+	font-size: 13px;
+	font-family: arial;
+	line-height: 17px;
+	color: #505050;
+}
+
+
+/* Children's Laureate Page */
+
+div#childrens-laureate-footer p {
+	font-size: 12px;
+	color: #4d493f;
+	margin: 9px 0;
+	line-height: 17px;
+}
+
+div#childrens-laureate-footer h3,
+div#childrens-laureate-footer h3 a { margin: 0 0 12px 0; }
+
+div#childrens-laureate-footer div.column {
+	float: left;
+	padding: 0;
+	margin-bottom: 35px;
+	border-right: 1px solid #abaa9a;
+}
+
+div#childrens-laureate-footer div#col1.column { width: 488px; }                
+div#childrens-laureate-footer div#col2.column { width: 242px; }
+div#childrens-laureate-footer div#col3.column { width: 243px; border-right: 0; }                
+div#childrens-laureate-footer div.padding { padding: 19px; }
+
+div#childrens-laureate-footer div#col1.column div.photo { margin-top: 5px; }
+
+div#childrens-laureate-footer div#col1.column p.photocredit {
+	margin-top: 4px;
+	text-align: right;
+}
+
+div#childrens-laureate-footer div#col1.column p.title {
+	font-size: 18px;
+	font-family: georgia;
+	font-weight: normal;
+	text-transform: none !important;
+}
+
+div#childrens-laureate-footer div#col1.column p.author {
+	font-size: 12px;
+	font-family: arial;
+	text-transform: uppercase;
+	color: #4d493f;
+	margin-bottom: 6px;
+	padding-bottom: 0;
+}
+
+div#childrens-laureate-footer div#col1.column p.description {
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	font-family: arial;
+	color: #4d493f;
+}
+
+div.laureateLeft {
+	float: left;
+	width: 239px;
+}
+
+div.laureateRight {
+	float: right;
+	width: 210px;
+}
+
+div.laureateRight p.slug {
+	margin-top: 0 !important;
+	padding-top: 0 !important;
+}
+
+div.laureateRight p.slug { margin-top: 0; }
+div.laureateRight p.publisher { margin-top: 0; }
+
+div.laureateRight p.description {
+	margin-top: 30px;
+	line-height: 17px;
+}
+
+div.laureateEvents p.date {
+	font-family: arial;
+	font-weight: bold;
+	font-size: 12px;
+	color: #505050;
+	margin-bottom: 0 !important;
+	padding-bottom: 0 !important;
+}
+
+div.laureateEvents p.title {
+	color: #000 !important;
+	font-family: georgia;
+	font-size: 16px !important;
+	line-height: 19px !important;
+	margin-top: 6px !important;
+	margin-bottom: 0 !important;
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+}
+
+div.laureateEvents p.location {
+	font-family: arial;
+	font-size: 12px;
+	color: #505050;
+	margin-top: 3px !important;
+	margin-bottom: 0 !important;
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+}
+
+div.laureateEvents p.description {
+	font-family: arial;
+	font-size: 12px;
+	color: #505050;
+	margin-top: 3px !important;
+	margin-bottom: 0 !important;
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+}
+
+div.laureateEvents p.links {
+	margin-top: 3px !important;
+	margin-bottom: 0 !important;
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+}
+
+div.laureateEvents div.events { padding-bottom: 10px; }
+
+div.laureateAnnouncement p.announceTitle {
+	font-family: georgia;
+	font-size: 16px !important;
+	line-height: 19px !important;
+	margin-top: 4px !important;
+	margin-bottom: 0 !important;
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+}
+
+div.laureateAnnouncement p.announceDate {
+	font-family: arial;
+	font-size: 12px;
+	color: #505050;
+	margin-top: 8px !important;
+	margin-bottom: 0 !important;
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+	font-weight: bold;
+}
+
+div.laureateAnnouncement div.announce { padding-bottom: 20px; }
+
+
+/* Children's Laureate Bio Page */
+
+div.childrens-laureate-bio h1 {
+	color: #000 !important;
+	padding-top: 20px;
+}
+
+div.childrens-laureate-bio p.laureate-subdesc {
+	color: #4d493f;
+	font-size: 16px;
+	font-family: georgia;
+	margin-top: 0;
+	padding-top: 0;
+	padding-bottom: 15px;
+}
+
+div.laureate-bioLeft {
+	float: left;
+	width: 285px;
+}
+
+div.laureate-bioRight {
+	float: right;
+	width: 405px;
+}
+
+div.laureate-bioRight p {
+	margin: 0;
+	padding: 0;
+}
+
+div.laureate-bioRight p.title {
+	font-size: 18px;
+	font-family: georgia;
+	font-weight: normal;
+	padding-top: 8px;
+}
+
+div.laureate-bioRight p.author {
+	color: #4d493f;
+	font-family: arial;
+	font-size: 12px;
+	text-transform: uppercase;
+	padding-top: 8px;
+}
+
+div.laureate-bioRight p.publisher {
+	color: #4d493f;
+	font-family: arial;
+	font-size: 12px;
+	padding-top: 8px;
+}
+
+div.laureate-bioRight p.description {
+	color: #4d493f;
+	font-family: arial;
+	font-size: 12px;
+	line-height: 17px;
+	padding: 17px 0;
+}
+
+div.laureate-bioRight ul.linklist {
+	padding-top: 7px;
+}
+
+div#childrens-laureate-bio-footer p {
+	color: #4d493f;
+}
+
+div#childrens-laureate-bio-footer div.column {
+	float: left;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 35px;
+	border-right: 1px solid #abaa9a;
+}
+
+div#childrens-laureate-bio-footer div#col1.column { width: 488px; }                
+div#childrens-laureate-bio-footer div#col2.column { width: 487px; border-right: 0; }
+div#childrens-laureate-bio-footer div.padding { padding: 19px; }
+
+div#childrens-laureate-bio-footer div.lowerLeft {
+	float: left;
+	width: 50%;
+	padding: 25px 0 33px 21px;
+	margin: 0;
+}
+
+div#childrens-laureate-bio-footer div.lowerRight {
+	float: right;
+	width: 155px;
+	padding: 25px 0 33px 21px;
+	margin: 0;
+}
+
+div#childrens-laureate-bio-footer div.lowerLeft h3 {
+	margin: 0;
+	padding: 0;
+}
+
+div#childrens-laureate-bio-footer div.lowerRight { }
+
+div.bookpickLeft {
+	float: left;
+	width: 75px;
+	padding-bottom: 37px;
+}
+
+div.bookpickLeft > span > img {
+	max-width: 62px;
+}
+
+div.bookpickRight {
+	float: right;
+	width: 370px;
+	padding-bottom: 37px;
+}
+
+div.bookpickRight p {
+	margin: 0;
+	padding: 0;
+}
+
+div.bookpickRight p.slug { padding-bottom: 6px; }
+
+div.bookpickRight p.title {
+	font-size: 18px;
+	font-family: georgia;
+	font-weight: normal;
+	padding-bottom: 8px;
+	line-height: 21px;
+}
+
+div.bookpickRight p.author {
+	font-family: arial;
+	font-size: 12px;
+	text-transform: uppercase;
+	padding-bottom: 8px;
+}
+
+div.bookpickRight p.publisher {
+	color: #4d493f;
+	font-family: arial;
+	font-size: 12px;
+	padding: 0;
+}
+
+div.children-article { padding: 0 25px; }
+
+div.children-article div.articleitemsLeft { float: left; width: 50%; }
+div.children-article div.articleitemsRight { float: right; width: 50%; }
+
+div.children-article-left.firstarticle {
+	padding-top: 0;
+}
+
+div.children-article-left {
+	float: left;
+	width: 145px;
+	height: 110px;
+	padding-top: 25px;
+}
+
+div.children-article-right.firstarticle {
+	padding-top: 0;
+}
+
+div.children-article-right {
+	float: right;
+	width: 280px;
+	margin-right: 20px;
+	height: 110px;
+	padding-top: 25px;
+}
+
+div.childrenarticlebody p {
+	color: #505050;
+	font: normal 16px/20px Georgia, serif;
+}
+
+div.childrenarticlebody .tout p {
+	font: normal 12px/17px Arial;
+}
+
+div.childrenarticlebody .tout span.blacktext { color: #000 !important; }
+
+div.childrenarticlebody p strong {
+	font-weight: normal;
+	font-style: italic;
+}
+
+div.childrenarticlebody .tout p strong { font-weight: bold; font-style: normal; }
+
+h1.twoline { padding-bottom: 7px; }
+
+div.childrenarticlebodyright { margin-right: 30px; }
+
+div#childrenarticletop {
+	padding-top: 7px;
+	padding-right: 40px;
+	padding-bottom: 7px;
+	padding-left: 40px;
+}
+
+div#childrenarticletop .tout.tpad { margin-top: 0; }
+div#childrenarticletop .tout.indent { margin-left: -20px; }
+
+div#childrenarticletop p.desc {
+	color: #4d493f;
+	font-size: 16px;
+	font-family: georgia;
+	margin-top: 4px;
+	margin-bottom: 30px;
+}
+
+body.children.articles.featured div#content { padding-top: 31px; }
+
+/* ------------ */
+/* -- awards -- */
+/* ------------ */
+
+div.fellowship {
+	float: left;
+	width: 33%;
+}
+
+div.fellowship p {
+	color: #505050;
+	font-family: georgia;
+	font-size: 16px;
+	line-height: 19px;
+}
+
+div.fellowship p a { color: #045482; }
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+
+	div#refinement-bar ul#refinement-listing {
+		margin: 0;
+	}
+
+	div#refinement-bar ul#refinement-listing li input {
+		margin-top: 1px;
+	}
+
+	div#refinement-bar ul#refinement-listing li a.showall {
+		padding: 0 0 0 17px;
+	}
+
+	div#refinement-bar div#refinement-top span.showonly {
+		margin-left: 17px;
+	}
+
+	body.magazine.archive.poem-poet div#content {
+		padding: 9px 19px;
+		margin-top: 0;
+	}
+
+	body.magazine.archive.toc div#magazinetop {
+		margin-top: 0;
+	}
+
+	div#browse-widget div#widget-nav-prev a {
+		background: transparent url("/images/browse-poetry-prev.gif") 0 0 no-repeat;
+	}
+
+	div#browse-widget div#widget-nav-next a {
+		margin-left: 121px;
+	}
+
+	body.lab.guide .featured-nav li.active {
+		padding-top: 6px;
+	}
+
+	div#sidebar .widget.tout.past div.left {
+		margin-top: -2px;
+	}
+
+	div#breadcrumbs {
+		width: 690px;
+	}
+
+	body.magazine.guide span.slug {
+		margin: 23px 0 0 0;
+	}
+
+}
+
+span.annotation + span {
+    display: none;
+}
+
+span.book-image{
+    display: none;
+}
+
+.required {
+    color: #4d493f;
+    padding: 0 0 0 4px;
+    font-size: 11px;
+}

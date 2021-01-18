@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=Shift_JIS" http-equiv="content-type">
+    <title>kouzai_2015</title>
+  </head>
+  <body>
+    <p>academic year 2015:&nbsp; first term</p>
+    <ul>
+      <li><a href="first_year_2015.html">English IA IB</a></li>
+      <li><a href="second_year_2015.html">English IIIA IIIB</a></li>
+      <li><a title="英語V＿２０１５年度" href="third_year_2015.html">English V</a></li>
+      <li><a title="MD/PhD English Writing Strategies" href="file:///C:/Users/FMU/Dropbox/site/MD_PhD%20English%20Writing%20Strategies.html"><span
+            style="color: #0000ee;"><span style="text-decoration: underline;">MD/PhD
+              English Writing Strategies</span></span></a></li>
+    </ul>
+  </body>
+</html>

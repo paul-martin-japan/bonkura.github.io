@@ -1,0 +1,80 @@
+body{
+	color:#000;
+}
+
+div.poem, div.article, div#poetwrapper div.biography, div#articlewrapper div.biography, p, h1, h2, h3, span.author, div#articlewrapper h2 {
+    color: #000;
+}
+
+body,
+div#wrapper,
+div#header { background: #fff; }
+
+div#header div#topnav,
+div#logo,
+div#navwrapper,
+div#sidebar,
+div#subnav,
+div#footer,
+div#dev-bar,
+div#pmsearchbox,
+p.report,
+.backtotop,
+a.more,
+a.close,
+div.expander a.toggle,
+div.expander span,
+div.actions,
+div#refinement-bar,
+div.postcomment,
+div#magazinetop,
+ul.linklist,
+div#tabs,
+div.about,
+div#comments,
+div.tabs-comments,
+div.article_related,
+div.authorbio,
+div.divider,
+div#pmsearchbox,
+iframe#browser,
+div#tocbar
+ { display: none !important; }
+
+div#printlogo { display: block; }
+
+
+div.expander span.icon { display: block !important; }
+
+div#wrapper,
+div#content { width: 100%; }
+
+div.expander ul { display: block !important; }
+
+div#header { margin: 0; padding: 0; }
+
+div#breadcrumbs { background: #fff !important; }
+
+div#breadcrumbs,
+body.generic div#breadcrumbs {
+	float: none;
+	width: 0;
+	padding: 0;
+}
+
+ul.featured-nav ul,
+ul.featured-nav li,
+div.l1_desc,
+div.l2_desc,
+div.l3_desc { display:block !important; background: #fff !important; }
+
+ul.featured-nav li.l1,
+ul.featured-nav li.l2,
+ul.featured-nav li.l3 { margin-bottom: 12px; padding-bottom: 50px; display:inline-block; }
+
+div#col1,
+div#col2,
+div#col3,
+div.column { float: none !important; width: auto !important; height: auto !important }
+
+div#comments-top h1 { display: none; }

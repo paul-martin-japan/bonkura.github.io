@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=Shift_JIS" http-equiv="content-type">
+    <title>lecture handouts</title>
+    <meta content="Paul Martin" name="author">
+  </head>
+  <body>
+    <p style="text-align: center;">Lectures</p>
+    <p><br>
+    </p>
+    <ul>
+      <li><a href="first%20year.html"><strong>First-year lectures Autumn/Winter
+            2014</strong></a></li>
+      <li><a href="second%20year.html"><strong>Second-year lectures
+            Autumn/Winter 2014</strong></a></li>
+      <li>Third-year lectures Spring/Summer 2015</li>
+    </ul>
+  </body>
+</html>
